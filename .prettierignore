@@ -1,0 +1,4 @@
+# SvelteKit output directory
+/website/build
+/website/.svelte-kit
+/website/package
