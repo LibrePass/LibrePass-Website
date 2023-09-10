@@ -76,8 +76,8 @@
     </div>
 </section>
 
-<section class="flex mx-auto p-10">
-    <div class="card w-96 mx-auto bg-secondary text-secondary-content">
+<section class="flex mx-auto p-10 w-full sm:w-96">
+    <div class="card w-full mx-auto bg-secondary text-secondary-content">
         <div class="card-body">
             <h2 class="card-title justify-center">
                 Free
