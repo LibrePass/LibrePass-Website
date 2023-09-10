@@ -13,7 +13,7 @@
 </svelte:head>
 
 <section class="container min-h-screen flex justify-center items-center max-w-[980px] mx-auto gap-5">
-    <div class="flex flex-col justify-start gap-4 p-4">
+    <div class="flex flex-col justify-start gap-4 p-4 text-center sm:text-start">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
             Take control of your passwords.
         </h1>
@@ -23,7 +23,7 @@
             you have easy access to them.
         </p>
 
-        <div class="flex">
+        <div class="flex justify-center sm:justify-start">
             <a href="/auth/register" class="flex btn btn-primary">
                 Get Started &rarr;
             </a>
