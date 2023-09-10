@@ -2,8 +2,8 @@
 
 </script>
 
-<section class="container flex justify-center items-center min-h-screen max-w-[980px] mx-auto gap-5">
-    <div class="card w-96 border">
+<section class="container min-h-screen m-no-header flex justify-center items-center max-w-[980px] mx-auto gap-5">
+    <div class="card w-96 border m-header">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
 

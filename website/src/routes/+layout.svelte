@@ -1,9 +1,12 @@
 <script>
+    import MainNav from '$lib/components/nav/MainNav.svelte';
     import './../app.postcss'
 </script>
 
-<div class="flex flex-col">
-    <main class="flex flex-col">
+<div>
+    <MainNav />
+
+    <main class="m-header">
         <slot />
     </main>
 </div>
