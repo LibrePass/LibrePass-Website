@@ -1,6 +1,12 @@
 <script>
-
+    import Seo from "$lib/components/Seo.svelte"
 </script>
+
+<Seo
+    title="Register"
+    description="Create an account with LibrePass to start creating secure passwords for your accounts,
+which will be stored securely."
+/>
 
 <section class="container min-h-screen m-no-header flex justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="card w-96 border m-header">

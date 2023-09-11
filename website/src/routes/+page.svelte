@@ -4,13 +4,17 @@
     import ShieldCheck from "svelte-material-icons/ShieldCheckOutline.svelte"
     import Timer from "svelte-material-icons/TimerOutline.svelte"
 
+    import Seo from "$lib/components/Seo.svelte";
     import phoneScreenshot from "$lib/images/screenshots/phone.avif"
 </script>
 
-<svelte:head>
-    <title>Home</title>
-    <meta name="description" content="Svelte demo app" />
-</svelte:head>
+<Seo
+    title="Take control of your password with LibrePass"
+    description="With LibrePass, convenience and security go hand in hand.
+Using LibrePass, your passwords are secure and you can easily access them
+and take your online life to the next level without worrying about whether
+your passwords are secure enough."
+/>
 
 <section class="container flex min-h-screen m-no-header justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="flex flex-col justify-start gap-4 p-4 text-center sm:text-start">
