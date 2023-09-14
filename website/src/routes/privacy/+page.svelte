@@ -1,5 +1,11 @@
 <script>
+    import Seo from "$lib/components/Seo.svelte";
 </script>
+
+<Seo
+    title="Privacy Policy"
+    description="Privacy Policy for LibrePass"
+/>
 
 <section class="container flex flex-col p-5 max-w-2xl mx-auto gap-5">
     <h1 class="text-center text-3xl md:text-4xl">
@@ -100,14 +106,26 @@
         4. User Rights
     </h3>
 
-    <p>
-        You have the right to:
+    <div>
+        <p>
+            You have the right to:
+        </p>
 
-- Access your personal data held by LibrePass.
-- Correct your personal data in case of inaccuracies or errors.
-- Delete your account at any time. (You currently need to
-contact us to do this).
-    </p>
+        <ul class="list-disc px-4">
+            <li>
+                Access your personal data held by LibrePass.
+            </li>
+
+            <li>
+                Correct your personal data in case of inaccuracies or errors.
+            </li>
+            
+            <li>
+                Delete your account at any time. (You currently need to
+                contact us to do this).
+            </li>
+        </ul>
+    </div>
 
     <h3 class="text-xl">
         5. Changes to the Privacy Policy
