@@ -1,5 +1,27 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
+    import { AuthClient } from "@librepass/client"
+
     import Seo from "$lib/components/Seo.svelte"
+    import { secretsStore } from "$lib/storage";
+    import { goto } from "$app/navigation";
+
+    let email: string
+    let password: string;
+    let confirmPassword: string;
+    let passwordHint: string;
+
+    onMount(() => {
+        if (secretsStore.exists()) {
+            return goto("/user/vault")
+        }
+    })
+
+    const authClient = new AuthClient()
+
+    function submit() {
+
+    }
 </script>
 
 <Seo
@@ -8,7 +30,7 @@
 which will be stored securely."
 />
 
-<section class="container min-h-screen m-no-header flex justify-center items-center max-w-[980px] mx-auto gap-5">
+<section class="container min-h-screen m-no-header mx-auto flex justify-center items-center">
     <div class="card w-96 border m-header">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
@@ -16,7 +38,7 @@ which will be stored securely."
             <div class="form-control w-full max-w-xs gap-2">
                 <div>
                     <span class="label-text">Email address</span>
-                    <input type="email" class="input input-bordered w-full max-w-xs" />
+                    <input type="email" class="input input-bordered w-full max-w-xs" bind:value={email} />
                     <span class="label-text-alt">
                         We will never share your email address with anyone else. And we will never send spam.
                     </span>
@@ -24,7 +46,7 @@ which will be stored securely."
 
                 <div>
                     <span class="label-text">Password</span>
-                    <input type="password" class="input input-bordered w-full max-w-xs" />
+                    <input type="password" class="input input-bordered w-full max-w-xs" bind:value={password} />
                     <span class="label-text-alt">
                         <strong>Important:</strong>
                         Your forgotten password cannot be recovered! 8 characters required
@@ -33,12 +55,12 @@ which will be stored securely."
 
                 <div>
                     <span class="label-text">Confirm Password</span>
-                    <input type="password" class="input input-bordered w-full max-w-xs" />
+                    <input type="password" class="input input-bordered w-full max-w-xs" bind:value={confirmPassword} />
                 </div>
 
                 <div>
                     <span class="label-text">Password hint (optional)</span>
-                    <input type="text" class="input input-bordered w-full max-w-xs" />
+                    <input type="text" class="input input-bordered w-full max-w-xs" bind:value={passwordHint} />
                     <span class="label-text-alt">
                         The password hint can help you remember it when you forget it.
                     </span>
