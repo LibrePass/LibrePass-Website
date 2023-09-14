@@ -12,6 +12,7 @@
         "convenient password management",
         "secure online life",
         "two factor authentication",
+        "free password manager",
         "password management tool",
         "password storage",
         "password protection",
@@ -25,7 +26,8 @@
         "password management software",
         "password manager application",
         "password manager features",
-        "password manager benefits"
+        "password manager benefits",
+        "password manager reviews"
     ]
 </script>
 
