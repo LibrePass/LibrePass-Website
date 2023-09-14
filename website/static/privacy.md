@@ -1,6 +1,6 @@
 # Privacy Policy for LibrePass
 
-*Last Update: [Date]*
+*Last Update: 14 September 2023*
 
 ## Introduction
 
