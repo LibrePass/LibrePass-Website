@@ -80,49 +80,6 @@ your passwords are secure enough."
     </div>
 </section>
 
-<section class="flex mx-auto p-10 w-full sm:w-96">
-    <div class="card w-full mx-auto bg-secondary text-secondary-content">
-        <div class="card-body">
-            <h2 class="card-title justify-center">
-                Free
-            </h2>
-
-            <h1 class="card-title text-4xl justify-center">
-                $0
-            </h1>
-
-            <p class="card-title text-sm justify-center">Free forever</p>
-
-            <div class="flex flex-col gap-2 pt-2">
-                <div class="flex text-lg items-center space-x-2">
-                    <Check />
-                    <p>Unlimited passwords</p>
-                </div>
-
-                <div class="flex text-lg items-center space-x-2">
-                    <Check />
-                    <p>Unlimited devices</p>
-                </div>
-
-                <div class="flex text-lg items-center space-x-2">
-                    <Check />
-                    <p>Password generator</p>
-                </div>
-
-                <div class="flex text-lg items-center space-x-2">
-                    <Check />
-                    <p>Advanced password encryption</p>
-                </div>
-
-                <div class="flex text-lg items-center space-x-2">
-                    <Check />
-                    <p>Always free</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <style lang="postcss">
     .badge-item {
         @apply flex flex-col gap-2 items-center max-w-[16em];
