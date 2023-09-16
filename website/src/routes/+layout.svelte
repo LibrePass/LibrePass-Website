@@ -1,12 +1,11 @@
 <script>
-    import MainNav from '$lib/components/nav/MainNav.svelte';
-    import './../app.postcss'
+    import Header from '$lib/components/nav/Header.svelte';
+
+    import './../app.postcss';
 </script>
 
 <div>
-    <MainNav />
-
-    <main class="m-header">
+    <Header>
         <slot />
-    </main>
+    </Header>
 </div>

@@ -1,3 +1,3 @@
-export { AuthClient } from "./api/auth"
+export { AuthClient } from './api/auth';
 
-export * from "./utils/crypto"
+export * from './utils/crypto';

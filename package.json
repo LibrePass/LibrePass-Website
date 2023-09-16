@@ -3,8 +3,8 @@
     "private": true,
     "license": "GPL-3.0",
     "scripts": {
-        "lint": "prettier --plugin-search-dir . --check . && eslint .",
-        "format": "prettier --plugin-search-dir . --write . && eslint . --fix"
+        "lint": "prettier --plugin prettier-plugin-svelte . --check . && eslint .",
+        "format": "prettier --plugin prettier-plugin-svelte --write . && eslint . --fix"
     },
     "workspaces": [
         "client",
