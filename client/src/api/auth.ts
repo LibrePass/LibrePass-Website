@@ -4,9 +4,13 @@ import { Client } from '../client';
 import { computePasswordHash, DefaultArgon2idParameters } from '../utils/crypto';
 
 export class AuthClient {
-    private client = new Client();
+    private client: Client;
 
     private API_ENDPOINT = '/api/auth';
+
+    constructor(apiUrl: string) {
+        this.client = new Client(undefined, apiUrl)
+    }
 
     public async register(email: string, password: string, passwordHint: string) {
         const preLogin = await this.preLogin('');

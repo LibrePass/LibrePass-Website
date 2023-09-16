@@ -5,6 +5,10 @@
     import { goto } from '$app/navigation';
     import Seo from '$lib/components/Seo.svelte';
     import { secretsStore } from '$lib/storage';
+    import { toastStore } from '$lib/components/utilities/Toast/stores';
+    import { PUBLIC_API_URL } from '$env/static/public'
+
+    let disabled = false;
 
     let email: string;
     let password: string;
@@ -17,9 +21,58 @@
         }
     });
 
-    const authClient = new AuthClient();
+    const authClient = new AuthClient(PUBLIC_API_URL);
 
-    function submit() {}
+    async function submit() {
+        if (!email || !password || !confirmPassword) {
+            return toastStore.trigger({
+                message: 'Please enter your email and password',
+                variant: 'alert-error'
+            });
+        }
+
+        if (!email.includes("@")) {
+            toastStore.trigger({
+                message: 'Invalid email address',
+                variant: 'alert-error'
+            })
+        }
+
+        if (password != confirmPassword) {
+            return toastStore.trigger({
+                message: 'Passwords do not match',
+                variant: 'alert-error'
+            });
+        }
+
+        if (password.length < 8) {
+            return toastStore.trigger({
+                message: 'Password must be at least 8 characters long',
+                variant: 'alert-error'
+            });
+        }
+
+        try {
+            disabled = true;
+
+            await authClient.register(email, password, passwordHint);
+
+            toastStore.trigger({
+                message: 'Please verify your email address'
+            });
+
+            await goto('/auth/login');
+        } catch (e) {
+            disabled = false;
+
+            console.error(e);
+
+            return toastStore.trigger({
+                message: 'Something went wrong',
+                variant: 'destructive'
+            });
+        }
+    }
 </script>
 
 <Seo
@@ -28,7 +81,7 @@
 which will be stored securely."
 />
 
-<section class="container h-full-header mx-auto flex justify-center items-center">
+<section class="h-full-header mx-auto flex justify-center items-center">
     <div class="card sm:border">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
@@ -64,7 +117,7 @@ which will be stored securely."
             </div>
 
             <div class="card-actions justify-end">
-                <button class="btn btn-primary">Register</button>
+                <button class="btn btn-primary" on:click={submit} {disabled}>Register</button>
             </div>
         </div>
     </div>
