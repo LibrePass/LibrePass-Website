@@ -29,12 +29,12 @@ which will be stored securely."
 />
 
 <section class="container h-full-header mx-auto flex justify-center items-center">
-    <div class="card w-96 border">
+    <div class="card sm:border">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
 
-            <div class="form-control w-full max-w-xs gap-2">
-                <div>
+            <div class="form-control max-w-xs gap-2">
+                <div class="w-full">
                     <span class="label-text">Email address</span>
                     <input type="email" class="input input-bordered w-full max-w-xs" bind:value={email} />
                     <span class="label-text-alt">
