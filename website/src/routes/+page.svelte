@@ -1,5 +1,4 @@
 <script>
-    import Check from 'svelte-material-icons/Check.svelte';
     import Devices from 'svelte-material-icons/Devices.svelte';
     import ShieldCheck from 'svelte-material-icons/ShieldCheckOutline.svelte';
     import Timer from 'svelte-material-icons/TimerOutline.svelte';
@@ -17,7 +16,7 @@ your passwords are secure enough."
 />
 
 <section class="container flex h-full-header justify-center items-center max-w-[980px] mx-auto gap-5">
-    <div class="flex flex-col justify-start gap-4 p-4 text-center sm:text-start">
+    <div class="flex flex-col justify-start gap-4 text-center sm:text-start">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Take control of your passwords.</h1>
 
         <p class="max-w-[720px] text-lg sm:text-xl">
