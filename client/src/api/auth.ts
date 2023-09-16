@@ -1,10 +1,10 @@
-import { curve25519 } from "@medzik/libcrypto"
+import { curve25519 } from '@medzik/libcrypto';
 
-import { DefaultArgon2idParameters, computePasswordHash } from "../utils/crypto"
-import { Client } from "../client"
+import { Client } from '../client';
+import { computePasswordHash, DefaultArgon2idParameters } from '../utils/crypto';
 
 export class AuthClient {
-    private client = new Client()
+    private client = new Client();
 
     private API_ENDPOINT = '/api/auth';
 

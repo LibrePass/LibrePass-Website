@@ -1,6 +1,6 @@
 # Privacy Policy for LibrePass
 
-*Last Update: 14 September 2023*
+_Last Update: 14 September 2023_
 
 ## Introduction
 
@@ -60,10 +60,10 @@ safety, and the rights and safety of other users.
 
 You have the right to:
 
-- Access your personal data held by LibrePass.
-- Correct your personal data in case of inaccuracies or errors.
-- Delete your account at any time. (You currently need to
-contact us to do this).
+-   Access your personal data held by LibrePass.
+-   Correct your personal data in case of inaccuracies or errors.
+-   Delete your account at any time. (You currently need to
+    contact us to do this).
 
 5. Changes to the Privacy Policy
 

@@ -1,27 +1,25 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    import { AuthClient } from "@librepass/client"
+    import { onMount } from 'svelte';
+    import { AuthClient } from '@librepass/client';
 
-    import Seo from "$lib/components/Seo.svelte"
-    import { secretsStore } from "$lib/storage";
-    import { goto } from "$app/navigation";
+    import { goto } from '$app/navigation';
+    import Seo from '$lib/components/Seo.svelte';
+    import { secretsStore } from '$lib/storage';
 
-    let email: string
+    let email: string;
     let password: string;
     let confirmPassword: string;
     let passwordHint: string;
 
     onMount(() => {
         if (secretsStore.exists()) {
-            return goto("/user/vault")
+            return goto('/user/vault');
         }
-    })
+    });
 
-    const authClient = new AuthClient()
+    const authClient = new AuthClient();
 
-    function submit() {
-
-    }
+    function submit() {}
 </script>
 
 <Seo
@@ -30,8 +28,8 @@
 which will be stored securely."
 />
 
-<section class="container min-h-screen m-no-header mx-auto flex justify-center items-center">
-    <div class="card w-96 border m-header">
+<section class="container h-full-header mx-auto flex justify-center items-center">
+    <div class="card w-96 border">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
 
@@ -61,9 +59,7 @@ which will be stored securely."
                 <div>
                     <span class="label-text">Password hint (optional)</span>
                     <input type="text" class="input input-bordered w-full max-w-xs" bind:value={passwordHint} />
-                    <span class="label-text-alt">
-                        The password hint can help you remember it when you forget it.
-                    </span>
+                    <span class="label-text-alt"> The password hint can help you remember it when you forget it. </span>
                 </div>
             </div>
 

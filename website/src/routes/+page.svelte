@@ -1,11 +1,11 @@
 <script>
-    import Check from "svelte-material-icons/Check.svelte"
-    import Devices from "svelte-material-icons/Devices.svelte"
-    import ShieldCheck from "svelte-material-icons/ShieldCheckOutline.svelte"
-    import Timer from "svelte-material-icons/TimerOutline.svelte"
+    import Check from 'svelte-material-icons/Check.svelte';
+    import Devices from 'svelte-material-icons/Devices.svelte';
+    import ShieldCheck from 'svelte-material-icons/ShieldCheckOutline.svelte';
+    import Timer from 'svelte-material-icons/TimerOutline.svelte';
 
-    import Seo from "$lib/components/Seo.svelte";
-    import phoneScreenshot from "$lib/images/screenshots/phone.avif"
+    import Seo from '$lib/components/Seo.svelte';
+    import phoneScreenshot from '$lib/images/screenshots/phone.avif';
 </script>
 
 <Seo
@@ -16,11 +16,9 @@ and take your online life to the next level without worrying about whether
 your passwords are secure enough."
 />
 
-<section class="container flex min-h-screen m-no-header justify-center items-center max-w-[980px] mx-auto gap-5">
+<section class="container flex h-full-header justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="flex flex-col justify-start gap-4 p-4 text-center sm:text-start">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
-            Take control of your passwords.
-        </h1>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Take control of your passwords.</h1>
 
         <p class="max-w-[720px] text-lg sm:text-xl">
             With LibrePass, convenience and security go hand in hand. Through LibrePass, your passwords are secure while
@@ -28,9 +26,7 @@ your passwords are secure enough."
         </p>
 
         <div class="flex justify-center sm:justify-start">
-            <a href="/auth/register" class="flex btn btn-primary">
-                Get Started &rarr;
-            </a>
+            <a href="/auth/register" class="flex btn btn-primary"> Get Started &rarr; </a>
         </div>
     </div>
 
@@ -50,9 +46,7 @@ your passwords are secure enough."
             <div class="badge-item">
                 <Timer class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">
-                    Fast
-                </p>
+                <p class="font-bold">Fast</p>
 
                 <p>Instant access to your passwords</p>
             </div>
@@ -60,9 +54,7 @@ your passwords are secure enough."
             <div class="badge-item">
                 <ShieldCheck class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">
-                    Secure
-                </p>
+                <p class="font-bold">Secure</p>
 
                 <p>Your passwords are end-to-end encrypted and securely stored</p>
             </div>
@@ -70,9 +62,7 @@ your passwords are secure enough."
             <div class="badge-item">
                 <Devices class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">
-                    Accessible
-                </p>
+                <p class="font-bold">Accessible</p>
 
                 <p>Available on all your favorite platforms</p>
             </div>
