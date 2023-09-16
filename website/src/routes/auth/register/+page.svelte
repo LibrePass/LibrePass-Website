@@ -3,10 +3,10 @@
     import { AuthClient } from '@librepass/client';
 
     import { goto } from '$app/navigation';
+    import { PUBLIC_API_URL } from '$env/static/public';
     import Seo from '$lib/components/Seo.svelte';
-    import { secretsStore } from '$lib/storage';
     import { toastStore } from '$lib/components/utilities/Toast/stores';
-    import { PUBLIC_API_URL } from '$env/static/public'
+    import { secretsStore } from '$lib/storage';
 
     let disabled = false;
 
@@ -31,11 +31,11 @@
             });
         }
 
-        if (!email.includes("@")) {
+        if (!email.includes('@')) {
             toastStore.trigger({
                 message: 'Invalid email address',
                 variant: 'alert-error'
-            })
+            });
         }
 
         if (password != confirmPassword) {

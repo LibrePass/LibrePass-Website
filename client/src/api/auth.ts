@@ -9,7 +9,7 @@ export class AuthClient {
     private API_ENDPOINT = '/api/auth';
 
     constructor(apiUrl: string) {
-        this.client = new Client(undefined, apiUrl)
+        this.client = new Client(undefined, apiUrl);
     }
 
     public async register(email: string, password: string, passwordHint: string) {
