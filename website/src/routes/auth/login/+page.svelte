@@ -2,11 +2,11 @@
     import { onMount } from 'svelte';
     import { AuthClient, computePasswordHash, computeSharedSecret, recoverPublicKey } from '@librepass/client';
 
-    import { goto } from '$app/navigation';
-    import { PUBLIC_API_URL } from '$env/static/public';
     import Seo from '$lib/components/Seo.svelte';
     import { toastStore } from '$lib/components/utilities/Toast/stores';
     import { authStore, secretsStore } from '$lib/storage';
+    import { goto } from '$app/navigation';
+    import { PUBLIC_API_URL } from '$env/static/public';
 
     let disabled = false;
 
@@ -20,7 +20,7 @@
     });
 
     const authClient = new AuthClient(PUBLIC_API_URL);
- 
+
     async function submit() {
         if (!email || !password) {
             return toastStore.trigger({
@@ -43,7 +43,7 @@
                 await secondLogin();
             } else await firstLogin();
 
-            window.dispatchEvent(new Event('updateHeader'))
+            window.dispatchEvent(new Event('updateHeader'));
         } catch (e) {
             disabled = false;
 
@@ -99,10 +99,7 @@
     }
 </script>
 
-<Seo
-    title="Login"
-    description="Login to your LibrePass account to manage your vault."
-/>
+<Seo title="Login" description="Login to your LibrePass account to manage your vault." />
 
 <section class="h-full-header mx-auto flex justify-center items-center">
     <div class="card sm:border">

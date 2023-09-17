@@ -58,7 +58,7 @@ export class AuthClient {
     }
 }
 
-export type PreLoginResponse = {
+type PreLoginResponse = {
     parallelism: number;
     memory: number;
     iterations: number;
@@ -66,7 +66,7 @@ export type PreLoginResponse = {
     serverPublicKey: string;
 };
 
-export type UserCredentials = {
+type UserCredentials = {
     userId: string;
     apiKey: string;
     publicKey: string;

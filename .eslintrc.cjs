@@ -32,8 +32,7 @@ module.exports = {
                     ['^svelte', '^@?\\w'],
                     // Internal packages.
                     [
-                        // Components
-                        '^\\$components',
+                        '^\\$lib',
                         // Other
                         '^\\$'
                     ],

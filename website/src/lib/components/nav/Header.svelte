@@ -10,20 +10,18 @@
 
     onMount(() => {
         window.addEventListener('updateHeader', () => {
-            sites = getSites()
-        })
-    })
+            sites = getSites();
+        });
+    });
 
     function getSites() {
-        let sites: {title: string,href: string}[] = []
+        let sites: { title: string; href: string }[] = [];
 
         if (browser && secretsStore.exists()) {
-            sites.push(
-                {
-                    title: 'Vault',
-                    href: '/user/vault'
-                }
-            )
+            sites.push({
+                title: 'Vault',
+                href: '/user/vault'
+            });
         } else {
             sites.push(
                 {
@@ -34,17 +32,15 @@
                     title: 'Login',
                     href: '/auth/login'
                 }
-            )
+            );
         }
 
-        sites.push(
-            {
-                title: 'Privacy Policy',
-                href: '/privacy'
-            }
-        )
+        sites.push({
+            title: 'Privacy Policy',
+            href: '/privacy'
+        });
 
-        return sites
+        return sites;
     }
 </script>
 
@@ -69,7 +65,7 @@
 
                     <div class="flex items-center">
                         <a href="/" class="flex-0 btn normal-case btn-ghost px-2">
-                            <LibrePassIcon class="h-6 w-6" />
+                            <LibrePassIcon class="h-6 w-6 md:h-7 md:w-7" />
                             <div class="text-lg inline-flex md:text-2xl">
                                 <span>Libre</span>
                                 <span class="text-primary">Pass</span>
