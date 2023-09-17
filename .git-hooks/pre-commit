@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILES=$(git diff --cached --name-only --diff-filter=ACM)
+yarn format
+echo "$FILES" | xargs git add
