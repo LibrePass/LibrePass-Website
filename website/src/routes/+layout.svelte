@@ -8,7 +8,9 @@
 <Toast />
 
 <div>
-    <Header>
+    <Header />
+
+    <main>
         <slot />
-    </Header>
+    </main>
 </div>
