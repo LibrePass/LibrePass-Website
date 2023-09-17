@@ -1,6 +1,6 @@
 <script lang="ts">
     export let title: string;
-    export let description: string | undefined;
+    export let description: string | undefined = undefined;
 
     const keywords = [
         'LibrePass',
