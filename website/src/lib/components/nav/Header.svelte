@@ -1,7 +1,51 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte';
     import Menu from 'svelte-material-icons/Menu.svelte';
 
     import LibrePassIcon from '$lib/images/LibrePass.svelte';
+    import { secretsStore } from '$lib/storage';
+    import { browser } from '$app/environment';
+
+    let sites = getSites();
+
+    onMount(() => {
+        window.addEventListener('updateHeader', () => {
+            sites = getSites()
+        })
+    })
+
+    function getSites() {
+        let sites: {title: string,href: string}[] = []
+
+        if (browser && secretsStore.exists()) {
+            sites.push(
+                {
+                    title: 'Vault',
+                    href: '/user/vault'
+                }
+            )
+        } else {
+            sites.push(
+                {
+                    title: 'Register',
+                    href: '/auth/register'
+                },
+                {
+                    title: 'Login',
+                    href: '/auth/login'
+                }
+            )
+        }
+
+        sites.push(
+            {
+                title: 'Privacy Policy',
+                href: '/privacy'
+            }
+        )
+
+        return sites
+    }
 </script>
 
 <div class="drawer">
@@ -38,9 +82,9 @@
 
                 <div class="navbar-end">
                     <ul class="menu menu-horizontal min-h-full bg-base-100 invisible md:visible">
-                        <li><a href="/auth/register">Register</a></li>
-                        <!-- <li><a href="/auth/login">Login</a></li> -->
-                        <li><a href="/privacy">Privacy Policy</a></li>
+                        {#each sites as site}
+                            <li><a href={site.href}>{site.title}</a></li>
+                        {/each}
                     </ul>
                 </div>
             </nav>
@@ -51,9 +95,9 @@
     <div class="drawer-side z-40">
         <label for="drawer" class="drawer-overlay"></label>
         <ul class="menu p-4 w-80 min-h-full bg-base-100">
-            <li><a href="/auth/register">Register</a></li>
-            <!-- <li><a href="/auth/login">Login</a></li> -->
-            <li><a href="/privacy">Privacy Policy</a></li>
+            {#each sites as site}
+                <li><a href={site.href}>{site.title}</a></li>
+            {/each}
         </ul>
     </div>
 </div>
