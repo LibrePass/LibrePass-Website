@@ -51,7 +51,7 @@
 
             return toastStore.trigger({
                 message: 'Something went wrong',
-                variant: 'destructive'
+                variant: 'alert-error'
             });
         }
     }
@@ -85,7 +85,7 @@
 
             return toastStore.trigger({
                 message: 'Invalid password',
-                variant: 'destructive'
+                variant: 'alert-error'
             });
         }
 

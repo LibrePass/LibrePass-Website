@@ -6,8 +6,7 @@ const toastDefaults: ToastSettings = {
     message: 'Missing Toast Message'
 };
 
-// Note for security; differentiates the queued toasts
-function randomUUID(): string {
+function randomID(): string {
     const random = Math.random();
     return Number(random).toString(32);
 }
@@ -23,9 +22,11 @@ function toastService() {
     const { subscribe, set, update } = writable<Toast[]>([]);
     return {
         subscribe,
+
         /** Add new toast to the queue. */
         trigger: (toast: ToastSettings) => {
-            const id: string = randomUUID();
+            const id: string = randomID();
+
             update((tStore) => {
                 // Merge with defaults
                 const tMerged: Toast = { ...toastDefaults, ...toast, id };
@@ -36,8 +37,10 @@ function toastService() {
                 // Return
                 return tStore;
             });
+
             return id;
         },
+
         /** Remove toast in queue*/
         close: (id: string) =>
             update((tStore) => {
@@ -53,18 +56,7 @@ function toastService() {
                 }
                 return tStore;
             }),
-        /** remain visible on hover */
-        freeze: (index: number) =>
-            update((tStore) => {
-                if (tStore.length > 0) clearTimeout(tStore[index].timeoutId);
-                return tStore;
-            }),
-        /** cancel remain visible on leave */
-        unfreeze: (index: number) =>
-            update((tStore) => {
-                if (tStore.length > 0) tStore[index].timeoutId = handleAutoHide(tStore[index]);
-                return tStore;
-            }),
+
         /** Remove all toasts from queue */
         clear: () => set([])
     };
