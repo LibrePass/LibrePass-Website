@@ -42,7 +42,8 @@
                             class="btn-square btn-sm"
                             aria-label="Dismiss toast"
                             on:click={() => toastStore.close(t.id)}
-                            >✕
+                        >
+                            ✕
                         </button>
                     </div>
                 </div>
