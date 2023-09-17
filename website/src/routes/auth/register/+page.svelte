@@ -2,11 +2,11 @@
     import { onMount } from 'svelte';
     import { AuthClient } from '@librepass/client';
 
-    import { goto } from '$app/navigation';
-    import { PUBLIC_API_URL } from '$env/static/public';
     import Seo from '$lib/components/Seo.svelte';
     import { toastStore } from '$lib/components/utilities/Toast/stores';
     import { secretsStore } from '$lib/storage';
+    import { goto } from '$app/navigation';
+    import { PUBLIC_API_URL } from '$env/static/public';
 
     let disabled = false;
 
