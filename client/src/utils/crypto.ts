@@ -1,4 +1,4 @@
-import { argon2, curve25519 } from '@medzik/libcrypto';
+import { argon2, x25519 } from '@medzik/libcrypto';
 
 export const DefaultArgon2idParameters = {
     parallelism: 3,
@@ -7,11 +7,11 @@ export const DefaultArgon2idParameters = {
 };
 
 export function generateKeyPair() {
-    return curve25519.generateKeyPair();
+    return x25519.generateKeyPair();
 }
 
 export function computeSecretKey(privateKey: string, publicKey: string) {
-    return curve25519.computeSharedSecret(privateKey, publicKey);
+    return x25519.computeSharedSecret(privateKey, publicKey);
 }
 
 export async function computePasswordHash(password: string, email: string, parameters = DefaultArgon2idParameters) {
@@ -26,5 +26,5 @@ export async function computePasswordHash(password: string, email: string, param
     });
 }
 
-export const computeSharedSecret = curve25519.computeSharedSecret;
-export const recoverPublicKey = curve25519.recoverPublicKey;
+export const computeSharedSecret = x25519.computeSharedSecret;
+export const publicFromPrivate = x25519.publicFromPrivate;

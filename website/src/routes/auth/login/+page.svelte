@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { AuthClient, computePasswordHash, computeSharedSecret, recoverPublicKey } from '@librepass/client';
+    import { AuthClient, computePasswordHash, computeSharedSecret, publicFromPrivate } from '@librepass/client';
 
     import Seo from '$lib/components/Seo.svelte';
     import { toastStore } from '$lib/components/utilities/Toast/stores';
@@ -79,7 +79,7 @@
         const preLogin = await authClient.preLogin(email);
 
         const privateKey = await computePasswordHash(password, email, preLogin);
-        const publicKey = recoverPublicKey(privateKey);
+        const publicKey = publicFromPrivate(privateKey);
         if (publicKey != authStore.get()!.publicKey) {
             disabled = false;
 
