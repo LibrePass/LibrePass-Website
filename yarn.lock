@@ -233,17 +233,15 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@medzik/libcrypto@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@medzik/libcrypto/-/libcrypto-0.3.1.tgz#1249d8fd58ae2edcee1e35621fd708dd5816cd7b"
-  integrity sha512-0dZcmopttulUTa4acuqIVcvDxDlU0Do9PTmSvfQ1fO2sEg+JCevO57KSId4XTX2mBKTCxnFWOheSvY5UkZWEZQ==
+"@medzik/libcrypto@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@medzik/libcrypto/-/libcrypto-1.0.0.tgz#592fc5b712fcab7176d1deb0cfd063beab4ffe3e"
+  integrity sha512-ppnJuS/R99wo4WJ/TDnOpY1+x4nUhYTLUh20hI5VJhaKlI5asFJYTMbbkWTOa9OMotV5RYk9VXxkyzBOtWyXpA==
   dependencies:
     "@stablelib/x25519" "^1.0.3"
-    browser-keygen "^1.0.5"
     browserify-cipher "^1.0.1"
     buffer "^6.0.3"
     hash-wasm "^4.9.0"
-    public-encrypt "^4.0.3"
 
 "@neoconfetti/svelte@^1.0.0":
   version "1.0.0"
@@ -723,11 +721,6 @@ brorand@^1.0.1, brorand@^1.1.0:
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==
 
-browser-keygen@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/browser-keygen/-/browser-keygen-1.0.5.tgz#7805b334c9986a168ad9375f1debc1419ec9831e"
-  integrity sha512-WSKlsQ0iuk84eeLGs3wiaTans6yziJeCBvgTkkovCarY3YKhOa+TFQsyByhi1xtopTiv+6QKBaBRsROFU1MPtg==
-
 browser-resolve@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/browser-resolve/-/browser-resolve-2.0.0.tgz#99b7304cb392f8d73dba741bb2d7da28c6d7842b"
@@ -812,6 +805,7 @@ buffer-crc32@^0.2.5:
   integrity sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==
 
 "buffer-polyfill@npm:buffer@^6.0.3", buffer@^6.0.3:
+  name buffer-polyfill
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
   integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
@@ -2393,7 +2387,7 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-public-encrypt@^4.0.0, public-encrypt@^4.0.3:
+public-encrypt@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.3.tgz#4fcc9d77a07e48ba7527e7cbe0de33d0701331e0"
   integrity sha512-zVpa8oKZSz5bTMTFClc1fQOnyyEzpl5ozpi1B5YcvBrdohMjH2rfsBtyXcuNuwjsDIXmBYlF2N5FlJYhR29t8Q==

@@ -1,4 +1,4 @@
-import { curve25519 } from '@medzik/libcrypto';
+import { x25519 } from '@medzik/libcrypto';
 
 import { Client } from '../client';
 import { computePasswordHash, DefaultArgon2idParameters } from '../utils/crypto';
@@ -16,9 +16,9 @@ export class AuthClient {
         const preLogin = await this.preLogin('');
 
         const privateKey = await computePasswordHash(password, email, preLogin);
-        const publicKey = curve25519.recoverPublicKey(privateKey);
+        const publicKey = x25519.publicFromPrivate(privateKey);
 
-        const sharedKey = curve25519.computeSharedSecret(privateKey, preLogin.serverPublicKey);
+        const sharedKey = x25519.computeSharedSecret(privateKey, preLogin.serverPublicKey);
 
         return await this.client.post(`${this.API_ENDPOINT}/register`, {
             email,
@@ -41,9 +41,9 @@ export class AuthClient {
         const preLogin = await this.preLogin(email);
 
         const privateKey = await computePasswordHash(password, email, preLogin);
-        const publicKey = curve25519.recoverPublicKey(privateKey);
+        const publicKey = x25519.publicFromPrivate(privateKey);
 
-        const sharedKey = curve25519.computeSharedSecret(privateKey, preLogin.serverPublicKey);
+        const sharedKey = x25519.computeSharedSecret(privateKey, preLogin.serverPublicKey);
 
         const credentials = await this.client.post<UserCredentials>(`${this.API_ENDPOINT}/oauth?grantType=login`, {
             email,
