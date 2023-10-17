@@ -1,5 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig({
@@ -9,7 +10,9 @@ export default defineConfig({
         nodePolyfills({
             // Whether to polyfill `node:` protocol imports.
             protocolImports: true
-        })
+        }),
+        // Image Optimizer
+        ViteImageOptimizer()
     ],
     optimizeDeps: {
         esbuildOptions: {
