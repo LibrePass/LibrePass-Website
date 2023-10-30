@@ -82,7 +82,7 @@ which will be stored securely."
 />
 
 <section class="h-full-header mx-auto flex justify-center items-center">
-    <div class="card sm:border">
+    <div class="card sm:bordered">
         <div class="card-body">
             <h2 class="card-title justify-center">Create an account</h2>
 

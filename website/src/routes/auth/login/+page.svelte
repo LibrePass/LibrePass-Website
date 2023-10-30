@@ -102,7 +102,7 @@
 <Seo title="Login" description="Login to your LibrePass account to manage your vault." />
 
 <section class="h-full-header mx-auto flex justify-center items-center">
-    <div class="card sm:border">
+    <div class="card sm:bordered">
         <div class="card-body">
             <h2 class="card-title justify-center">Login</h2>
 
