@@ -233,10 +233,10 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@medzik/libcrypto@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@medzik/libcrypto/-/libcrypto-1.0.0.tgz#592fc5b712fcab7176d1deb0cfd063beab4ffe3e"
-  integrity sha512-ppnJuS/R99wo4WJ/TDnOpY1+x4nUhYTLUh20hI5VJhaKlI5asFJYTMbbkWTOa9OMotV5RYk9VXxkyzBOtWyXpA==
+"@medzik/libcrypto@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@medzik/libcrypto/-/libcrypto-1.1.0.tgz#e933085fa1bb5d85d287131f2fde52f36e75f29d"
+  integrity sha512-D1i5iYwYoiEWvnWxJV5q/7ZKSIc62jyLlSB/Cq6W4quE8qu7GzdQFU+Opfz9ZconrfSidPo9MLiF+IXITDDk/Q==
   dependencies:
     "@stablelib/x25519" "^1.0.3"
     browserify-cipher "^1.0.1"
