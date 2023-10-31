@@ -15,7 +15,7 @@ and take your online life to the next level without worrying about whether
 your passwords are secure enough."
 />
 
-<section class="container flex h-full-header justify-center items-center max-w-[980px] mx-auto gap-5">
+<section class="container flex h-90-header justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="flex flex-col justify-start gap-4 text-center sm:text-start">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Take control of your passwords.</h1>
 
@@ -30,7 +30,7 @@ your passwords are secure enough."
     </div>
 
     <div class="hidden lg:block">
-        <div class="mockup-phone">
+        <div class="mockup-phone shadow-2xl">
             <div class="camera"></div>
             <div class="display w-[250px]">
                 <img src={phoneScreenshot} alt="screenshot of android application" />
