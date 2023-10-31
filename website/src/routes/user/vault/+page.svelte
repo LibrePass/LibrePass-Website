@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount, SvelteComponent } from 'svelte';
+    import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
     import Modal, { bind } from 'svelte-simple-modal';
     import { Cipher, CipherClient } from '@librepass/client';
