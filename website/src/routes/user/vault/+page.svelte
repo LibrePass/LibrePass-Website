@@ -1,7 +1,10 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+    import { onMount,SvelteComponent } from 'svelte';
+    import { writable } from 'svelte/store';
+    import Modal, { bind } from 'svelte-simple-modal';
     import { Cipher, CipherClient } from '@librepass/client';
 
+    import CipherModal from '$lib/components/modal/CipherModal.svelte';
     import Seo from '$lib/components/Seo.svelte';
     import { authStore, secretsStore } from '$lib/storage';
     import { goto } from '$app/navigation';
@@ -44,9 +47,17 @@
 
         return tmpCiphers;
     }
+
+    const modal = writable(SvelteComponent);
+
+    function showModal(cipher: Cipher) {
+        modal.set(bind(CipherModal, { cipher }));
+    }
 </script>
 
 <Seo title="Vault" />
+
+<Modal show={$modal} classContent="rounded-md bg-base-100 text-base-content" />
 
 <div class="container flex flex-col overflow-x-auto">
     <table class="table">
@@ -60,10 +71,7 @@
         <tbody>
             {#if mounted}
                 {#each ciphers as cipher}
-                    <tr
-                        class="cursor-pointer hover:bg-base-200/20 justify-center"
-                        on:click={() => console.log('clicked')}
-                    >
+                    <tr class="cursor-pointer hover:bg-base-200/20 justify-center" on:click={() => showModal(cipher)}>
                         <th class="flex flex-col h-16 justify-center">
                             <span>{cipher.loginData?.name}</span>
                             <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
