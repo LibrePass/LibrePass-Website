@@ -53,7 +53,7 @@
             <div class="dropdown">
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <!-- svelte-ignore a11y-label-has-associated-control -->
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <label tabindex="0" class="btn btn-ghost md:hidden">
                     <Menu class="h-5 w-5" />
                 </label>
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -81,7 +81,7 @@
         <div class="navbar-center"></div>
 
         <div class="navbar-end">
-            <ul class="menu menu-horizontal min-h-full bg-base-100 invisible md:visible">
+            <ul class="menu menu-horizontal min-h-full bg-transparent invisible md:visible">
                 {#each sites as site}
                     <li><a href={site.href}>{site.title}</a></li>
                 {/each}
