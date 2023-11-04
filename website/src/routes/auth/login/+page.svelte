@@ -17,6 +17,10 @@
         if (secretsStore.exists()) {
             return goto('/user/vault');
         }
+
+        if (authStore.exists()) {
+            email = authStore.get()!.email;
+        }
     });
 
     const authClient = new AuthClient(PUBLIC_API_URL);
