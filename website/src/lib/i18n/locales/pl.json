@@ -1,0 +1,32 @@
+{
+    "page": {
+        "home": {
+            "title": "Przejmij kontrolę nad swoimi hasłami dzięki LibrePass",
+            "description": "Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Korzystając z LibrePass, Twoje hasła są bezpieczne i możesz łatwo uzyskać do nich dostęp i przenieść swoje życie online na wyższy poziom, nie martwiąc się o to, czy Twoje hasła są wystarczająco bezpieczne.",
+
+            "sections": {
+                "first": {
+                    "title": "Przejmij kontrolę nad swoimi hasłami.",
+                    "description": "Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Dzięki LibrePass Twoje hasła są bezpieczne, a Ty masz do nich łatwy dostęp.",
+                    "button": "Rozpocznij"
+                },
+                "second": {
+                    "badges": {
+                        "fast": {
+                            "title": "Szybki",
+                            "description": "Błyskawiczny dostęp do haseł"
+                        },
+                        "secure": {
+                            "title": "Bezpieczny",
+                            "description": "Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane."
+                        },
+                        "accessible": {
+                            "title": "Dostępność",
+                            "description": "Dostępne na wszystkich popularnych platformach"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
