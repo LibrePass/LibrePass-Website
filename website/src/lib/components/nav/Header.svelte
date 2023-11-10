@@ -35,11 +35,6 @@
             );
         }
 
-        sites.push({
-            title: 'Privacy Policy',
-            href: '/privacy'
-        });
-
         return sites;
     }
 </script>
