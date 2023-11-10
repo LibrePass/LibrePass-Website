@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import Devices from 'svelte-material-icons/Devices.svelte';
     import ShieldCheck from 'svelte-material-icons/ShieldCheckOutline.svelte';
     import Timer from 'svelte-material-icons/TimerOutline.svelte';
@@ -7,25 +8,22 @@
     import phoneScreenshot from '$lib/images/screenshots/phone.avif';
 </script>
 
-<Seo
-    title="Take control of your password with LibrePass"
-    description="With LibrePass, convenience and security go hand in hand.
-Using LibrePass, your passwords are secure and you can easily access them
-and take your online life to the next level without worrying about whether
-your passwords are secure enough."
-/>
+<Seo title={$_('page.home.title')} description={$_('page.home.description')} />
 
 <section class="container flex h-90-header justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="flex flex-col justify-start gap-4 text-center sm:text-start">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Take control of your passwords.</h1>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+            {$_('page.home.sections.first.title')}
+        </h1>
 
         <p class="max-w-[720px] text-lg sm:text-xl">
-            With LibrePass, convenience and security go hand in hand. Through LibrePass, your passwords are secure while
-            you have easy access to them.
+            {$_('page.home.sections.first.description')}
         </p>
 
         <div class="flex justify-center sm:justify-start">
-            <a href="/auth/register" class="flex btn btn-primary"> Get Started &rarr; </a>
+            <a href="/auth/register" class="flex btn btn-primary">
+                {$_('page.home.sections.first.button')} &rarr;
+            </a>
         </div>
     </div>
 
@@ -45,25 +43,37 @@ your passwords are secure enough."
             <div class="badge-item">
                 <Timer class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">Fast</p>
+                <p class="font-bold">
+                    {$_('page.home.sections.second.badges.fast.title')}
+                </p>
 
-                <p>Instant access to your passwords</p>
+                <p>
+                    {$_('page.home.sections.second.badges.fast.description')}
+                </p>
             </div>
 
             <div class="badge-item">
                 <ShieldCheck class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">Secure</p>
+                <p class="font-bold">
+                    {$_('page.home.sections.second.badges.secure.title')}
+                </p>
 
-                <p>Your passwords are end-to-end encrypted and securely stored</p>
+                <p>
+                    {$_('page.home.sections.second.badges.secure.description')}
+                </p>
             </div>
 
             <div class="badge-item">
                 <Devices class="h-16 w-16 p-2 outline rounded-xl" />
 
-                <p class="font-bold">Accessible</p>
+                <p class="font-bold">
+                    {$_('page.home.sections.second.badges.accessible.title')}
+                </p>
 
-                <p>Available on all your favorite platforms</p>
+                <p>
+                    {$_('page.home.sections.second.badges.accessible.description')}
+                </p>
             </div>
         </div>
     </div>

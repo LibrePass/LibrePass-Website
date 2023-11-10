@@ -1,0 +1,32 @@
+{
+    "page": {
+        "home": {
+            "title": "Take control of your password with LibrePass",
+            "description": "With LibrePass, convenience and security go hand in hand. Using LibrePass, your passwords are secure and you can easily access them and take your online life to the next level without worrying about whether your passwords are secure enough.",
+
+            "sections": {
+                "first": {
+                    "title": "Take control of your passwords.",
+                    "description": "With LibrePass, convenience and security go hand in hand. Through LibrePass, your passwords are secure while you have easy access to them.",
+                    "button": "Get started"
+                },
+                "second": {
+                    "badges": {
+                        "fast": {
+                            "title": "Fast",
+                            "description": "Instant access to your passwords"
+                        },
+                        "secure": {
+                            "title": "Secure",
+                            "description": "Your passwords are end-to-end encrypted and securely stored"
+                        },
+                        "accessible": {
+                            "title": "Accessible",
+                            "description": "Available on all your favorite platforms"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
