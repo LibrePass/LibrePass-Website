@@ -6,5 +6,8 @@ export const handle: Handle = async ({ event, resolve }) => {
     if (lang) {
         locale.set(lang);
     }
-    return resolve(event);
+
+    return resolve(event, {
+        transformPageChunk: ({ html }) => html.replace('%lang%', lang || 'en')
+    });
 };

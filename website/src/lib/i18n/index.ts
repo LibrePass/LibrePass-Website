@@ -5,6 +5,7 @@ import { browser } from '$app/environment';
 const defaultLocale = 'en';
 
 register('en', () => import('./locales/en.json'));
+register('pl', () => import('./locales/pl.json'));
 
 init({
     fallbackLocale: defaultLocale,
