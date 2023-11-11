@@ -18,7 +18,7 @@
                         },
                         "secure": {
                             "title": "Bezpieczny",
-                            "description": "Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane."
+                            "description": "Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane"
                         },
                         "accessible": {
                             "title": "Dostępność",
@@ -27,6 +27,26 @@
                     }
                 }
             }
+        },
+        "login": {
+            "title": "Logowanie",
+            "description": "Zaloguj się do swojego konta LibrePass, aby zarządzać swoim sejfem.",
+            "button": "Zaloguj się"
+        },
+        "register": {
+            "title": "Tworzenie konta",
+            "description": "Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do swoich kont, które będą bezpiecznie przechowywane.",
+            "email_alt": "Nigdy nie udostępnimy Twojego adresu e-mail nikomu innemu i nigdy nie będziemy wysyłać spamu.",
+            "password_alt_bold": "Ważne:",
+            "password_alt": "Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.",
+            "password_hint_alt": "Podpowiedź do hasła może pomóc w jego przypomnieniu, gdy zostanie zapomniane.",
+            "button": "Zarejestruj się"
         }
+    },
+    "field": {
+        "email": "Adres email",
+        "password": "Hasło",
+        "confirm_password": "Potwierdź hasło",
+        "password_hint": "Podpowiedź do hasła (opcjonalnie)"
     }
 }
