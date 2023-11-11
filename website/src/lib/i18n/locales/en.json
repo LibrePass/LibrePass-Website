@@ -27,6 +27,26 @@
                     }
                 }
             }
+        },
+        "login": {
+            "title": "Login",
+            "description": "Login to your LibrePass account to manage your vault.",
+            "button": "Login"
+        },
+        "register": {
+            "title": "Create an account",
+            "description": "Create an account with LibrePass to start creating secure passwords for your accounts, which will be stored securely.",
+            "email_alt": "We will never share your email address with anyone else. And we will never send spam.",
+            "password_alt_bold": "Important:",
+            "password_alt": "Your forgotten password cannot be recovered! 8 characters required.",
+            "password_hint_alt": "The password hint can help you remember it when you forget it.",
+            "button": "Register"
         }
+    },
+    "field": {
+        "email": "Email address",
+        "password": "Password",
+        "confirm_password": "Confirm Password",
+        "password_hint": "Password hint (optional)"
     }
 }

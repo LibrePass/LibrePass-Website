@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import { _ } from 'svelte-i18n';
     import { AuthClient, computePasswordHash, computeSharedSecret, publicFromPrivate } from '@librepass/client';
 
     import Seo from '$lib/components/Seo.svelte';
@@ -103,27 +104,35 @@
     }
 </script>
 
-<Seo title="Login" description="Login to your LibrePass account to manage your vault." />
+<Seo title={$_('page.login.title')} description={$_('page.login.description')} />
 
 <section class="h-full-header mx-auto flex justify-center items-center">
     <div class="card sm:bordered">
         <div class="card-body">
-            <h2 class="card-title justify-center">Login</h2>
+            <h2 class="card-title justify-center">
+                {$_('page.login.title')}
+            </h2>
 
             <div class="form-control max-w-xs gap-2">
                 <div class="w-full">
-                    <span class="label-text">Email address</span>
+                    <span class="label-text">
+                        {$_('field.email')}
+                    </span>
                     <input type="email" class="input input-bordered w-full max-w-xs" bind:value={email} />
                 </div>
 
                 <div>
-                    <span class="label-text">Password</span>
+                    <span class="label-text">
+                        {$_('field.password')}
+                    </span>
                     <input type="password" class="input input-bordered w-full max-w-xs" bind:value={password} />
                 </div>
             </div>
 
             <div class="card-actions justify-end pt-2">
-                <button class="btn btn-primary" on:click={submit} {disabled}>Login</button>
+                <button class="btn btn-primary" on:click={submit} {disabled}>
+                    {$_('page.login.button')}
+                </button>
             </div>
         </div>
     </div>
