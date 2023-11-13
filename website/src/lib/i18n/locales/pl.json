@@ -4,7 +4,7 @@
             "title": "Przejmij kontrolę nad swoimi hasłami dzięki LibrePass",
             "description": "Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Korzystając z LibrePass, Twoje hasła są bezpieczne i możesz łatwo uzyskać do nich dostęp i przenieść swoje życie online na wyższy poziom, nie martwiąc się o to, czy Twoje hasła są wystarczająco bezpieczne.",
 
-            "sections": {
+            "section": {
                 "first": {
                     "title": "Przejmij kontrolę nad swoimi hasłami.",
                     "description": "Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Dzięki LibrePass Twoje hasła są bezpieczne, a Ty masz do nich łatwy dostęp.",
@@ -41,6 +41,11 @@
             "password_alt": "Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.",
             "password_hint_alt": "Podpowiedź do hasła może pomóc w jego przypomnieniu, gdy zostanie zapomniane.",
             "button": "Zarejestruj się"
+        },
+        "verification_email": {
+            "title": "Weryfikacja adresu e-mail",
+            "header": "Adres e-mail został zweryfikowany!",
+            "login_btn": "Zalgouj się"
         }
     },
     "field": {
