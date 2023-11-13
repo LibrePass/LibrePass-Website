@@ -4,7 +4,7 @@
             "title": "Take control of your password with LibrePass",
             "description": "With LibrePass, convenience and security go hand in hand. Using LibrePass, your passwords are secure and you can easily access them and take your online life to the next level without worrying about whether your passwords are secure enough.",
 
-            "sections": {
+            "section": {
                 "first": {
                     "title": "Take control of your passwords.",
                     "description": "With LibrePass, convenience and security go hand in hand. Through LibrePass, your passwords are secure while you have easy access to them.",
@@ -41,6 +41,11 @@
             "password_alt": "Your forgotten password cannot be recovered! 8 characters required.",
             "password_hint_alt": "The password hint can help you remember it when you forget it.",
             "button": "Register"
+        },
+        "verification_email": {
+            "title": "Email address verification",
+            "header": "Email address has been verified!",
+            "login_btn": "Login"
         }
     },
     "field": {
