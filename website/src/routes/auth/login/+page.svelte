@@ -107,7 +107,7 @@
 <Seo title={$_('page.login.title')} description={$_('page.login.description')} />
 
 <section class="h-full-header mx-auto flex justify-center items-center">
-    <div class="card sm:bordered">
+    <div class="card bg-base-200">
         <div class="card-body">
             <h2 class="card-title justify-center">
                 {$_('page.login.title')}
@@ -129,8 +129,8 @@
                 </div>
             </div>
 
-            <div class="card-actions justify-end pt-2">
-                <button class="btn btn-primary" on:click={submit} {disabled}>
+            <div class="card-actions pt-2">
+                <button class="btn btn-primary w-full" on:click={submit} {disabled}>
                     {$_('page.login.button')}
                 </button>
             </div>
