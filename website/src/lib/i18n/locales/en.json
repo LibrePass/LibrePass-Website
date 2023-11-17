@@ -1,4 +1,9 @@
 {
+    "nav": {
+        "register": "Register",
+        "login": "Login",
+        "vault": "Vault"
+    },
     "page": {
         "home": {
             "title": "Take control of your password with LibrePass",

@@ -1,4 +1,9 @@
 {
+    "nav": {
+        "register": "Zarejestruj się",
+        "login": "Zaloguj się",
+        "vault": "Sejf"
+    },
     "page": {
         "home": {
             "title": "Przejmij kontrolę nad swoimi hasłami dzięki LibrePass",
