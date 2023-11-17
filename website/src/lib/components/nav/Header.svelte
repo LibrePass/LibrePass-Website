@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import { _ } from 'svelte-i18n';
     import Menu from 'svelte-material-icons/Menu.svelte';
 
     import LibrePassIcon from '$lib/images/LibrePass.svelte';
@@ -19,17 +20,17 @@
 
         if (browser && secretsStore.exists()) {
             sites.push({
-                title: 'Vault',
+                title: $_('nav.vault'),
                 href: '/user/vault'
             });
         } else {
             sites.push(
                 {
-                    title: 'Register',
+                    title: $_('nav.register'),
                     href: '/auth/register'
                 },
                 {
-                    title: 'Login',
+                    title: $_('nav.login'),
                     href: '/auth/login'
                 }
             );
