@@ -1,6 +1,5 @@
 {
     "license": "AGPL-3.0",
-    "private": true,
     "scripts": {
         "lint": "prettier --plugin prettier-plugin-svelte . --check . && eslint .",
         "format": "prettier --plugin prettier-plugin-svelte --write . && eslint . --fix"
