@@ -78,8 +78,8 @@
 
 <Seo title={$_('page.register.title')} description={$_('page.register.description')} />
 
-<section class="h-full-header mx-auto flex justify-center items-center">
-    <div class="card bg-base-200">
+<section class="h-full-header mx-auto flex justify-center sm:items-center">
+    <div class="card sm:bg-base-200">
         <div class="card-body">
             <h2 class="card-title justify-center">
                 {$_('page.register.title')}
