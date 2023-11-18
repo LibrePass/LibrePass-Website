@@ -1,8 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { writable } from 'svelte/store';
-    import Modal, { bind } from 'svelte-simple-modal';
     import { Cipher, CipherClient } from '@librepass/client';
+    import { modalStore } from '@medzik/svelte-utils';
 
     import CipherModal from '$lib/components/modal/CipherModal.svelte';
     import Seo from '$lib/components/Seo.svelte';
@@ -48,55 +47,50 @@
         return tmpCiphers;
     }
 
-    const modal = writable(null);
-
     function showModal(cipher: Cipher) {
-        // @ts-ignore
-        modal.set(bind(CipherModal, { cipher }));
+        modalStore.trigger({
+            ref: CipherModal,
+            props: { cipher }
+        });
     }
 </script>
 
 <Seo title="Vault" />
 
-<Modal show={$modal} classContent="rounded-md bg-base-100 text-base-content">
-    <div class="container flex flex-col overflow-x-auto">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <!-- <th class="text-right">Actions</th> -->
-                </tr>
-            </thead>
+<div class="container flex flex-col overflow-x-auto">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <!-- <th class="text-right">Actions</th> -->
+            </tr>
+        </thead>
 
-            <tbody>
-                {#if mounted}
-                    {#each ciphers as cipher}
-                        <tr
-                            class="cursor-pointer hover:bg-base-200/20 justify-center"
-                            on:click={() => showModal(cipher)}
-                        >
-                            <th class="flex flex-col h-16 justify-center">
-                                <span>{cipher.loginData?.name}</span>
-                                <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
-                            </th>
+        <tbody>
+            {#if mounted}
+                {#each ciphers as cipher}
+                    <tr class="cursor-pointer hover:bg-base-200/20 justify-center" on:click={() => showModal(cipher)}>
+                        <th class="flex flex-col h-16 justify-center">
+                            <span>{cipher.loginData?.name}</span>
+                            <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
+                        </th>
 
-                            <!-- <th class="text-right">...</th> -->
-                        </tr>
-                    {/each}
-                {:else}
-                    <!-- '_' is defined but never used -->
-                    <!-- eslint-disable-next-line -->
-                    {#each { length: 4 } as _}
-                        <tr class="cursor-pointer hover:bg-base-200/20">
-                            <th class="flex h-16">
-                                <span class="loading loading-infinity"></span>
-                            </th>
+                        <!-- <th class="text-right">...</th> -->
+                    </tr>
+                {/each}
+            {:else}
+                <!-- '_' is defined but never used -->
+                <!-- eslint-disable-next-line -->
+                {#each { length: 4 } as _}
+                    <tr class="cursor-pointer hover:bg-base-200/20">
+                        <th class="flex h-16">
+                            <span class="loading loading-infinity"></span>
+                        </th>
 
-                            <!-- <th class="text-right">...</th> -->
-                        </tr>
-                    {/each}
-                {/if}
-            </tbody>
-        </table>
-    </div>
-</Modal>
+                        <!-- <th class="text-right">...</th> -->
+                    </tr>
+                {/each}
+            {/if}
+        </tbody>
+    </table>
+</div>
