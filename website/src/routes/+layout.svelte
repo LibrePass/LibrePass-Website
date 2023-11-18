@@ -1,8 +1,8 @@
 <script>
+    import { Modal, Toast } from '@medzik/svelte-utils';
     import NProgress from 'nprogress';
 
     import Header from '$lib/components/nav/Header.svelte';
-    import Toast from '$lib/components/utilities/Toast/Toast.svelte';
     import { navigating } from '$app/stores';
 
     import 'nprogress/nprogress.css';
@@ -23,6 +23,8 @@
 </script>
 
 <Toast />
+
+<Modal />
 
 <div>
     <Header />

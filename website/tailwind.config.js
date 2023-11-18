@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./src/**/*.{html,js,svelte,ts}'],
+    content: ['./src/**/*.{html,js,svelte,ts}', '../node_modules/@medzik/svelte-utils/**/*.{js,svelte,ts}'],
     theme: {
         container: {
             center: true,

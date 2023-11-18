@@ -2,9 +2,9 @@
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { AuthClient, computePasswordHash, computeSharedSecret, publicFromPrivate } from '@librepass/client';
+    import { toastStore } from '@medzik/svelte-utils';
 
     import Seo from '$lib/components/Seo.svelte';
-    import { toastStore } from '$lib/components/utilities/Toast/stores';
     import { authStore, secretsStore } from '$lib/storage';
     import { goto } from '$app/navigation';
     import { PUBLIC_API_URL } from '$env/static/public';
