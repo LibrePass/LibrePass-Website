@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { AuthClient } from '@librepass/client';
-    import { toastStore } from '@medzik/svelte-utils';
+    import { PasswordInput, toastStore } from '@medzik/svelte-utils';
 
     import Seo from '$lib/components/Seo.svelte';
     import { secretsStore } from '$lib/storage';
@@ -100,7 +100,7 @@
                     <span class="label-text">
                         {$_('field.password')}
                     </span>
-                    <input type="password" class="input input-bordered w-full max-w-xs" bind:value={password} />
+                    <PasswordInput class="input-bordered max-w-xs" bind:value={password} />
                     <span class="label-text-alt">
                         <strong>{$_('page.register.password_alt_bold')}</strong>
                         {$_('page.register.password_alt')}
