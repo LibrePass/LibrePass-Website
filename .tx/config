@@ -1,0 +1,8 @@
+[main]
+host = https://app.transifex.com
+
+[o:librepass:p:librepass-website:r:website] 
+source_file = website/src/lib/i18n/locales/en.yml
+file_filter = website/src/lib/i18n/locales/<lang>.yml
+source_lang = en
+type = YAML_GENERIC

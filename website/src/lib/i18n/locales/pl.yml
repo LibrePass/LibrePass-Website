@@ -1,0 +1,84 @@
+nav:
+    # "Register" button on the navigation bar
+    register: Zarejestruj się
+    # "Login" button on the navigation bar
+    login: Zaloguj się
+    # "Vault" button on the navigation bar
+    vault: Sejf
+
+page:
+    home:
+        # Title of the home page
+        title: Przejmij kontrolę nad swoimi hasłami dzięki LibrePass
+        # Description of the home page
+        description: 'Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Korzystając z LibrePass, Twoje hasła są bezpieczne i możesz łatwo uzyskać do nich dostęp i przenieść swoje życie online na wyższy poziom, nie martwiąc się o to, czy Twoje hasła są wystarczająco bezpieczne.'
+        section:
+            first:
+                # Header in the first section on the home page
+                h1: Przejmij kontrolę nad swoimi hasłami.
+                # Description in the first section on the home page
+                p: 'Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Dzięki LibrePass Twoje hasła są bezpieczne, a Ty masz do nich łatwy dostęp.'
+                # Button in the first section on the home page
+                btn: Rozpocznij
+            second:
+                badges:
+                    fast:
+                        # Title of the "Fast" badge on the home page
+                        h1: Szybki
+                        # Description of the "Fast" badge on the home page
+                        p: Błyskawiczny dostęp do haseł
+                    secure:
+                        # Title of the "Secure" badge on the home page
+                        h1: Bezpieczny
+                        # Description of the "Secure" badge on the home page
+                        p: Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane
+                    accessible:
+                        # Title of the "Accessible" badge on the home page
+                        h1: Dostępny
+                        # Description of the "Accessible" badge on the home page
+                        p: Dostępne na wszystkich popularnych platformach
+    login:
+        # Title of the login page
+        title: Logowanie
+        # Description of the login page
+        description: 'Zaloguj się do swojego konta LibrePass, aby zarządzać swoim sejfem.'
+        # Header of the login card in the login page
+        h1: Logowanie
+        # Button in the login page
+        btn: Zaloguj się
+    register:
+        # Title of the login page
+        title: Tworzenie konta
+        # Description of the login page
+        description: 'Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do swoich kont, które będą bezpiecznie przechowywane.'
+        # Header of the login card in the login page
+        h1: Tworzenie konta
+        # Button in the login page
+        btn: Zarejestruj się
+        field:
+            alt:
+                # Alt text for the email field in the register page
+                email: Nigdy nie udostępnimy Twojego adresu e-mail nikomu innemu i nigdy nie będziemy wysyłać spamu.
+                # Alt text for the password field in the register page (bold font)
+                password_bold: 'Ważne:'
+                # Alt text for the password field in the register page (normal font, after 'Important: ')
+                password_normal: Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.
+                # Alt text for the password hint field in the register page
+                password_hint: 'Podpowiedź do hasła może pomóc w jego przypomnieniu, gdy zostanie zapomniane.'
+    verification_email:
+        # Title of the verification email page
+        title: Weryfikacja adresu email
+        # Header of the verification email page
+        h1: Adres e-mail został zweryfikowany!
+        # "Login" button on the verification email page
+        btn: Zaloguj się
+
+field:
+    # Placeholder for the email field
+    email: Adres email
+    # Placeholder for the password field
+    password: Hasło
+    # Placeholder for the confirm password field on the register page
+    confirm_password: Potwierdź hasło
+    # Placeholder for the password hint field on the register page
+    password_hint: Podpowiedź do hasła (opcjonalnie)

@@ -82,7 +82,7 @@
     <div class="card sm:bg-base-200">
         <div class="card-body">
             <h2 class="card-title justify-center">
-                {$_('page.register.title')}
+                {$_('page.register.h1')}
             </h2>
 
             <div class="form-control max-w-xs gap-2">
@@ -92,7 +92,7 @@
                     </span>
                     <input type="email" class="input input-bordered w-full max-w-xs" bind:value={email} />
                     <span class="label-text-alt">
-                        {$_('page.register.email_alt')}
+                        {$_('page.register.field.alt.email')}
                     </span>
                 </div>
 
@@ -102,8 +102,8 @@
                     </span>
                     <PasswordInput class="input-bordered max-w-xs" bind:value={password} />
                     <span class="label-text-alt">
-                        <strong>{$_('page.register.password_alt_bold')}</strong>
-                        {$_('page.register.password_alt')}
+                        <strong>{$_('page.register.field.alt.password_bold')}</strong>
+                        {$_('page.register.field.alt.password_normal')}
                     </span>
                 </div>
 
@@ -120,14 +120,14 @@
                     </span>
                     <input type="text" class="input input-bordered w-full max-w-xs" bind:value={passwordHint} />
                     <span class="label-text-alt">
-                        {$_('page.register.password_hint_alt')}
+                        {$_('page.register.field.alt.password_hint')}
                     </span>
                 </div>
             </div>
 
             <div class="card-actions">
                 <button class="btn btn-primary w-full" on:click={submit} {disabled}>
-                    {$_('page.register.button')}
+                    {$_('page.register.btn')}
                 </button>
             </div>
         </div>
