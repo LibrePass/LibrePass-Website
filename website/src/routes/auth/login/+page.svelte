@@ -110,7 +110,7 @@
     <div class="card sm:bg-base-200">
         <div class="card-body">
             <h2 class="card-title justify-center">
-                {$_('page.login.title')}
+                {$_('page.login.h1')}
             </h2>
 
             <div class="form-control max-w-xs gap-2">
@@ -131,7 +131,7 @@
 
             <div class="card-actions pt-2">
                 <button class="btn btn-primary w-full" on:click={submit} {disabled}>
-                    {$_('page.login.button')}
+                    {$_('page.login.btn')}
                 </button>
             </div>
         </div>

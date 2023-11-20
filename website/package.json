@@ -3,6 +3,7 @@
     "version": "1.1.0",
     "scripts": {
         "dev": "vite dev",
+        "translations": "node src/lib/i18n/locales/scripts/ymlToJson.js",
         "build": "vite build",
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
