@@ -1,84 +1,84 @@
 nav:
     # "Register" button on the navigation bar
-    register: Register
+    register: Registrering
     # "Log in" button on the navigation bar
-    login: Log in
+    login: Logg inn
     # "Vault" button on the navigation bar
-    vault: Vault
+    vault: Hvelv
 
 page:
     home:
         # Title of the home page
-        title: Take control of your password with LibrePass
+        title: Ta kontrollen over passordene med LibrePass
         # Description of the home page
-        description: Convenience and security can be combined. Your passwords are secure and can easily be accessed so your online life is easy and secure.
+        description: Beleilighet og sikkerhet kan kombineres. Passordene din er sikre og du kan enkelt få tak i dem, slik at nettlivet er enklere og sikrere.
         section:
             first:
                 # Header in the first section on the home page
-                h1: Take control of your passwords.
+                h1: Ta kontrollen over passordene.
                 # Description in the first section on the home page
-                p: Convenience and security go hand in hand. Your passwords are secure and you have easy access to them.
+                p: Beleilighet og sikkerhet kan kombineres. Passordene dine er sikre og du har enkel tilgang til dem.
                 # Button in the first section on the home page
-                btn: Get started
+                btn: Begynn
             second:
                 badges:
                     fast:
                         # Title of the "Fast" badge on the home page
-                        h1: Fast
+                        h1: Raskt
                         # Description of the "Fast" badge on the home page
-                        p: Instant access to your passwords
+                        p: Umiddelbar tilgang til passordene dine
                     secure:
                         # Title of the "Secure" badge on the home page
-                        h1: Secure
+                        h1: Sikkert
                         # Description of the "Secure" badge on the home page
-                        p: Your passwords are end-to-end encrypted and securely stored
+                        p: Passordene dine er ende-til-ende -kryptert og lagret sikkert
                     accessible:
                         # Title of the "Accessible" badge on the home page
-                        h1: Accessible
+                        h1: Tilgjengelig
                         # Description of the "Accessible" badge on the home page
-                        p: Available on all your favorite platforms
+                        p: Tilgjengelig på alle dine favorittplattformer
     login:
         # Title of the login page
-        title: Log in
+        title: Logg inn
         # Description of the login page
-        description: Log in on your LibrePass account to manage your vault.
+        description: Logg inn på LibrePass-kontoen din for å håndtere hvelvet ditt.
         # Header of the login card in the login page
-        h1: Log in
+        h1: Logg inn
         # Button in the login page
-        btn: Log in
+        btn: Logg inn
     register:
         # Title of the login page
-        title: Create an account
+        title: Opprett en konto
         # Description of the login page
-        description: Create an account with LibrePass to start creating secure passwords for your accounts, which will be stored securely.
+        description: Opprett en LibrePass-konto for å begynne med sikker lagring av sikre passord på kontoene dine.
         # Header of the login card in the login page
-        h1: Register
+        h1: Registrering
         # Button in the login page
-        btn: Register
+        btn: Registrering
         field:
             alt:
                 # Alt text for the email field in the register page
-                email: Your e-mail address will never be shared with with anyone. There is no spam.
+                email: E-postadressen din vil aldri bli delt med noen. Ingen spam.
                 # Alt text for the password field in the register page (bold font)
-                password_bold: 'Important:'
+                password_bold: 'Viktig:'
                 # Alt text for the password field in the register page (normal font, after 'Important: ')
-                password_normal: Your forgotten password cannot be recovered! 8 characters required.
+                password_normal: Ditt glemte passord kan ikke gjenopprettes. 8 tegn kreves.
                 # Alt text for the password hint field in the register page
-                password_hint: A password hint can help you remember.
+                password_hint: Passordhintet kan hjelpe deg å huske.
     verification_email:
         # Title of the verification email page
-        title: Verification of e-mail address
+        title: Bekreftelse av e-postadresse
         # Header of the verification email page
-        h1: E-mail address has been verified.
-        # "Login" button on the verification email page
-        btn: Log in
+        h1: E-postadresse bekreftet.
+        # "Log in" button on the verification email page
+        btn: Logg inn
 
 field:
     # Placeholder for the email field
-    email: E-mail address
+    email: E-postadresse
     # Placeholder for the password field
-    password: Password
+    password: Passord
     # Placeholder for the confirm password field on the register page
-    confirm_password: Confirm Password
+    confirm_password: Bekreft passord
     # Placeholder for the password hint field on the register page
-    password_hint: Password hint (optional)
+    password_hint: Passordhint (valgfritt)
