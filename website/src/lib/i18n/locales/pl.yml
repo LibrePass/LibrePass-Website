@@ -1,77 +1,55 @@
 nav:
-  register:
-    Zarejestruj się
-  login:
-    Dane logowania
+  register: Zarejestruj się
+  login: Zaloguj się
   vault: Sejf
 
 page:
   home:
-    title:
-      Przejmij kontrolę nad swoimi hasłami dzięki LibrePass
+    title: Przejmij kontrolę nad swoimi hasłami dzięki LibrePass
     description: Wygoda i bezpieczeństwo mogą być połączone. Twoje hasła są bezpieczne
       i łatwo dostępne, dzięki czemu Twoje życie online jest łatwe i bezpieczne.
     section:
       first:
-        h1:
-          Przejmij kontrolę nad swoimi hasłami.
-        p:
-          'Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Dzięki LibrePass
-          Twoje hasła są bezpieczne, a Ty masz do nich łatwy dostęp.'
+        h1: Przejmij kontrolę nad swoimi hasłami.
+        p: 'Wygoda i bezpieczeństwo idą w parze. Twoje hasła są bezpieczne i masz
+          do nich łatwy dostęp.'
         btn: Rozpocznij
       second:
         badges:
           fast:
-            h1:
-              Szybki
+            h1: Szybki
             p: Błyskawiczny dostęp do haseł
           secure:
-            h1:
-              Bezpieczny
+            h1: Bezpieczny
             p: Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane
           accessible:
-            h1:
-              Dostępny
+            h1: Dostępny
             p: Dostępne na wszystkich popularnych platformach
   login:
-    title:
-      Zaloguj się
-    description:
-      Zaloguj się na swojego konta LibrePass, aby zarządzać swoim sejfem.
-    h1:
-      Zaloguj się
-    btn: Dane logowania
+    title: Zaloguj się
+    description: Zaloguj się na swojego konta LibrePass, aby zarządzać swoim sejfem.
+    h1: Zaloguj się
+    btn: Zaloguj się
   register:
-    title:
-      Utwórz konto
-    description:
-      Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do
+    title: Utwórz konto
+    description: Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do
       swoich kont, które będą bezpiecznie przechowywane.
-    h1:
-      Tworzenie konta
+    h1: Tworzenie konta
     btn: Zarejestruj się
     field:
       alt:
-        email:
-          Twój adres e-mail nigdy nie zostanie nikomu udostępniony. Nie wysyłamy
+        email: Twój adres e-mail nigdy nie zostanie nikomu udostępniony. Nie wysyłamy
           spamu.
-        password_bold:
-          'Ważne:'
-        password_normal:
-          Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.
+        password_bold: 'Ważne:'
+        password_normal: Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.
         password_hint: Podpowiedź do hasła może pomóc w celu jego przypomnienia.
   verification_email:
-    title:
-      Weryfikacja adresu e-mail
-    h1:
-      Adres e-mail został zweryfikowany.
-    btn: Dane logowania
+    title: Weryfikacja adresu e-mail
+    h1: Adres e-mail został zweryfikowany.
+    btn: Zaloguj się
 
 field:
-  email:
-    Adres email
-  password:
-    Hasło
-  confirm_password:
-    Potwierdź hasło
+  email: Adres email
+  password: Hasło
+  confirm_password: Potwierdź hasło
   password_hint: Podpowiedź do hasła (opcjonalnie)
