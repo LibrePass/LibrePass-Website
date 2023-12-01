@@ -1,84 +1,84 @@
 nav:
-    # "Register" button on the navigation bar
-    register: Register
-    # "Log in" button on the navigation bar
-    login: Log in
-    # "Vault" button on the navigation bar
-    vault: Vault
+  # "Register" button on the navigation bar
+  register: Register
+  # "Log in" button on the navigation bar
+  login: Log in
+  # "Vault" button on the navigation bar
+  vault: Vault
 
 page:
-    home:
-        # Title of the home page
-        title: Take control of your password with LibrePass
-        # Description of the home page
-        description: Convenience and security can be combined. Your passwords are secure and can easily be accessed so your online life is easy and secure.
-        section:
-            first:
-                # Header in the first section on the home page
-                h1: Take control of your passwords.
-                # Description in the first section on the home page
-                p: Convenience and security go hand in hand. Your passwords are secure and you have easy access to them.
-                # Button in the first section on the home page
-                btn: Get started
-            second:
-                badges:
-                    fast:
-                        # Title of the "Fast" badge on the home page
-                        h1: Fast
-                        # Description of the "Fast" badge on the home page
-                        p: Instant access to your passwords
-                    secure:
-                        # Title of the "Secure" badge on the home page
-                        h1: Secure
-                        # Description of the "Secure" badge on the home page
-                        p: Your passwords are end-to-end encrypted and securely stored
-                    accessible:
-                        # Title of the "Accessible" badge on the home page
-                        h1: Accessible
-                        # Description of the "Accessible" badge on the home page
-                        p: Available on all your favorite platforms
-    login:
-        # Title of the login page
-        title: Log in
-        # Description of the login page
-        description: Log in on your LibrePass account to manage your vault.
-        # Header of the login card in the login page
-        h1: Log in
-        # Button in the login page
-        btn: Log in
-    register:
-        # Title of the login page
-        title: Create an account
-        # Description of the login page
-        description: Create an account with LibrePass to start creating secure passwords for your accounts, which will be stored securely.
-        # Header of the login card in the login page
-        h1: Register
-        # Button in the login page
-        btn: Register
-        field:
-            alt:
-                # Alt text for the email field in the register page
-                email: Your e-mail address will never be shared with with anyone. There is no spam.
-                # Alt text for the password field in the register page (bold font)
-                password_bold: 'Important:'
-                # Alt text for the password field in the register page (normal font, after 'Important: ')
-                password_normal: Your forgotten password cannot be recovered! 8 characters required.
-                # Alt text for the password hint field in the register page
-                password_hint: A password hint can help you remember.
-    verification_email:
-        # Title of the verification email page
-        title: Verification of e-mail address
-        # Header of the verification email page
-        h1: E-mail address has been verified.
-        # "Login" button on the verification email page
-        btn: Log in
+  home:
+    # Title of the home page
+    title: Take control of your password with LibrePass
+    # Description of the home page
+    description: Convenience and security can be combined. Your passwords are secure and can easily be accessed so your online life is easy and secure.
+    section:
+      first:
+        # Header in the first section on the home page
+        h1: Take control of your passwords.
+        # Description in the first section on the home page
+        p: Convenience and security go hand in hand. Your passwords are secure and you have easy access to them.
+        # Button in the first section on the home page
+        btn: Get started
+      second:
+        badges:
+          fast:
+            # Title of the "Fast" badge on the home page
+            h1: Fast
+            # Description of the "Fast" badge on the home page
+            p: Instant access to your passwords
+          secure:
+            # Title of the "Secure" badge on the home page
+            h1: Secure
+            # Description of the "Secure" badge on the home page
+            p: Your passwords are end-to-end encrypted and securely stored
+          accessible:
+            # Title of the "Accessible" badge on the home page
+            h1: Accessible
+            # Description of the "Accessible" badge on the home page
+            p: Available on all your favorite platforms
+  login:
+    # Title of the login page
+    title: Log in
+    # Description of the login page
+    description: Log in on your LibrePass account to manage your vault.
+    # Header of the login card in the login page
+    h1: Log in
+    # Button in the login page
+    btn: Log in
+  register:
+    # Title of the login page
+    title: Create an account
+    # Description of the login page
+    description: Create an account with LibrePass to start creating secure passwords for your accounts, which will be stored securely.
+    # Header of the login card in the login page
+    h1: Register
+    # Button in the login page
+    btn: Register
+    field:
+      alt:
+        # Alt text for the email field in the register page
+        email: Your e-mail address will never be shared with with anyone. There is no spam.
+        # Alt text for the password field in the register page (bold font)
+        password_bold: 'Important:'
+        # Alt text for the password field in the register page (normal font, after 'Important: ')
+        password_normal: Your forgotten password cannot be recovered! 8 characters required.
+        # Alt text for the password hint field in the register page
+        password_hint: A password hint can help you remember.
+  verification_email:
+    # Title of the verification email page
+    title: Verification of e-mail address
+    # Header of the verification email page
+    h1: E-mail address has been verified.
+    # "Login" button on the verification email page
+    btn: Log in
 
 field:
-    # Placeholder for the email field
-    email: E-mail address
-    # Placeholder for the password field
-    password: Password
-    # Placeholder for the confirm password field on the register page
-    confirm_password: Confirm Password
-    # Placeholder for the password hint field on the register page
-    password_hint: Password hint (optional)
+  # Placeholder for the email field
+  email: E-mail address
+  # Placeholder for the password field
+  password: Password
+  # Placeholder for the confirm password field on the register page
+  confirm_password: Confirm Password
+  # Placeholder for the password hint field on the register page
+  password_hint: Password hint (optional)
