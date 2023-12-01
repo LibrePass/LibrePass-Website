@@ -16,7 +16,7 @@
         "@modyfi/vite-plugin-yaml": "^1.0.4",
         "@neoconfetti/svelte": "^1.0.0",
         "@sveltejs/adapter-auto": "^2.1.1",
-        "@sveltejs/adapter-vercel": "^3.0.3",
+        "@sveltejs/adapter-vercel": "^3.1.0",
         "@sveltejs/kit": "^1.27.6",
         "@types/cookie": "^0.6.0",
         "autoprefixer": "^10.4.16",
