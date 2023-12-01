@@ -2,3 +2,5 @@
 /website/build
 /website/.svelte-kit
 /website/package
+
+*.yml

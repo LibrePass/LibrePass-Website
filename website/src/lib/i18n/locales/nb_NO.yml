@@ -1,84 +1,51 @@
 nav:
-    # "Register" button on the navigation bar
-    register: Registrering
-    # "Log in" button on the navigation bar
-    login: Logg inn
-    # "Vault" button on the navigation bar
-    vault: Hvelv
+  register: Registrering
+  login: Logg inn
+  vault: Hvelv
 
 page:
-    home:
-        # Title of the home page
-        title: Ta kontrollen over passordene med LibrePass
-        # Description of the home page
-        description: Beleilighet og sikkerhet kan kombineres. Passordene din er sikre og du kan enkelt få tak i dem, slik at nettlivet er enklere og sikrere.
-        section:
-            first:
-                # Header in the first section on the home page
-                h1: Ta kontrollen over passordene.
-                # Description in the first section on the home page
-                p: Beleilighet og sikkerhet kan kombineres. Passordene dine er sikre og du har enkel tilgang til dem.
-                # Button in the first section on the home page
-                btn: Begynn
-            second:
-                badges:
-                    fast:
-                        # Title of the "Fast" badge on the home page
-                        h1: Raskt
-                        # Description of the "Fast" badge on the home page
-                        p: Umiddelbar tilgang til passordene dine
-                    secure:
-                        # Title of the "Secure" badge on the home page
-                        h1: Sikkert
-                        # Description of the "Secure" badge on the home page
-                        p: Passordene dine er ende-til-ende -kryptert og lagret sikkert
-                    accessible:
-                        # Title of the "Accessible" badge on the home page
-                        h1: Tilgjengelig
-                        # Description of the "Accessible" badge on the home page
-                        p: Tilgjengelig på alle dine favorittplattformer
-    login:
-        # Title of the login page
-        title: Logg inn
-        # Description of the login page
-        description: Logg inn på LibrePass-kontoen din for å håndtere hvelvet ditt.
-        # Header of the login card in the login page
-        h1: Logg inn
-        # Button in the login page
-        btn: Logg inn
-    register:
-        # Title of the login page
-        title: Opprett en konto
-        # Description of the login page
-        description: Opprett en LibrePass-konto for å begynne med sikker lagring av sikre passord på kontoene dine.
-        # Header of the login card in the login page
-        h1: Registrering
-        # Button in the login page
-        btn: Registrering
-        field:
-            alt:
-                # Alt text for the email field in the register page
-                email: E-postadressen din vil aldri bli delt med noen. Ingen spam.
-                # Alt text for the password field in the register page (bold font)
-                password_bold: 'Viktig:'
-                # Alt text for the password field in the register page (normal font, after 'Important: ')
-                password_normal: Ditt glemte passord kan ikke gjenopprettes. 8 tegn kreves.
-                # Alt text for the password hint field in the register page
-                password_hint: Passordhintet kan hjelpe deg å huske.
-    verification_email:
-        # Title of the verification email page
-        title: Bekreftelse av e-postadresse
-        # Header of the verification email page
-        h1: E-postadresse bekreftet.
-        # "Log in" button on the verification email page
-        btn: Logg inn
+  home:
+    title: Ta kontrollen over passordene med LibrePass
+    description: Beleilighet og sikkerhet kan kombineres. Passordene din er sikre og du kan enkelt få tak i dem, slik at nettlivet er enklere og sikrere.
+    section:
+      first:
+        h1: Ta kontrollen over passordene.
+        p: Beleilighet og sikkerhet kan kombineres. Passordene dine er sikre og du har enkel tilgang til dem.
+        btn: Begynn
+      second:
+        badges:
+          fast:
+            h1: Raskt
+            p: Umiddelbar tilgang til passordene dine
+          secure:
+            h1: Sikkert
+            p: Passordene dine er ende-til-ende -kryptert og lagret sikkert
+          accessible:
+            h1: Tilgjengelig
+            p: Tilgjengelig på alle dine favorittplattformer
+  login:
+    title: Logg inn
+    description: Logg inn på LibrePass-kontoen din for å håndtere hvelvet ditt.
+    h1: Logg inn
+    btn: Logg inn
+  register:
+    title: Opprett en konto
+    description: Opprett en LibrePass-konto for å begynne med sikker lagring av sikre passord på kontoene dine.
+    h1: Registrering
+    btn: Registrering
+    field:
+      alt:
+        email: E-postadressen din vil aldri bli delt med noen. Ingen spam.
+        password_bold: 'Viktig:'
+        password_normal: Ditt glemte passord kan ikke gjenopprettes. 8 tegn kreves.
+        password_hint: Passordhintet kan hjelpe deg å huske.
+  verification_email:
+    title: Bekreftelse av e-postadresse
+    h1: E-postadresse bekreftet.
+    btn: Logg inn
 
 field:
-    # Placeholder for the email field
-    email: E-postadresse
-    # Placeholder for the password field
-    password: Passord
-    # Placeholder for the confirm password field on the register page
-    confirm_password: Bekreft passord
-    # Placeholder for the password hint field on the register page
-    password_hint: Passordhint (valgfritt)
+  email: E-postadresse
+  password: Passord
+  confirm_password: Bekreft passord
+  password_hint: Passordhint (valgfritt)
