@@ -1,0 +1,55 @@
+page:
+  verification_email:
+    h1: E-Mail-Adresse wurde überprüft.
+    title: Überprüfung der E-Mail-Adresse
+    btn: Anmeldung
+  register:
+    field:
+      alt:
+        password_normal: Eure vergessen Passwort kann nicht sein erholt! 8 Charaktere
+          bedürft.
+        password_bold: 'Wichtig:'
+        email: Ihre E-Mail-Adresse wird nie mit jemandem geteilt. Es gibt keinen Spam.
+        password_hint: Ein Passwort-Hit kann Ihnen helfen, sich zu erinnern.
+    h1: Registrieren
+    description: 'Schaff ein Konto mit LibrePass zu Start schaffend feste Passwörter
+      für eure Kontos/Konti/Konten, #welche wollen sein gelagert fest.'
+    btn: Registrieren
+    title: Schaff ein Konto
+  home:
+    section:
+      second:
+        badges:
+          accessible:
+            h1: Erreichbar
+            p: Verfügbar auf jede eure bevorzugt Bahnsteige
+          secure:
+            h1: Fest
+            p: 'Eure Passwörter sind Ende-zu-Ende #kodieren und fest gelagert'
+          fast:
+            p: Augenblick Zugang zu euren Passwörtern
+            h1: Fasten
+      first:
+        btn: Loslegen
+        p: Konvenience und Sicherheit gehen Hand in Hand. Ihre Passwörter sind sicher
+          und Sie haben einen einfachen Zugang zu ihnen.
+        h1: Nimm Aufsicht von euren Passwörtern.
+    title: Nimm Aufsicht von eurem Passwort mit LibrePass
+    description: Konvenience und Sicherheit können kombiniert werden. Ihre Passwörter
+      sind sicher und können leicht zugegriffen werden, so dass Ihr Online-Leben einfach
+      und sicher ist.
+  login:
+    btn: Anmeldung
+    h1: Anmeldung
+    title: Anmeldung
+    description: Melden Sie sich auf Ihrem LibrePass-Konto an, um Ihren Tresor zu
+      verwalten.
+field:
+  confirm_password: Passwort bestätigen
+  email: E-Mail Adresse
+  password_hint: Passwort Hinweis (optional)
+  password: Passwort
+nav:
+  vault: Tresor
+  login: Anmeldung
+  register: Registrieren
