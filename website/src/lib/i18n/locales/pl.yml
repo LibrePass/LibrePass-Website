@@ -11,7 +11,7 @@ page:
         # Title of the home page
         title: Przejmij kontrolę nad swoimi hasłami dzięki LibrePass
         # Description of the home page
-        description: 'Dzięki LibrePass wygoda i bezpieczeństwo idą w parze. Korzystając z LibrePass, Twoje hasła są bezpieczne i możesz łatwo uzyskać do nich dostęp i przenieść swoje życie online na wyższy poziom, nie martwiąc się o to, czy Twoje hasła są wystarczająco bezpieczne.'
+        description: Wygoda i bezpieczeństwo mogą być połączone. Twoje hasła są bezpieczne i łatwo dostępne, dzięki czemu Twoje życie online jest łatwe i bezpieczne.
         section:
             first:
                 # Header in the first section on the home page
@@ -39,18 +39,18 @@ page:
                         p: Dostępne na wszystkich popularnych platformach
     login:
         # Title of the login page
-        title: Logowanie
+        title: Zaloguj się
         # Description of the login page
-        description: 'Zaloguj się do swojego konta LibrePass, aby zarządzać swoim sejfem.'
+        description: Zaloguj się na swojego konta LibrePass, aby zarządzać swoim sejfem.
         # Header of the login card in the login page
-        h1: Logowanie
+        h1: Zaloguj się
         # Button in the login page
         btn: Zaloguj się
     register:
         # Title of the login page
-        title: Tworzenie konta
+        title: Utwórz konto
         # Description of the login page
-        description: 'Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do swoich kont, które będą bezpiecznie przechowywane.'
+        description: Utwórz konto w LibrePass, aby zacząć tworzyć bezpieczne hasła do swoich kont, które będą bezpiecznie przechowywane.
         # Header of the login card in the login page
         h1: Tworzenie konta
         # Button in the login page
@@ -58,18 +58,18 @@ page:
         field:
             alt:
                 # Alt text for the email field in the register page
-                email: Nigdy nie udostępnimy Twojego adresu e-mail nikomu innemu i nigdy nie będziemy wysyłać spamu.
+                email: Twój adres e-mail nigdy nie zostanie nikomu udostępniony. Nie wysyłamy spamu.
                 # Alt text for the password field in the register page (bold font)
                 password_bold: 'Ważne:'
                 # Alt text for the password field in the register page (normal font, after 'Important: ')
                 password_normal: Zapomnianego hasła nie można odzyskać! Wymagane 8 znaków.
                 # Alt text for the password hint field in the register page
-                password_hint: 'Podpowiedź do hasła może pomóc w jego przypomnieniu, gdy zostanie zapomniane.'
+                password_hint: Podpowiedź do hasła może pomóc w celu jego przypomnienia.
     verification_email:
         # Title of the verification email page
-        title: Weryfikacja adresu email
+        title: Weryfikacja adresu e-mail
         # Header of the verification email page
-        h1: Adres e-mail został zweryfikowany!
+        h1: Adres e-mail został zweryfikowany.
         # "Login" button on the verification email page
         btn: Zaloguj się
 

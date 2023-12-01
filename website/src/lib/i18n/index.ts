@@ -4,8 +4,8 @@ import { browser } from '$app/environment';
 
 const defaultLocale = 'en';
 
-register('en', () => import('./locales/en.json'));
-register('pl', () => import('./locales/pl.json'));
+register('en', () => import('./locales/en.yml'));
+register('pl', () => import('./locales/pl.yml'));
 
 init({
     fallbackLocale: defaultLocale,
