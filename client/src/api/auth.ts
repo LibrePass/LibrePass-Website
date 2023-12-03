@@ -28,7 +28,7 @@ export class AuthClient {
             parallelism: DefaultArgon2idParameters.parallelism,
             memory: DefaultArgon2idParameters.memory,
             iterations: DefaultArgon2idParameters.iterations,
-            // Curve25519 keypair
+            // X25519 keypair
             publicKey: publicKey
         });
     }

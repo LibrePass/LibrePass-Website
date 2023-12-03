@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Cipher, CipherClient } from '@librepass/client';
+    import { Cipher, CipherClient, CipherType } from '@librepass/client';
     import { modalStore } from '@medzik/svelte-utils';
 
     import CipherModal from '$lib/components/modal/CipherModal.svelte';
@@ -42,7 +42,22 @@
         });
 
         // sort ciphers by name
-        tmpCiphers.sort((a, b) => a.loginData!.name!.localeCompare(b.loginData!.name));
+        tmpCiphers.sort((a, b) => {
+            function toComp(x: Cipher): string {
+                if (x.type == CipherType.Login) {
+                    return x.loginData!.name;
+                } else if (x.type == CipherType.SecureNote) {
+                    return x.secureNoteData!.title;
+                } else if (x.type == CipherType.Card) {
+                    return x.cardData!.name;
+                } else {
+                    // never happends
+                    return '';
+                }
+            }
+
+            return toComp(a).localeCompare(toComp(b));
+        });
 
         return tmpCiphers;
     }
@@ -71,8 +86,17 @@
                 {#each ciphers as cipher}
                     <tr class="cursor-pointer hover:bg-base-200/20 justify-center" on:click={() => showModal(cipher)}>
                         <th class="flex flex-col h-16 justify-center">
-                            <span>{cipher.loginData?.name}</span>
-                            <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
+                            {#if cipher.type == CipherType.Login}
+                                <span>{cipher.loginData?.name}</span>
+                                <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
+                            {:else if cipher.type == CipherType.SecureNote}
+                                <span>{cipher.secureNoteData?.title}</span>
+                            {:else if cipher.type == CipherType.Card}
+                                <span>{cipher.cardData?.name}</span>
+                                <span class="text-xs text-base-content/75"
+                                    >{'**** ' + cipher.cardData?.number.slice(-4)}</span
+                                >
+                            {/if}
                         </th>
 
                         <!-- <th class="text-right">...</th> -->
