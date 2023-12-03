@@ -242,8 +242,8 @@ export interface CipherSecureNoteData {
 
 /**
  * Card data for cipher.
+ * @param name cipher name
  * @param cardholderName cardholder name
- * @param brand card brand
  * @param number card number
  * @param expMonth card expiration month
  * @param expYear card expiration year
@@ -252,12 +252,12 @@ export interface CipherSecureNoteData {
  * @param fields custom fields
  */
 export interface CipherCardData {
+    name: string;
     cardholderName: string;
-    brand: string;
     number: string;
-    expMonth: number;
-    expYear: number;
-    code: string;
+    expMonth?: number;
+    expYear?: number;
+    code?: string;
     notes?: string;
     fields?: CustomField[];
 }
