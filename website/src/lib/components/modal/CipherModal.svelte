@@ -4,7 +4,8 @@
         type CipherCardData,
         type CipherLoginData,
         type CipherSecureNoteData,
-        CipherType    } from '@librepass/client';
+        CipherType
+    } from '@librepass/client';
 
     export let cipher: Cipher;
     let cipherClone = Object.assign({}, cipher);
@@ -17,7 +18,15 @@
     let cardData: CipherCardData = cipherClone.cardData;
 </script>
 
-<!-- <h3 class="font-bold text-lg">{cipherDataClone.name}</h3> -->
+<h3 class="font-bold text-lg">
+    {#if cipherClone.type == CipherType.Login}
+        {loginData.name}
+    {:else if cipherClone.type == CipherType.SecureNote}
+        {secureNoteData.title}
+    {:else if cipherClone.type == CipherType.Card}
+        {cardData.name}
+    {/if}
+</h3>
 
 <div class="form-control py-4">
     {#if cipherClone.type == CipherType.Login}
