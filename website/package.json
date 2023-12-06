@@ -1,6 +1,6 @@
 {
     "name": "@librepass/website",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "scripts": {
         "dev": "vite dev",
         "translations": "node src/lib/i18n/locales/scripts/ymlToJson.js",
