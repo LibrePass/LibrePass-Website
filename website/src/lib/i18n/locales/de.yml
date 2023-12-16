@@ -44,6 +44,9 @@ page:
     title: Anmeldung
     description: Melden Sie sich auf Ihrem LibrePass-Konto an, um Ihren Tresor zu
       verwalten.
+  vault:
+    modal:
+      save: Speichern
 field:
   confirm_password: Passwort bestätigen
   email: E-Mail Adresse
