@@ -9,12 +9,12 @@
 <section class="container flex h-90-header justify-center items-center max-w-[980px] mx-auto gap-5">
     <div class="flex flex-col justify-start gap-4 text-center sm:text-start">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
-            {$_('page.verification_email.header')}
+            {$_('page.verification_email.h1')}
         </h1>
 
         <div class="flex justify-center">
             <a href="/auth/login" class="flex btn btn-success">
-                {$_('page.verification_email.login_btn')} &rarr;
+                {$_('page.verification_email.btn')} &rarr;
             </a>
         </div>
     </div>
