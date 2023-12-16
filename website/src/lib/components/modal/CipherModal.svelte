@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { _ } from 'svelte-i18n';
     import {
         type Cipher,
         type CipherCardData,
@@ -48,69 +49,95 @@
 <div class="form-control py-4">
     {#if cipherClone.type == CipherType.Login}
         <div class="w-full">
-            <span class="label-text">Name</span>
+            <span class="label-text">
+                {$_('field.name')}
+            </span>
             <input class="input input-bordered w-full" bind:value={loginData.name} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Username</span>
+            <span class="label-text">
+                {$_('field.username')}
+            </span>
             <input class="input input-bordered w-full" bind:value={loginData.username} />
         </div>
 
         <div>
-            <span class="label-text">Password</span>
+            <span class="label-text">
+                {$_('field.password')}
+            </span>
             <input class="input input-bordered w-full" bind:value={loginData.password} />
             <!-- TODO: show/hide switch -->
             <!-- TODO: Password Generator -->
         </div>
 
         <div>
-            <span class="label-text">Notes</span>
+            <span class="label-text">
+                {$_('field.notes')}
+            </span>
             <textarea class="textarea textarea-bordered w-full" bind:value={loginData.notes} />
         </div>
     {:else if cipher.type == CipherType.SecureNote}
         <div class="w-full">
-            <span class="label-text">Title</span>
+            <span class="label-text">
+                {$_('field.title')}
+            </span>
             <input class="input input-bordered w-full" bind:value={secureNoteData.title} />
         </div>
 
         <div>
-            <span class="label-text">Note</span>
+            <span class="label-text">
+                {$_('field.notes')}
+            </span>
             <textarea class="textarea textarea-bordered w-full" bind:value={secureNoteData.note} />
         </div>
     {:else if cipher.type == CipherType.Card}
         <div class="w-full">
-            <span class="label-text">Name</span>
+            <span class="label-text">
+                {$_('field.name')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.name} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Cardholder name</span>
+            <span class="label-text">
+                {$_('field.cardholderName')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.cardholderName} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Number</span>
+            <span class="label-text">
+                {$_('field.number')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.number} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Expiration month</span>
+            <span class="label-text">
+                {$_('field.expirationMonth')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.expMonth} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Expiration year</span>
+            <span class="label-text">
+                {$_('field.expirationYear')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.expYear} />
         </div>
 
         <div class="w-full">
-            <span class="label-text">Secure code</span>
+            <span class="label-text">
+                {$_('field.secureCode')}
+            </span>
             <input class="input input-bordered w-full" bind:value={cardData.code} />
         </div>
 
         <div>
-            <span class="label-text">Notes</span>
+            <span class="label-text">
+                {$_('field.notes')}
+            </span>
             <textarea class="textarea textarea-bordered w-full" bind:value={cardData.notes} />
         </div>
     {/if}

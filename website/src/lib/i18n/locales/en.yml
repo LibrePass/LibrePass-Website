@@ -82,3 +82,21 @@ field:
   confirm_password: Confirm Password
   # Placeholder for the password hint field on the register page
   password_hint: Password hint (optional)
+  # Placeholder for the cipher name field
+  name: Name
+  # Placeholder for the username in login cipher
+  username: Username
+  # Placeholder for the title of secure note
+  title: Title
+  # Placeholder for the notes field
+  notes: Notes
+  # Placeholder for the cardholder name
+  cardholderName: Cardholder name
+  # Placeholder for the card number
+  number: Number
+  # Placeholder for the expiration month of the card
+  expirationMonth: Expiration month
+  # Placeholder for the expiration year of the card
+  expirationYear: Expiration year
+  # Placeholder for the secure code of the card
+  secureCode: Secure code
