@@ -92,8 +92,8 @@
 
     <p>
         If you have any questions or concerns regarding our Privacy Policy, please contact us at <a
-            href="mailto:librepass@medzik.dev"
-            class="link">librepass@medzik.dev</a
+            href="mailto:contact@librepass.org"
+            class="link">contact@librepass.org</a
         >.
     </p>
 
