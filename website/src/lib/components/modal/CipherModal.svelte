@@ -144,5 +144,7 @@
 </div>
 
 <div class="text-center">
-    <button class="btn btn-primary" on:click={save}> Save </button>
+    <button class="btn btn-primary" on:click={save}>
+        {$_('page.vault.modal.save')}
+    </button>
 </div>

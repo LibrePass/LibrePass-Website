@@ -72,6 +72,10 @@ page:
     h1: E-mail address has been verified.
     # "Login" button on the verification email page
     btn: Log in
+  vault:
+    modal:
+      # Button in the cipher modal when editing cipher
+      save: Save
 
 field:
   # Placeholder for the email field
