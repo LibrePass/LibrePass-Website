@@ -47,6 +47,9 @@ page:
     h1: E-postadresse bekreftet.
     btn: Logg inn
 
+  vault:
+    modal:
+      save: Lagre
 field:
   email: E-postadresse
   password: Passord
@@ -60,3 +63,4 @@ field:
   expirationMonth: Utløpsmåned
   expirationYear: Utløpsår
   name: Navn
+  secureCode: Sikkerhetskode
