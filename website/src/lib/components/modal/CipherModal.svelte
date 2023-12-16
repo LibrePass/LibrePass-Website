@@ -1,4 +1,6 @@
 <script lang="ts">
+    export let closeModal: () => void;
+
     import { _ } from 'svelte-i18n';
     import {
         type Cipher,
@@ -8,7 +10,6 @@
         type CipherSecureNoteData,
         CipherType
     } from '@librepass/client';
-    import { modalStore } from '@medzik/svelte-utils';
 
     import { authStore, secretsStore } from '$lib/storage';
     import { PUBLIC_API_URL } from '$env/static/public';
@@ -32,7 +33,7 @@
         const encryptedCipher = cipher.toEncryptedCipher(secrets.sharedSecret);
         cipherClient.update(encryptedCipher);
 
-        modalStore.close();
+        closeModal();
     }
 </script>
 
