@@ -28,7 +28,7 @@
 
     <nav>
         <header class="footer-title">Team</header>
-        <a class="link link-hover" href="mailto:librepass@medzik.dev">Contact</a>
+        <a class="link link-hover" href="mailto:contact@librepass.org">Contact</a>
     </nav>
 
     <nav>
