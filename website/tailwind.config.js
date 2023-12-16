@@ -13,10 +13,10 @@ export default {
         themes: [
             {
                 light: {
-                    primary: '#ffb68d',
-                    secondary: '#335c67',
-                    accent: '#8a8a8a',
-                    neutral: '#e5e7eb',
+                    primary: '#ff8c5c',
+                    secondary: '#5d8e9f',
+                    accent: '#b0b0b0',
+                    neutral: '#cfd4d8',
                     'base-100': '#f4f4f4',
                     'base-200': '#ffffff',
                     'base-300': '#eaeaea',
@@ -26,10 +26,10 @@ export default {
                     error: '#f87272'
                 },
                 dark: {
-                    primary: '#ffb68d',
-                    secondary: '#335c67',
+                    primary: '#ff934d',
+                    secondary: '#507c8b',
                     accent: '#8a8a8a',
-                    neutral: '#e5e7eb',
+                    neutral: '#cfd4d8',
                     'base-100': '#201a17',
                     'base-200': '#332d28',
                     'base-300': '#4f4740',
