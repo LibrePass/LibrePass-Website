@@ -48,6 +48,9 @@ page:
     h1: Adres e-mail został zweryfikowany.
     btn: Zaloguj się
 
+  vault:
+    modal:
+      save: Zapisz
 field:
   email: Adres email
   password: Hasło
