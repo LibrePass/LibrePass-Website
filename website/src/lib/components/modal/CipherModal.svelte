@@ -15,20 +15,29 @@
     import { PUBLIC_API_URL } from '$env/static/public';
 
     export let cipher: Cipher;
-    let cipherClone = Object.assign({}, cipher);
 
-    // @ts-ignore
-    let loginData: CipherLoginData = cipherClone.loginData;
-    // @ts-ignore
-    let secureNoteData: CipherSecureNoteData = cipherClone.secureNoteData;
-    // @ts-ignore
-    let cardData: CipherCardData = cipherClone.cardData;
+    function clone(object: any): any {
+        if (!object) return undefined;
+        return Object.assign(Object.create(Object.getPrototypeOf(object)), object);
+    }
+
+    let loginData: CipherLoginData = clone(cipher.loginData);
+    let secureNoteData: CipherSecureNoteData = clone(cipher.secureNoteData);
+    let cardData: CipherCardData = clone(cipher.cardData);
 
     function save() {
         const secrets = secretsStore.get();
 
         const auth = authStore.get()!;
         const cipherClient = new CipherClient(PUBLIC_API_URL, auth.apiKey);
+
+        if (cipher.type == CipherType.Login) {
+            cipher.loginData = loginData;
+        } else if (cipher.type == CipherType.SecureNote) {
+            cipher.secureNoteData = secureNoteData;
+        } else if (cipher.type == CipherType.Card) {
+            cipher.cardData = cardData;
+        }
 
         const encryptedCipher = cipher.toEncryptedCipher(secrets.sharedSecret);
         cipherClient.update(encryptedCipher);
@@ -38,17 +47,17 @@
 </script>
 
 <h3 class="font-bold text-lg">
-    {#if cipherClone.type == CipherType.Login}
+    {#if cipher.type == CipherType.Login}
         {loginData.name}
-    {:else if cipherClone.type == CipherType.SecureNote}
+    {:else if cipher.type == CipherType.SecureNote}
         {secureNoteData.title}
-    {:else if cipherClone.type == CipherType.Card}
+    {:else if cipher.type == CipherType.Card}
         {cardData.name}
     {/if}
 </h3>
 
 <div class="form-control py-4">
-    {#if cipherClone.type == CipherType.Login}
+    {#if cipher.type == CipherType.Login}
         <div class="w-full">
             <span class="label-text">
                 {$_('field.name')}
