@@ -49,6 +49,15 @@ field:
   email: E-Mail Adresse
   password_hint: Passwort Hinweis (optional)
   password: Passwort
+  title: Titel
+  cardholderName: Karteninhabername
+  notes: Notizen
+  username: Benutzername
+  expirationMonth: Ablaufmonat
+  expirationYear: Ablaufjahr
+  name: Name
+  number: Anzahl
+  secureCode: Sicherheitscode
 nav:
   vault: Tresor
   login: Anmeldung

@@ -53,3 +53,12 @@ field:
   password: Hasło
   confirm_password: Potwierdź hasło
   password_hint: Podpowiedź do hasła (opcjonalnie)
+  title: Tytuł
+  cardholderName: Nazwa posiadacza karty
+  notes: Notes
+  expirationMonth: Miesiąc ważności
+  expirationYear: Rok ważności
+  number: Numer
+  username: Nazwa użytkownika
+  secureCode: Kod bezpieczeństwa
+  name: Nazwa
