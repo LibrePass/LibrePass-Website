@@ -6,7 +6,7 @@
 
     import Footer from '$lib/components/Footer.svelte';
     import Seo from '$lib/components/Seo.svelte';
-    import phoneScreenshot from '$lib/images/screenshots/phone.avif';
+    import phoneScreenshot from '$lib/images/screenshots/phone.png';
 </script>
 
 <Seo title={$_('page.home.title')} description={$_('page.home.description')} />
