@@ -1,5 +1,8 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import AccountIcon from 'svelte-material-icons/Account.svelte';
+    import CardIcon from 'svelte-material-icons/CreditCard.svelte';
+    import NoteIcon from 'svelte-material-icons/NoteText.svelte';
     import { Cipher, CipherClient, CipherType } from '@librepass/client';
     import { modalStore } from '@medzik/svelte-utils';
 
@@ -84,19 +87,29 @@
         <tbody>
             {#if mounted}
                 {#each ciphers as cipher}
-                    <tr class="cursor-pointer hover:bg-base-200/20 justify-center" on:click={() => showModal(cipher)}>
-                        <th class="flex flex-col h-16 justify-center">
+                    <tr class="cursor-pointer hover:bg-base-200/20" on:click={() => showModal(cipher)}>
+                        <th class="flex h-16 items-center gap-4">
                             {#if cipher.type == CipherType.Login}
-                                <span>{cipher.loginData?.name}</span>
-                                <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
+                                <AccountIcon class="w-5 h-5" />
                             {:else if cipher.type == CipherType.SecureNote}
-                                <span>{cipher.secureNoteData?.title}</span>
+                                <NoteIcon class="w-5 h-5" />
                             {:else if cipher.type == CipherType.Card}
-                                <span>{cipher.cardData?.name}</span>
-                                <span class="text-xs text-base-content/75"
-                                    >{'**** ' + cipher.cardData?.number.slice(-4)}</span
-                                >
+                                <CardIcon class="w-5 h-5" />
                             {/if}
+
+                            <div class="flex flex-col">
+                                {#if cipher.type == CipherType.Login}
+                                    <span>{cipher.loginData?.name}</span>
+                                    <span class="text-xs text-base-content/75">{cipher.loginData?.username || ''}</span>
+                                {:else if cipher.type == CipherType.SecureNote}
+                                    <span>{cipher.secureNoteData?.title}</span>
+                                {:else if cipher.type == CipherType.Card}
+                                    <span>{cipher.cardData?.name}</span>
+                                    <span class="text-xs text-base-content/75">
+                                        {'**** ' + cipher.cardData?.number.slice(-4)}
+                                    </span>
+                                {/if}
+                            </div>
                         </th>
 
                         <!-- <th class="text-right">...</th> -->
