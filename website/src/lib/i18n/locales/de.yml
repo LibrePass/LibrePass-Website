@@ -19,21 +19,33 @@ page:
   home:
     section:
       second:
-        badges:
-          accessible:
-            h1: Erreichbar
-            p: Verfügbar auf jede eure bevorzugt Bahnsteige
-          secure:
-            h1: Fest
-            p: 'Eure Passwörter sind Ende-zu-Ende #kodieren und fest gelagert'
-          fast:
-            p: Augenblick Zugang zu euren Passwörtern
-            h1: Fasten
+        badges: {}
       first:
         btn: Loslegen
         p: Konvenience und Sicherheit gehen Hand in Hand. Ihre Passwörter sind sicher
           und Sie haben einen einfachen Zugang zu ihnen.
         h1: Nimm Aufsicht von euren Passwörtern.
+      features:
+        passwordGenerator:
+          p: Erhöhen Sie Ihr Passwort-Spiel mit LibrePass Smart Passwort-Generator.
+            Erstellen Sie robuste und einzigartige Passwörter, die auf Ihre Spezifikationen
+            zugeschnitten sind. Stärken Sie Ihre Online-Sicherheit mühelos und halten
+            Sie prying Augen in Schach.
+          h1: Intelligenter Passwort-Generator
+        security:
+          p: LibrePass bietet höchste Sicherheitsstandards, wobei die End-to-End-Verschlüsselung
+            verwendet wird, um die empfindlichsten Daten zu schützen.
+          h1: Sicherheit
+        crossDeviceSync:
+          h1: Cross-Device Synchronisierung
+          p: Ihre Passwörter reisen mit Ihnen, um sicherzustellen, dass sie immer
+            aktualisiert und bereit für den Zugriff sind. Erleben Sie die Freiheit,
+            Ihre Passwörter jederzeit und überall zu verwalten.
+        h1: LibrePass Angebote
+        opensource:
+          p: LibrePass priorisiert Sicherheit durch End-to-End-Verschlüsselung und
+            Open-Source-Transparenz, so dass Benutzer Verschlüsselungsalgorithmen
+            unabhängig für erhöhte Sicherheit überprüfen.
     title: Nimm Aufsicht von eurem Passwort mit LibrePass
     description: Konvenience und Sicherheit können kombiniert werden. Ihre Passwörter
       sind sicher und können leicht zugegriffen werden, so dass Ihr Online-Leben einfach

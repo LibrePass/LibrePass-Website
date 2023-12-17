@@ -15,16 +15,7 @@ page:
           har enkel tilgang til dem.
         btn: Begynn
       second:
-        badges:
-          fast:
-            h1: Raskt
-            p: Umiddelbar tilgang til passordene dine
-          secure:
-            h1: Sikkert
-            p: Passordene dine er ende-til-ende -kryptert og lagret sikkert
-          accessible:
-            h1: Tilgjengelig
-            p: Tilgjengelig på alle dine favorittplattformer
+        badges: {}
   login:
     title: Logg inn
     description: Logg inn på LibrePass-kontoen din for å håndtere hvelvet ditt.
