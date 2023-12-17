@@ -10,6 +10,7 @@
         type CipherSecureNoteData,
         CipherType
     } from '@librepass/client';
+    import { PasswordInput } from '@medzik/svelte-utils';
 
     import { authStore, secretsStore } from '$lib/storage';
     import { PUBLIC_API_URL } from '$env/static/public';
@@ -76,8 +77,7 @@
             <span class="label-text">
                 {$_('field.password')}
             </span>
-            <input class="input input-bordered w-full" bind:value={loginData.password} />
-            <!-- TODO: show/hide switch -->
+            <PasswordInput class="input-bordered w-full" bind:value={loginData.password} />
             <!-- TODO: Password Generator -->
         </div>
 
@@ -120,7 +120,7 @@
             <span class="label-text">
                 {$_('field.number')}
             </span>
-            <input class="input input-bordered w-full" bind:value={cardData.number} />
+            <PasswordInput class="input-bordered w-full" bind:value={cardData.number} />
         </div>
 
         <div class="w-full">
@@ -141,7 +141,7 @@
             <span class="label-text">
                 {$_('field.secureCode')}
             </span>
-            <input class="input input-bordered w-full" bind:value={cardData.code} />
+            <PasswordInput class="input-bordered w-full" bind:value={cardData.code} />
         </div>
 
         <div>
