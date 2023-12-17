@@ -14,21 +14,14 @@
     <nav>
         <header class="footer-title">Download</header>
         <a class="link link-hover" href="https://f-droid.org/en/packages/dev.medzik.librepass.android/" target="_blank">
-            Android F-Droid
-        </a>
-
-        <a
-            class="link link-hover"
-            href="https://github.com/LibrePass/LibrePass-Android/releases/latest"
-            target="_blank"
-        >
-            Android .apk
+            Android
         </a>
     </nav>
 
     <nav>
         <header class="footer-title">Team</header>
         <a class="link link-hover" href="mailto:contact@librepass.org">Contact</a>
+        <a class="link link-hover" href="https://github.com/LibrePass">GitHub</a>
     </nav>
 
     <nav>
