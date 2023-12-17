@@ -26,7 +26,7 @@ export default {
                     error: '#f87272'
                 },
                 dark: {
-                    primary: '#ff934d',
+                    primary: '#ffb68d',
                     secondary: '#507c8b',
                     accent: '#8a8a8a',
                     neutral: '#cfd4d8',
