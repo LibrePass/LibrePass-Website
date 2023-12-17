@@ -15,8 +15,9 @@ page:
           do nich łatwy dostęp.'
         btn: Rozpocznij
       features:
-        secure:
-          h1: Bezpieczny
+        h1: LibrePass Oferuje
+        security:
+          h1: Bezpieczeństwo
           p: LibrePass zapewnia najwyższe standardy bezpieczeństwa, wykorzystując kompleksowe szyfrowanie w celu ochrony najbardziej wrażliwych danych.
         crossDeviceSync:
           h1: Synchronizacja pomiędzy urządzeniami

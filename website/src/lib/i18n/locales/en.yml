@@ -21,8 +21,9 @@ page:
         # Button in the first section on the home page
         btn: Get started
       features:
-        secure:
-          h1: Secure
+        h1: LibrePass Offerts
+        security:
+          h1: Security
           p: LibrePass provides the highest security standards, using end-to-end encryption to protect the most sensitive data.
         crossDeviceSync:
           h1: Cross-Device Synchronization
