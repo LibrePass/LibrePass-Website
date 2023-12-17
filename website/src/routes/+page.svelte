@@ -1,8 +1,5 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import Devices from 'svelte-material-icons/Devices.svelte';
-    import ShieldCheck from 'svelte-material-icons/ShieldCheckOutline.svelte';
-    import Timer from 'svelte-material-icons/TimerOutline.svelte';
 
     import Footer from '$lib/components/Footer.svelte';
     import Seo from '$lib/components/Seo.svelte';
@@ -27,8 +24,54 @@
             </a>
         </div>
     </div>
+</section>
 
-    <div class="hidden lg:block">
+<section
+    class="flex justify-center items-center mx-auto gap-10 py-[10vh] px-[2em] bg-primary text-primary-content flex-col lg:flex-row"
+>
+    <div class="flex flex-col justify-start gap-10 text-center sm:text-start max-w-[32em]">
+        <div class="space-y-2">
+            <h1 class="text-xl md:text-2xl font-bold">
+                {$_('page.home.section.features.secure.h1')}
+            </h1>
+
+            <p class="text-sm">
+                {$_('page.home.section.features.secure.p')}
+            </p>
+        </div>
+
+        <div class="space-y-2">
+            <h1 class="text-xl md:text-2xl font-bold">
+                {$_('page.home.section.features.crossDeviceSync.h1')}
+            </h1>
+
+            <p class="text-sm">
+                {$_('page.home.section.features.crossDeviceSync.p')}
+            </p>
+        </div>
+
+        <div class="space-y-2">
+            <h1 class="text-xl md:text-2xl font-bold">
+                {$_('page.home.section.features.passwordGenerator.h1')}
+            </h1>
+
+            <p class="text-sm">
+                {$_('page.home.section.features.passwordGenerator.p')}
+            </p>
+        </div>
+
+        <div class="space-y-2">
+            <h1 class="text-xl md:text-2xl font-bold">
+                {$_('page.home.section.features.opensource.h1')}
+            </h1>
+
+            <p class="text-sm">
+                {$_('page.home.section.features.opensource.p')}
+            </p>
+        </div>
+    </div>
+
+    <div>
         <div class="mockup-phone shadow-2xl">
             <div class="camera"></div>
             <div class="display w-[250px]">
@@ -38,52 +81,4 @@
     </div>
 </section>
 
-<section class="flex min-h-[50vh] w-full bg-primary text-primary-content">
-    <div class="container flex justify-center items-center mx-auto">
-        <div class="flex flex-wrap justify-center text-center gap-12 p-20">
-            <div class="badge-item">
-                <Timer class="h-16 w-16 p-2 outline rounded-xl" />
-
-                <p class="font-bold">
-                    {$_('page.home.section.second.badges.fast.h1')}
-                </p>
-
-                <p>
-                    {$_('page.home.section.second.badges.fast.p')}
-                </p>
-            </div>
-
-            <div class="badge-item">
-                <ShieldCheck class="h-16 w-16 p-2 outline rounded-xl" />
-
-                <p class="font-bold">
-                    {$_('page.home.section.second.badges.secure.h1')}
-                </p>
-
-                <p>
-                    {$_('page.home.section.second.badges.secure.p')}
-                </p>
-            </div>
-
-            <div class="badge-item">
-                <Devices class="h-16 w-16 p-2 outline rounded-xl" />
-
-                <p class="font-bold">
-                    {$_('page.home.section.second.badges.accessible.h1')}
-                </p>
-
-                <p>
-                    {$_('page.home.section.second.badges.accessible.p')}
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <Footer />
-
-<style lang="postcss">
-    .badge-item {
-        @apply flex flex-col gap-2 items-center max-w-[16em];
-    }
-</style>
