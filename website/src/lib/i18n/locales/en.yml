@@ -20,23 +20,19 @@ page:
         p: Convenience and security go hand in hand. Your passwords are secure and you have easy access to them.
         # Button in the first section on the home page
         btn: Get started
-      second:
-        badges:
-          fast:
-            # Title of the "Fast" badge on the home page
-            h1: Fast
-            # Description of the "Fast" badge on the home page
-            p: Instant access to your passwords
-          secure:
-            # Title of the "Secure" badge on the home page
-            h1: Secure
-            # Description of the "Secure" badge on the home page
-            p: Your passwords are end-to-end encrypted and securely stored
-          accessible:
-            # Title of the "Accessible" badge on the home page
-            h1: Accessible
-            # Description of the "Accessible" badge on the home page
-            p: Available on all your favorite platforms
+      features:
+        secure:
+          h1: Secure
+          p: LibrePass provides the highest security standards, using end-to-end encryption to protect the most sensitive data.
+        crossDeviceSync:
+          h1: Cross-Device Synchronization
+          p: Your passwords travel with you, ensuring they are always updated and ready for access. Experience the freedom of managing your passwords anytime, anywhere.
+        passwordGenerator:
+          h1: Smart Password Generator
+          p: Elevate your password game with LibrePass's smart password generator. Create robust and unique passwords tailored to your specifications. Strengthen your online security effortlessly and keep prying eyes at bay.
+        opensource:
+          h1: Open Source
+          p: LibrePass prioritizes security through end-to-end encryption and open-source transparency, allowing users to verify encryption algorithms independently for enhanced safety.
   login:
     # Title of the login page
     title: Log in

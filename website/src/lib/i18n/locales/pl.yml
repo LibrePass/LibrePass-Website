@@ -14,17 +14,19 @@ page:
         p: 'Wygoda i bezpieczeństwo idą w parze. Twoje hasła są bezpieczne i masz
           do nich łatwy dostęp.'
         btn: Rozpocznij
-      second:
-        badges:
-          fast:
-            h1: Szybki
-            p: Błyskawiczny dostęp do haseł
-          secure:
-            h1: Bezpieczny
-            p: Hasła są ściśle zaszyfrowane i bezpiecznie przechowywane
-          accessible:
-            h1: Dostępny
-            p: Dostępne na wszystkich popularnych platformach
+      features:
+        secure:
+          h1: Bezpieczny
+          p: LibrePass zapewnia najwyższe standardy bezpieczeństwa, wykorzystując kompleksowe szyfrowanie w celu ochrony najbardziej wrażliwych danych.
+        crossDeviceSync:
+          h1: Synchronizacja pomiędzy urządzeniami
+          p: Twoje hasła podróżują razem z Tobą, dzięki czemu są zawsze aktualne i gotowe do użycia. Doświadcz swobody zarządzania hasłami w dowolnym miejscu i czasie.
+        passwordGenerator:
+          h1: Inteligentny generator haseł
+          p: Podnieś jakość swoich haseł dzięki inteligentnemu generatorowi haseł LibrePass. Twórz solidne i unikalne hasła dostosowane do Twoich potrzeb. Wzmocnij swoje bezpieczeństwo online bez wysiłku i trzymaj wścibskie oczy na dystans.
+        opensource:
+          h1: Otwarte oprogramowanie
+          p: LibrePass priorytetowo traktuje bezpieczeństwo poprzez szyfrowanie end-to-end i przejrzystość open-source, umożliwiając użytkownikom niezależną weryfikację algorytmów szyfrowania w celu zwiększenia bezpieczeństwa.
   login:
     title: Zaloguj się
     description: Zaloguj się na swojego konta LibrePass, aby zarządzać swoim sejfem.
