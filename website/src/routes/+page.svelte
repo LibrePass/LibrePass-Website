@@ -30,13 +30,17 @@
     class="flex justify-center items-center mx-auto gap-10 py-[10vh] px-[2em] bg-primary text-primary-content flex-col lg:flex-row"
 >
     <div class="flex flex-col justify-start gap-10 text-center sm:text-start max-w-[32em]">
+        <h1 class="text-2xl md:text-3xl text-center">
+            {$_('page.home.section.features.h1')}
+        </h1>
+
         <div class="space-y-2">
             <h1 class="text-xl md:text-2xl font-bold">
-                {$_('page.home.section.features.secure.h1')}
+                {$_('page.home.section.features.security.h1')}
             </h1>
 
             <p class="text-sm">
-                {$_('page.home.section.features.secure.p')}
+                {$_('page.home.section.features.security.p')}
             </p>
         </div>
 
