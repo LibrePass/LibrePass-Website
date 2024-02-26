@@ -25,7 +25,7 @@
         "nprogress": "^0.2.0",
         "postcss": "^8.4.35",
         "sharp": "^0.33.2",
-        "svelte": "^4.2.11",
+        "svelte": "^4.2.12",
         "svelte-check": "^3.6.3",
         "svelte-i18n": "^4.0.0",
         "svelte-material-icons": "^3.0.5",
