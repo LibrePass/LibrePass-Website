@@ -16,6 +16,9 @@
         <a class="link link-hover" href="https://f-droid.org/en/packages/dev.medzik.librepass.android/" target="_blank">
             Android
         </a>
+        <a class="link link-hover" href="https://github.com/LibrePass/LibrePass-iOS/releases" target="_blank">
+            iOS
+        </a>
     </nav>
 
     <nav>
