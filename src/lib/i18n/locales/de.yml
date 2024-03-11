@@ -1,0 +1,36 @@
+description:
+  password_hint_info: >-
+    Wir empfehlen, einen Passworthinweis einzurichten, um Ihnen zu helfen, wenn
+    Sie Ihr Passwort vergessen.
+  password_warning: Vergessenes Passwort kann nicht wiederhergestellt werden!
+field:
+  confirm_password: Bestätige das Passwort
+  email: E-Mail-Adresse
+  password: Passwort
+  password_hint: Passwort-Hinweis
+home:
+  description: >-
+    Komfort und Sicherheit lassen sich vereinen. 
+
+    Ihre Passwörter sind sicher und leicht zugänglich, sodass Ihr Online-Leben
+    einfach und sicher ist.
+  first:
+    btn:
+      login: Anmeldung
+      register: Loslegen
+    h1: Übernehmen Sie die Kontrolle über Ihre Passwörter
+    p: |-
+      Komfort und Sicherheit gehen Hand in Hand. 
+      Ihre Passwörter sind sicher und Sie haben einfachen Zugriff darauf.
+  title: Übernehmen Sie mit LibrePass die Kontrolle über Ihr Passwort
+login:
+  btn: Anmeldung
+  hint_link: Erhalten Sie einen Passworthinweis
+  register_link: Melden Sie sich an!
+  register_msg: Sie haben noch kein Konto?
+  title: Anmeldung
+register:
+  login_link: Anmelden!
+  btn: Benutzerkonto erstellen
+  login_msg: Sie haben bereits ein Konto?
+  title: Loslegen
