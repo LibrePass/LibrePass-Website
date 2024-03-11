@@ -6,8 +6,9 @@ home:
   first:
     h1: Przejmij kontrolę nad swoimi hasłami
     p: >-
-      Wygoda i bezpieczeństwo idą w parze. Twoje hasła są bezpieczne i masz do
-      nich łatwy dostęp.
+      Wygoda i bezpieczeństwo idą w parze. 
+
+      Twoje hasła są bezpieczne i masz do nich łatwy dostęp.
     btn:
       register: Rozpocznij
       login: Zaloguj się
