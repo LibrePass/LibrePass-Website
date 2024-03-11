@@ -1,0 +1,36 @@
+description:
+  password_hint_info: >-
+    Vi anbefaler å angi et passordtips for å hjelpe hvis du glemmer passordet
+    ditt.
+  password_warning: Glemt passord kan ikke gjenopprettes!
+field:
+  confirm_password: Bekreft passord
+  email: E-postadresse
+  password: Passord
+  password_hint: Passordhint (valgfritt)
+home:
+  description: >-
+    Bekvemmelighet og sikkerhet kan kombineres. 
+
+    Passordene dine er sikre og kan lett nås, slik at livet ditt på nettet er
+    enkelt og sikkert.
+  first:
+    btn:
+      login: Logg Inn
+      register: Begynn
+    h1: Ta kontroll over passordene dine
+    p: |-
+      Bekvemmelighet og sikkerhet går hånd i hånd. 
+      Passordene dine er sikre og du har enkel tilgang til dem.
+  title: Ta kontroll over passordet ditt med LibrePass
+login:
+  btn: Logg Inn
+  hint_link: Få passordhint
+  register_link: Melde deg på!
+  register_msg: Har du ikke en konto?
+  title: Logg Inn
+register:
+  login_link: Logg inn!
+  btn: Opprett konto
+  login_msg: Har du allerede en konto?
+  title: Kom i gang
