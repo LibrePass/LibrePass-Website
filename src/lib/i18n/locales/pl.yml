@@ -1,0 +1,34 @@
+home:
+  title: Przejmij kontrolę nad swoimi hasłami dzięki LibrePass
+  description: >-
+    Wygoda i bezpieczeństwo mogą być połączone. Twoje hasła są bezpieczne i
+    łatwo dostępne, dzięki czemu Twoje życie online jest łatwe i bezpieczne.
+  first:
+    h1: Przejmij kontrolę nad swoimi hasłami
+    p: >-
+      Wygoda i bezpieczeństwo idą w parze. Twoje hasła są bezpieczne i masz do
+      nich łatwy dostęp.
+    btn:
+      register: Rozpocznij
+      login: Zaloguj się
+description:
+  password_hint_info: >-
+    Zalecamy ustawienie podpowiedzi do hasła, aby pomóc w przypadku zapomnienia
+    hasła.
+  password_warning: Zapomnianego hasła nie można odzyskać!
+field:
+  confirm_password: Potwierdź hasło
+  email: Adres e-mail
+  password: Hasło
+  password_hint: Podpowiedź do hasła
+login:
+  btn: Zaloguj się
+  hint_link: Uzyskaj podpowiedź dotyczącą hasła
+  register_link: Zaloguj się!
+  register_msg: Nie masz konta?
+  title: Logowania
+register:
+  btn: Utwórz konto
+  login_link: Zaloguj się!
+  login_msg: Posiadasz już konto?
+  title: Rejestracja
