@@ -73,72 +73,72 @@
     <article class="modal-body max-h-[50vh] overflow-scroll space-y-2 px-2">
         {#if cipher.type == CipherType.Login}
             <label class="label">
-                <span>${$_('field.email')}</span>
+                <span>{$_('field.email')}</span>
                 <input class="input input-bordered w-full" bind:value={loginData.name} />
             </label>
 
             <label class="label">
-                <span>$_('field.username')</span>
+                <span>{$_('field.username')}</span>
                 <input class="input input-bordered w-full" bind:value={loginData.username} />
             </label>
 
             <label class="label">
-                <span>$_('field.password')</span>
+                <span>{$_('field.password')}</span>
                 <input class="input input-bordered w-full" bind:value={loginData.password} />
             </label>
 
             <label class="label">
-                <span>$_('field.notes')</span>
+                <span>{$_('field.notes')}</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={loginData.notes} />
             </label>
         {:else if cipher.type == CipherType.SecureNote}
             <label class="label">
-                <span>$_('field.title')</span>
+                <span>{$_('field.title')}</span>
                 <input class="input input-bordered w-full" bind:value={secureNoteData.title} />
             </label>
 
             <label class="label">
-                <span>$_('field.notes')</span>
+                <span>{$_('field.notes')}</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={secureNoteData.note} />
             </label>
         {:else if cipher.type == CipherType.Card}
             <label class="label">
-                <span>$_('field.name')</span>
+                <span>{$_('field.name')}</span>
                 <input class="input input-bordered w-full" bind:value={cardData.name} />
             </label>
 
             <label class="label">
-                <span>$_('field.cardholder_name')</span>
+                <span>{$_('field.cardholder_name')}</span>
                 <input class="input input-bordered w-full" bind:value={cardData.cardholderName} />
             </label>
 
             <div class="flex gap-2">
                 <label class="label">
-                    <span>$_('field.exp_month')</span>
+                    <span>{$_('field.exp_month')}</span>
                     <input class="input input-bordered w-full" bind:value={cardData.expMonth} />
                 </label>
 
                 <label class="label">
-                    <span>$_('field.exo_year')</span>
+                    <span>{$_('field.exp_year')}</span>
                     <input class="input input-bordered w-full" bind:value={cardData.expYear} />
                 </label>
             </div>
 
             <label class="label">
-                <span>$_('field.secure_code')</span>
+                <span>{$_('field.secure_code')}</span>
                 <input class="input input-bordered w-full" bind:value={cardData.code} />
             </label>
 
             <label class="label">
-                <span>$_('field.notes')</span>
+                <span>{$_('field.notes')}</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={cardData.notes} />
             </label>
         {/if}
     </article>
 
     <footer class="modal-footer flex justify-end space-x-2">
-        <button class="btn variant-filled-surface" on:click={cancel}> $_('btn.cancel') </button>
+        <button class="btn variant-filled-surface" on:click={cancel}> {$_('btn.cancel')} </button>
 
-        <button class="btn variant-filled-primary" on:click={save}> $_('btn.save') </button>
+        <button class="btn variant-filled-primary" on:click={save}> {$_('btn.save')} </button>
     </footer>
 </div>
