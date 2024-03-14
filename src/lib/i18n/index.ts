@@ -8,6 +8,7 @@ register('en', () => import('./locales/en.yml'));
 register('de', () => import('./locales/de.yml'));
 register('pl', () => import('./locales/pl.yml'));
 register('nb-NO', () => import('./locales/nb_NO.yml'));
+register('fr', () => import('./locales/fr.yml'));
 
 init({
     fallbackLocale: defaultLocale,
