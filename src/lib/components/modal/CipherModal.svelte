@@ -93,7 +93,7 @@
 
             <label class="label">
                 <span>Notes</span>
-                <textarea class="textarea textarea-bordered w-full" bind:value={secureNoteData.notes} />
+                <textarea class="textarea textarea-bordered w-full" bind:value={secureNoteData.note} />
             </label>
         {:else if cipher.type == CipherType.Card}
             <label class="label">
