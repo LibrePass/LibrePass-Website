@@ -31,11 +31,8 @@ home:
       Ihre Passwörter sind sicher und Sie haben einfachen Zugriff darauf.
   title: Übernehmen Sie mit LibrePass die Kontrolle über Ihr Passwort
   second:
-    oss:
-      title: Open Source
     p: Entdecken Sie die Vorteile der Verwendung von LibrePass
-    security:
-      cross_sync:
+    cross_sync:
         description: >-
           Mit LibrePass werden Ihre Passwörter nahtlos auf allen Ihren Geräten
           synchronisiert und stellen so sicher, dass sie immer aktuell und
@@ -44,21 +41,24 @@ home:
           Genießen Sie den Komfort und die Flexibilität, Ihre Passwörter
           jederzeit, überall und auf verschiedenen Plattformen zu verwalten.
         title: Plattformübergreifende Synchronisierung
-      generator:
-        description: >-
-          Generieren Sie mühelos robuste, sichere Passwörter mit dem
-          intelligenten Passwortgenerator von LibrePass. 
+    generator:
+      title: Intelligenter Passwortgenerator
+      description: >-
+        Generieren Sie mühelos robuste, sichere Passwörter mit dem
+        intelligenten Passwortgenerator von LibrePass. 
 
-          Erhöhen Sie Ihre Online-Sicherheit mit Passwörtern, die auf höchste
-          Standards in Bezug auf Stärke und Komplexität zugeschnitten sind.
-      oss:
-        description: >-
-          Entscheiden Sie sich für Transparenz und Vertrauen mit dem
-          Open-Source-Framework von LibrePass. 
+        Erhöhen Sie Ihre Online-Sicherheit mit Passwörtern, die auf höchste
+        Standards in Bezug auf Stärke und Komplexität zugeschnitten sind.
+    oss:
+      title: Open Source
+      description: >-
+        Entscheiden Sie sich für Transparenz und Vertrauen mit dem
+        Open-Source-Framework von LibrePass. 
 
-          Treten Sie einer Community bei, die sich für Sicherheit und Innovation
-          einsetzt und dafür sorgt, dass Ihre Daten in vertrauenswürdigen Händen
-          bleiben.
+        Treten Sie einer Community bei, die sich für Sicherheit und Innovation
+        einsetzt und dafür sorgt, dass Ihre Daten in vertrauenswürdigen Händen
+        bleiben.
+    security:
       p: >-
         LibrePass priorisiert Ihre Sicherheit und implementiert modernste
         Ende-zu-Ende-Verschlüsselung, um Ihre sensibelsten Daten zu schützen. 
@@ -67,8 +67,6 @@ home:
         bietet Ihnen Sicherheit in der heutigen digitalen Landschaft.
       title: Sicherheit
     h1: Hauptvorteile
-    generator:
-      title: Intelligenter Passwortgenerator
 login:
   btn: Anmeldung
   hint_link: Erhalten Sie einen Passworthinweis
