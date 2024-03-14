@@ -1,32 +1,42 @@
 home:
-    title: Take control of your password with LibrePass
-    description: Convenience and security can be combined. Your passwords are secure and can easily be accessed so your online life is easy and secure.
-    first:
-        h1: Take control of your passwords
-        p: Convenience and security go hand in hand. Your passwords are secure and you have easy access to them.
-        btn:
-            register: Get started
-            login: Log in
-
+  title: Take control of your password with LibrePass
+  description: >-
+    Convenience and security can be combined. Your passwords are secure and can
+    easily be accessed so your online life is easy and secure.
+  first:
+    h1: Take control of your passwords
+    p: >-
+      Convenience and security go hand in hand. Your passwords are secure and
+      you have easy access to them.
+    btn:
+      register: Get started
+      login: Log in
 login:
-    title: Log in
-    btn: Log in
-    hint_link: Get password hint
-    register_msg: Don't have an account?
-    register_link: Sign up!
-
+  title: Log in
+  btn: Log in
+  hint_link: Get password hint
+  register_msg: Don't have an account?
+  register_link: Sign up!
 register:
-    title: Get started
-    btn: Create account
-    login_msg: Already have an account?
-    login_link: Sign in!
-
+  title: Get started
+  btn: Create account
+  login_msg: Already have an account?
+  login_link: Sign in!
 field:
-    email: E-mail address
-    password: Password
-    confirm_password: Confirm password
-    password_hint: Password hint
-
+  email: E-mail address
+  password: Password
+  confirm_password: Confirm password
+  password_hint: Password hint
+  username: Username
+  notes: Notes
+  title: Title
+  cardholder_name: Cardholder name
+  exp_month: Expiration month
+  exp_year: Expiration year
+  secure_code: Secure code
 description:
-    password_warning: Forgotten password cannot be recovered!
-    password_hint_info: We recommend setting a password hint to help if you forget your password.
+  password_warning: Forgotten password cannot be recovered!
+  password_hint_info: We recommend setting a password hint to help if you forget your password.
+btn:
+  save: Save
+  cancel: Cancel

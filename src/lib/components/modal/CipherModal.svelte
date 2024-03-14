@@ -10,6 +10,7 @@
         CipherClient
     } from '@librepass/client';
     import { getModalStore } from '@skeletonlabs/skeleton';
+    import { _ } from 'svelte-i18n';
 
     export let cipher: Cipher;
 
@@ -34,6 +35,10 @@
     }
 
     const modalStore = getModalStore();
+
+    function cancel() {
+        modalStore.close();
+    }
 
     async function save() {
         const secrets = secretsStore.get();
@@ -67,72 +72,76 @@
     <article class="modal-body max-h-[50vh] overflow-scroll space-y-2 px-2">
         {#if cipher.type == CipherType.Login}
             <label class="label">
-                <span>Name</span>
+                <span>${$_('field.email')}</span>
                 <input class="input input-bordered w-full" bind:value={loginData.name} />
             </label>
 
             <label class="label">
-                <span>Username</span>
+                <span>$_('field.username')</span>
                 <input class="input input-bordered w-full" bind:value={loginData.username} />
             </label>
 
             <label class="label">
-                <span>Password</span>
+                <span>$_('field.password')</span>
                 <input class="input input-bordered w-full" bind:value={loginData.password} />
             </label>
 
             <label class="label">
-                <span>Notes</span>
+                <span>$_('field.notes')</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={loginData.notes} />
             </label>
         {:else if cipher.type == CipherType.SecureNote}
             <label class="label">
-                <span>Title</span>
+                <span>$_('field.title')</span>
                 <input class="input input-bordered w-full" bind:value={secureNoteData.title} />
             </label>
 
             <label class="label">
-                <span>Notes</span>
+                <span>$_('field.notes')</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={secureNoteData.note} />
             </label>
         {:else if cipher.type == CipherType.Card}
             <label class="label">
-                <span>Name</span>
+                <span>$_('field.name')</span>
                 <input class="input input-bordered w-full" bind:value={cardData.name} />
             </label>
 
             <label class="label">
-                <span>Cardholder name</span>
+                <span>$_('field.cardholder_name')</span>
                 <input class="input input-bordered w-full" bind:value={cardData.cardholderName} />
             </label>
 
             <div class="flex gap-2">
                 <label class="label">
-                    <span>Expiration month</span>
+                    <span>$_('field.exp_month')</span>
                     <input class="input input-bordered w-full" bind:value={cardData.expMonth} />
                 </label>
 
                 <label class="label">
-                    <span>Expiration year</span>
+                    <span>$_('field.exo_year')</span>
                     <input class="input input-bordered w-full" bind:value={cardData.expYear} />
                 </label>
             </div>
 
             <label class="label">
-                <span>Secure code</span>
+                <span>$_('field.secure_code')</span>
                 <input class="input input-bordered w-full" bind:value={cardData.code} />
             </label>
 
             <label class="label">
-                <span>Notes</span>
+                <span>$_('field.notes')</span>
                 <textarea class="textarea textarea-bordered w-full" bind:value={cardData.notes} />
             </label>
         {/if}
     </article>
 
     <footer class="modal-footer flex justify-end space-x-2">
-        <button class="btn variant-filled-surface" on:click={save}> Cancel </button>
+        <button class="btn variant-filled-surface" on:click={cancel}>
+            $_('btn.cancel')
+        </button>
 
-        <button class="btn variant-filled-primary" on:click={save}> Save </button>
+        <button class="btn variant-filled-primary" on:click={save}>
+            $_('btn.save')
+        </button>
     </footer>
 </div>

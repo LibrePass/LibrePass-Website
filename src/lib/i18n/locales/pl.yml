@@ -5,9 +5,8 @@ home:
     łatwo dostępne, dzięki czemu Twoje życie online jest łatwe i bezpieczne.
   first:
     h1: Przejmij kontrolę nad swoimi hasłami
-    p: >-
+    p: |-
       Wygoda i bezpieczeństwo idą w parze. 
-
       Twoje hasła są bezpieczne i masz do nich łatwy dostęp.
     btn:
       register: Rozpocznij
@@ -22,6 +21,13 @@ field:
   email: Adres e-mail
   password: Hasło
   password_hint: Podpowiedź do hasła
+  cardholder_name: Dane właściciela karty
+  exp_year: Rok ważności
+  exp_month: Miesiąc ważności
+  notes: Notatki
+  secure_code: Kod bezpieczeństwa
+  title: Tytuł
+  username: Nazwa użytkownika
 login:
   btn: Zaloguj się
   hint_link: Uzyskaj podpowiedź dotyczącą hasła
@@ -33,3 +39,6 @@ register:
   login_link: Zaloguj się!
   login_msg: Posiadasz już konto?
   title: Rejestracja
+btn:
+  cancel: Anuluj
+  save: Zapisz
