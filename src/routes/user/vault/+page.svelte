@@ -1,13 +1,13 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { Cipher, CipherClient, CipherType } from '@librepass/client';
-    import { getModalStore, Table, tableMapperValues, type TableSource, Modal } from '@skeletonlabs/skeleton';
+    import { getModalStore, Modal, Table, tableMapperValues, type TableSource } from '@skeletonlabs/skeleton';
 
     import { API_URL } from '$lib';
+    import CipherModal from '$lib/components/modal/CipherModal.svelte';
     import Seo from '$lib/components/Seo.svelte';
     import { authStore, secretsStore } from '$lib/storage';
     import { goto } from '$app/navigation';
-    import CipherModal from '$lib/components/modal/CipherModal.svelte';
 
     let secretKey: string;
     let cipherClient: CipherClient;

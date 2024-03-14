@@ -1,16 +1,17 @@
 <script lang="ts">
-    import { API_URL } from '$lib';
-    import { authStore, secretsStore } from '$lib/storage';
+    import { _ } from 'svelte-i18n';
     import {
-        CipherType,
         type Cipher,
-        type CipherSecureNoteData,
-        type CipherLoginData,
         type CipherCardData,
-        CipherClient
+        CipherClient,
+        type CipherLoginData,
+        type CipherSecureNoteData,
+        CipherType
     } from '@librepass/client';
     import { getModalStore } from '@skeletonlabs/skeleton';
-    import { _ } from 'svelte-i18n';
+
+    import { API_URL } from '$lib';
+    import { authStore, secretsStore } from '$lib/storage';
 
     export let cipher: Cipher;
 
@@ -136,12 +137,8 @@
     </article>
 
     <footer class="modal-footer flex justify-end space-x-2">
-        <button class="btn variant-filled-surface" on:click={cancel}>
-            $_('btn.cancel')
-        </button>
+        <button class="btn variant-filled-surface" on:click={cancel}> $_('btn.cancel') </button>
 
-        <button class="btn variant-filled-primary" on:click={save}>
-            $_('btn.save')
-        </button>
+        <button class="btn variant-filled-primary" on:click={save}> $_('btn.save') </button>
     </footer>
 </div>
