@@ -50,7 +50,7 @@
 
             <label class="label">
                 <span>Password</span>
-                <input class="input input-bordered w-full" bind:value={loginData.username} />
+                <input class="input input-bordered w-full" bind:value={loginData.password} />
             </label>
 
             <label class="label">
