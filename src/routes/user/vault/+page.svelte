@@ -1,15 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { Cipher, CipherClient, CipherType } from '@librepass/client';
-    import {
-        getModalStore,
-        Table,
-        tableMapperValues,
-        type TableSource,
-
-        Modal
-
-    } from '@skeletonlabs/skeleton';
+    import { getModalStore, Table, tableMapperValues, type TableSource, Modal } from '@skeletonlabs/skeleton';
 
     import { API_URL } from '$lib';
     import Seo from '$lib/components/Seo.svelte';
@@ -96,12 +88,12 @@
 
         modalStore.trigger({
             type: 'component',
-            component: { 
+            component: {
                 ref: CipherModal,
                 props: {
                     cipher
                 }
-             }
+            }
         });
     }
 </script>

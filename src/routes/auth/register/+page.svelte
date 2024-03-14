@@ -32,24 +32,14 @@
             <span>
                 {$_('field.email')}
             </span>
-            <input
-                class="input"
-                type="text"
-                placeholder={$_('field.email')}
-                bind:value={field.email}
-            />
+            <input class="input" type="text" placeholder={$_('field.email')} bind:value={field.email} />
         </label>
 
         <label class="label">
             <span>
                 {$_('field.password')}
             </span>
-            <input
-                class="input"
-                type="password"
-                placeholder={$_('field.password')}
-                bind:value={field.password}
-            />
+            <input class="input" type="password" placeholder={$_('field.password')} bind:value={field.password} />
             <span class="text-sm font-bold opacity-50">
                 {$_('description.password_warning')}
             </span>
@@ -71,12 +61,7 @@
             <span>
                 {$_('field.password_hint')}
             </span>
-            <input
-                class="input"
-                type="text"
-                placeholder={$_('field.password_hint')}
-                bind:value={field.passwordHint}
-            />
+            <input class="input" type="text" placeholder={$_('field.password_hint')} bind:value={field.passwordHint} />
             <span class="text-sm opacity-50">
                 {$_('description.password_hint_info')}
             </span>

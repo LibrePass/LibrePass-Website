@@ -1,12 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
-    import {
-        AuthClient,
-        computePasswordHash,
-        computeSharedSecret,
-        publicFromPrivate
-    } from '@librepass/client';
+    import { AuthClient, computePasswordHash, computeSharedSecret, publicFromPrivate } from '@librepass/client';
     import { getToastStore } from '@skeletonlabs/skeleton';
 
     import { API_URL } from '$lib';
@@ -116,24 +111,14 @@
             <span>
                 {$_('field.email')}
             </span>
-            <input
-                class="input"
-                type="text"
-                placeholder={$_('field.email')}
-                bind:value={field.email}
-            />
+            <input class="input" type="text" placeholder={$_('field.email')} bind:value={field.email} />
         </label>
 
         <label class="label">
             <span>
                 {$_('field.password')}
             </span>
-            <input
-                class="input"
-                type="password"
-                placeholder={$_('field.password')}
-                bind:value={field.password}
-            />
+            <input class="input" type="password" placeholder={$_('field.password')} bind:value={field.password} />
             <button class="text-sm text-primary-500">
                 {$_('login.hint_link')}
             </button>
@@ -146,12 +131,7 @@
             </a>
         </p>
 
-        <button
-            type="button"
-            class="btn variant-filled-primary w-full"
-            on:click={submit}
-            disabled={field.disabled}
-        >
+        <button type="button" class="btn variant-filled-primary w-full" on:click={submit} disabled={field.disabled}>
             {$_('login.btn')}
         </button>
     </div>
