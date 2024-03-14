@@ -8,6 +8,14 @@ field:
   email: E-Mail-Adresse
   password: Passwort
   password_hint: Passwort-Hinweis
+  cardholder_name: Name des Karteninhabers
+  exp_year: Ablaufjahr
+  exp_month: Monat des Ablaufens
+  exo_year: Monat des Ablaufens
+  notes: Anmerkungen
+  secure_code: Sicherheitscode
+  title: Titel
+  username: Nutzername
 home:
   description: >-
     Komfort und Sicherheit lassen sich vereinen. 
@@ -34,3 +42,6 @@ register:
   btn: Benutzerkonto erstellen
   login_msg: Sie haben bereits ein Konto?
   title: Loslegen
+btn:
+  cancel: Stornieren
+  save: Speichern

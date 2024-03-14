@@ -8,6 +8,13 @@ field:
   email: E-postadresse
   password: Passord
   password_hint: Passordhint (valgfritt)
+  cardholder_name: Kortholders navn
+  exp_year: Utløpsår
+  exp_month: Utløpsmåned
+  notes: Notater
+  secure_code: Sikker kode
+  title: Tittel
+  username: Brukernavn
 home:
   description: >-
     Bekvemmelighet og sikkerhet kan kombineres. 
@@ -34,3 +41,6 @@ register:
   btn: Opprett konto
   login_msg: Har du allerede en konto?
   title: Kom i gang
+btn:
+  cancel: Avbryt
+  save: Lagre
