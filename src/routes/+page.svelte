@@ -35,8 +35,8 @@
         <div class="benefit">
             <h2>Security</h2>
             <p>
-                LibrePass provides the highest security standards, using end-to-end encryption to
-                protect the most sensitive data.
+                LibrePass provides the highest security standards, using end-to-end encryption to protect the most
+                sensitive data.
             </p>
         </div>
     </div>
