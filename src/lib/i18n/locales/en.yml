@@ -11,6 +11,38 @@ home:
     btn:
       register: Get started
       login: Log in
+  second:
+    h1: Key Benefits
+    p: Discover the advantages of using LibrePass
+    security:
+      title: Security
+      p: >-
+        LibrePass prioritizes your security, implementing state-of-the-art
+        end-to-end encryption to protect your most sensitive data. Rest assured,
+        your privacy is our top concern, offering peace of mind in today's
+        digital landscape.
+      cross_sync:
+        title: Cross-platform Sync
+        description: >-
+          With LibrePass, your passwords seamlessly synchronize across all your
+          devices, ensuring they're always current and accessible. Enjoy the
+          convenience and flexibility of managing your passwords anytime,
+          anywhere, across various platforms.
+      generator:
+        description: >-
+          Generate robust, secure passwords effortlessly with LibrePass's
+          intelligent password generator. Enhance your online security with
+          passwords tailored to the highest standards of strength and
+          complexity.
+      oss:
+        description: >-
+          Choose transparency and trust with LibrePass's open-source framework.
+          Join a community committed to security and innovation, ensuring your
+          data remains in trusted hands.
+    generator:
+      title: Smart Password Generator
+    oss:
+      title: Open Source
 login:
   title: Log in
   btn: Log in

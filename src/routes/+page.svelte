@@ -32,9 +32,9 @@
 
 <section class="flex justify-center items-center mx-auto py-[10vh] px-[2em] variant-filled-primary">
     <div class="flex flex-col gap-10">
-        <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Key Benefits</h1>
+        <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">{$_('home.second.h1')}</h1>
         <p class="text-lg md:text-xl lg:text-2xl text-center text-primary-100 dark:text-primary-900">
-            Discover the advantages of using LibrePass
+            {$_('home.second.p')}
         </p>
 
         <div class="grid text-center md:text-start md:grid-cols-2 max-w-screen-md gap-10">
@@ -43,11 +43,9 @@
                     <Icon src={Lock} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
                 </div>
 
-                <h2>Security</h2>
+                <h2>{$_('home.second.security.title')}</h2>
                 <p>
-                    LibrePass prioritizes your security, implementing state-of-the-art end-to-end encryption to protect
-                    your most sensitive data. Rest assured, your privacy is our top concern, offering peace of mind in
-                    today's digital landscape.
+                    {$_('home.second.security.p')}
                 </p>
             </div>
 
@@ -56,11 +54,9 @@
                     <Icon src={Devices} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
                 </div>
 
-                <h2>Cross-platform Sync</h2>
+                <h2>{$_('home.second.security.cross_sync.title')}</h2>
                 <p>
-                    With LibrePass, your passwords seamlessly synchronize across all your devices, ensuring they're
-                    always current and accessible. Enjoy the convenience and flexibility of managing your passwords
-                    anytime, anywhere, across various platforms.
+                    {$_('home.second.security.cross_sync.description')}
                 </p>
             </div>
 
@@ -69,11 +65,9 @@
                     <Icon src={Shield} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
                 </div>
 
-                <h2>Smart Password Generator</h2>
+                <h2>{$_('home.second.generator.title')}</h2>
                 <p>
-                    Generate robust, secure passwords effortlessly with LibrePass's intelligent password generator.
-                    Enhance your online security with passwords tailored to the highest standards of strength and
-                    complexity.
+                    {$_('home.second.security.generator.description')}
                 </p>
             </div>
 
@@ -82,10 +76,9 @@
                     <Icon src={Code} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
                 </div>
 
-                <h2>Open Source</h2>
+                <h2>{$_('home.second.oss.title')}</h2>
                 <p>
-                    Embrace transparency and trust with LibrePass's open-source framework. Join a community committed to
-                    security and innovation, ensuring your data remains in trusted hands.
+                    {$_('home.second.security.oss.description')}
                 </p>
             </div>
         </div>
