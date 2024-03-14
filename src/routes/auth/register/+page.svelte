@@ -1,8 +1,9 @@
 <script>
-    import { goto } from '$app/navigation';
-    import { secretsStore } from '$lib/storage';
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
+
+    import { secretsStore } from '$lib/storage';
+    import { goto } from '$app/navigation';
 
     onMount(() => {
         if (secretsStore.exists()) {
