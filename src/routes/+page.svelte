@@ -54,9 +54,9 @@
                     <Icon src={Devices} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
                 </div>
 
-                <h2>{$_('home.second.security.cross_sync.title')}</h2>
+                <h2>{$_('home.second.cross_sync.title')}</h2>
                 <p>
-                    {$_('home.second.security.cross_sync.description')}
+                    {$_('home.second.cross_sync.description')}
                 </p>
             </div>
 
@@ -67,7 +67,7 @@
 
                 <h2>{$_('home.second.generator.title')}</h2>
                 <p>
-                    {$_('home.second.security.generator.description')}
+                    {$_('home.second.generator.description')}
                 </p>
             </div>
 
@@ -78,7 +78,7 @@
 
                 <h2>{$_('home.second.oss.title')}</h2>
                 <p>
-                    {$_('home.second.security.oss.description')}
+                    {$_('home.second.oss.description')}
                 </p>
             </div>
         </div>

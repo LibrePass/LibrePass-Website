@@ -12,32 +12,9 @@ home:
       register: Rozpocznij
       login: Zaloguj się
   second:
-    oss:
-      title: Otwarte źródło
+    h1: Kluczowe korzyści
     p: Odkryj zalety korzystania z LibrePass
     security:
-      cross_sync:
-        description: >-
-          Dzięki LibrePass hasła bezproblemowo synchronizują się na wszystkich
-          urządzeniach, dzięki czemu są zawsze aktualne i dostępne. 
-
-          Ciesz się wygodą i elastycznością zarządzania hasłami w dowolnym
-          miejscu i czasie, na różnych platformach.
-        title: Synchronizacja między platformami
-      generator:
-        description: >-
-          Bez wysiłku generuj solidne i bezpieczne hasła dzięki inteligentnemu
-          generatorowi haseł LibrePass. 
-
-          Zwiększ swoje bezpieczeństwo online dzięki hasłom dostosowanym do
-          najwyższych standardów siły i złożoności.
-      oss:
-        description: >-
-          Wybierz przejrzystość i zaufanie dzięki platformie open source
-          LibrePass. 
-
-          Dołącz do społeczności zaangażowanej w bezpieczeństwo i innowacje,
-          zapewniając, że Twoje dane pozostaną w zaufanych rękach.
       p: >-
         LibrePass priorytetowo traktuje Twoje bezpieczeństwo, wdrażając
         najnowocześniejsze, kompleksowe szyfrowanie, aby chronić Twoje
@@ -46,9 +23,30 @@ home:
         Bądź pewien, że Twoja prywatność jest dla nas najważniejsza i zapewnia
         spokój ducha w dzisiejszym cyfrowym krajobrazie.
       title: Bezpieczeństwo
-    h1: Kluczowe korzyści
+    cross_sync:
+      title: Synchronizacja między platformami
+      description: >-
+        Dzięki LibrePass hasła bezproblemowo synchronizują się na wszystkich
+        urządzeniach, dzięki czemu są zawsze aktualne i dostępne. 
+
+        Ciesz się wygodą i elastycznością zarządzania hasłami w dowolnym
+        miejscu i czasie, na różnych platformach.
     generator:
       title: Inteligentny generator haseł
+      description: >-
+        Bez wysiłku generuj solidne i bezpieczne hasła dzięki inteligentnemu
+        generatorowi haseł LibrePass. 
+
+        Zwiększ swoje bezpieczeństwo online dzięki hasłom dostosowanym do
+        najwyższych standardów siły i złożoności.
+    oss:
+      title: Otwarte źródło
+      description: >-
+        Wybierz przejrzystość i zaufanie dzięki platformie open source
+        LibrePass. 
+
+        Dołącz do społeczności zaangażowanej w bezpieczeństwo i innowacje,
+        zapewniając, że Twoje dane pozostaną w zaufanych rękach.
 description:
   password_hint_info: >-
     Zalecamy ustawienie podpowiedzi do hasła, aby pomóc w przypadku zapomnienia
