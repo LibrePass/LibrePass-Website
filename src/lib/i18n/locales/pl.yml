@@ -29,8 +29,8 @@ home:
         Dzięki LibrePass hasła bezproblemowo synchronizują się na wszystkich
         urządzeniach, dzięki czemu są zawsze aktualne i dostępne. 
 
-        Ciesz się wygodą i elastycznością zarządzania hasłami w dowolnym
-        miejscu i czasie, na różnych platformach.
+        Ciesz się wygodą i elastycznością zarządzania hasłami w dowolnym miejscu
+        i czasie, na różnych platformach.
     generator:
       title: Inteligentny generator haseł
       description: >-
@@ -64,6 +64,7 @@ field:
   secure_code: Kod bezpieczeństwa
   title: Tytuł
   username: Nazwa użytkownika
+  name: Nazwa
 login:
   btn: Zaloguj się
   hint_link: Uzyskaj podpowiedź dotyczącą hasła

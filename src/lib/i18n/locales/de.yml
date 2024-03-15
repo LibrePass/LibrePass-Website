@@ -15,6 +15,7 @@ field:
   secure_code: Sicherheitscode
   title: Titel
   username: Nutzername
+  name: Name
 home:
   description: >-
     Komfort und Sicherheit lassen sich vereinen. 
@@ -33,19 +34,19 @@ home:
   second:
     p: Entdecken Sie die Vorteile der Verwendung von LibrePass
     cross_sync:
-        description: >-
-          Mit LibrePass werden Ihre Passwörter nahtlos auf allen Ihren Geräten
-          synchronisiert und stellen so sicher, dass sie immer aktuell und
-          zugänglich sind. 
+      description: >-
+        Mit LibrePass werden Ihre Passwörter nahtlos auf allen Ihren Geräten
+        synchronisiert und stellen so sicher, dass sie immer aktuell und
+        zugänglich sind. 
 
-          Genießen Sie den Komfort und die Flexibilität, Ihre Passwörter
-          jederzeit, überall und auf verschiedenen Plattformen zu verwalten.
-        title: Plattformübergreifende Synchronisierung
+        Genießen Sie den Komfort und die Flexibilität, Ihre Passwörter
+        jederzeit, überall und auf verschiedenen Plattformen zu verwalten.
+      title: Plattformübergreifende Synchronisierung
     generator:
       title: Intelligenter Passwortgenerator
       description: >-
-        Generieren Sie mühelos robuste, sichere Passwörter mit dem
-        intelligenten Passwortgenerator von LibrePass. 
+        Generieren Sie mühelos robuste, sichere Passwörter mit dem intelligenten
+        Passwortgenerator von LibrePass. 
 
         Erhöhen Sie Ihre Online-Sicherheit mit Passwörtern, die auf höchste
         Standards in Bezug auf Stärke und Komplexität zugeschnitten sind.

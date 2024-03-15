@@ -15,6 +15,7 @@ field:
   secure_code: Sikker kode
   title: Tittel
   username: Brukernavn
+  name: Navn
 home:
   description: >-
     Bekvemmelighet og sikkerhet kan kombineres. 
@@ -60,9 +61,9 @@ home:
     oss:
       title: Åpen kilde
       description: >-
-          Velg åpenhet og tillit med LibrePass sitt åpen kildekode-rammeverk.
-          Bli med i et fellesskap forpliktet til sikkerhet og innovasjon, for å
-          sikre at dataene dine forblir i pålitelige hender.
+        Velg åpenhet og tillit med LibrePass sitt åpen kildekode-rammeverk. Bli
+        med i et fellesskap forpliktet til sikkerhet og innovasjon, for å sikre
+        at dataene dine forblir i pålitelige hender.
 login:
   btn: Logg Inn
   hint_link: Få passordhint
