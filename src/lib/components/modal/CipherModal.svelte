@@ -73,7 +73,7 @@
     <article class="modal-body max-h-[50vh] overflow-scroll space-y-2 px-2">
         {#if cipher.type == CipherType.Login}
             <label class="label">
-                <span>{$_('field.email')}</span>
+                <span>{$_('field.name')}</span>
                 <input class="input input-bordered w-full" bind:value={loginData.name} />
             </label>
 

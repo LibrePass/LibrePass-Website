@@ -33,8 +33,7 @@ home:
       description: >-
         Generate robust, secure passwords effortlessly with LibrePass's
         intelligent password generator. Enhance your online security with
-        passwords tailored to the highest standards of strength and
-        complexity.
+        passwords tailored to the highest standards of strength and complexity.
     oss:
       title: Open Source
       description: >-
@@ -64,6 +63,7 @@ field:
   exp_month: Expiration month
   exp_year: Expiration year
   secure_code: Secure code
+  name: Name
 description:
   password_warning: Forgotten password cannot be recovered!
   password_hint_info: We recommend setting a password hint to help if you forget your password.

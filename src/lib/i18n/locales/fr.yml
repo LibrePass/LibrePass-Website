@@ -18,6 +18,7 @@ field:
   secure_code: Code de sécurité
   title: Titre
   username: Nom d'utilisateur
+  name: Nom
 home:
   description: >-
     La commodité et la sécurité peuvent être combinées. 
