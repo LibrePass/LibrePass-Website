@@ -8,9 +8,9 @@
 
 <Seo title={$_('home.title')} description={$_('home.description')} />
 
-<section class="first-container flex justify-center items-center max-w-[980px] mx-auto gap-5">
-    <div class="flex flex-col justify-start gap-4 text-center sm:text-start">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl">
+<section class="first-container flex justify-center items-center max-w-[980px] mx-auto">
+    <div class="flex flex-col justify-start gap-4 text-center sm:text-start px-2">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
             {$_('home.first.h1')}
         </h1>
 
