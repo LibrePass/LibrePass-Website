@@ -1,6 +1,6 @@
 # SvelteKit output directory
-/website/build
-/website/.svelte-kit
-/website/package
+/build
+/.svelte-kit
+/package
 
 *.yml
