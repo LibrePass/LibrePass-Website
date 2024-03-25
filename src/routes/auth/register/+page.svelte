@@ -1,9 +1,20 @@
 <script>
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
+    import { AuthClient } from '@librepass/client';
+    import { getToastStore } from '@skeletonlabs/skeleton';
 
+    import { API_URL } from '$lib';
     import { secretsStore } from '$lib/storage';
     import { goto } from '$app/navigation';
+
+    let field = {
+        email: '',
+        password: '',
+        confirmPassword: '',
+        passwordHint: '',
+        disabled: false
+    };
 
     onMount(() => {
         if (secretsStore.exists()) {
@@ -11,15 +22,44 @@
         }
     });
 
-    let field = {
-        email: '',
-        password: '',
-        confirmPassword: '',
-        passwordHint: ''
-    };
+    const authClient = new AuthClient(API_URL);
+
+    const toastStore = getToastStore();
 
     async function submit() {
-        console.log(field);
+        if (!field.email || !field.password || !field.confirmPassword) {
+            return toastStore.trigger({
+                message: 'Please enter your email and password',
+                background: 'variant-filled-error'
+            });
+        }
+
+        if (field.password !== field.confirmPassword) {
+            return toastStore.trigger({
+                message: 'Passwords do not match',
+                background: 'variant-filled-error'
+            });
+        }
+
+        try {
+            field.disabled = true;
+
+            await authClient.register(field.email, field.password, field.passwordHint);
+
+            return toastStore.trigger({
+                message: 'Please verify your email address',
+                background: 'variant-filled-success'
+            });
+        } catch (e) {
+            field.disabled = false;
+
+            console.error(e);
+
+            return toastStore.trigger({
+                message: 'Something went wrong',
+                background: 'variant-filled-error'
+            });
+        }
     }
 </script>
 
