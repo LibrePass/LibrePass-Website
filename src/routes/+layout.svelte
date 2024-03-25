@@ -11,13 +11,18 @@
         Toast
     } from '@skeletonlabs/skeleton';
 
+    import PageProgressBar from '$lib/components/PageProgressBar.svelte';
+
     import '../app.postcss';
+
     storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
     initializeStores();
 </script>
 
 <svelte:head>{@html '<script>(' + setInitialClassState.toString() + ')();</script>'}</svelte:head>
+
+<PageProgressBar />
 
 <Toast />
 <Modal />
