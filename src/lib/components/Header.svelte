@@ -4,7 +4,7 @@
     import LibrePassIcon from './icon/LibrePassIcon.svelte';
 </script>
 
-<AppBar class="fixed w-full text-xl" shadow="shadow-2xl">
+<AppBar class="fixed w-full text-xl h-16" shadow="shadow-2xl">
     <a href="/" class="flex items-center">
         <LibrePassIcon class="h-6 mr-2" />
 
