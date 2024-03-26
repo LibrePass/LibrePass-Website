@@ -102,7 +102,7 @@
 </script>
 
 <section class="h-full-header flex sm:justify-center sm:items-center">
-    <div class="card p-6 space-y-4 sm:max-w-sm">
+    <div class="p-6 space-y-4 sm:card sm:max-w-sm">
         <h1 class="text-xl text-center">
             {$_('login.title')}
         </h1>
