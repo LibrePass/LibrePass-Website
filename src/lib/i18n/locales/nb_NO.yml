@@ -18,15 +18,16 @@ field:
   name: Navn
 home:
   description: >-
-    Bekvemmelighet og sikkerhet kan kombineres. Passordene dine er sikre og kan lett
-    nås, slik at livet ditt på nettet er enkelt og sikkert.
+    Bekvemmelighet og sikkerhet kan kombineres. Passordene dine er sikre og kan
+    lett nås, slik at livet ditt på nettet er enkelt og sikkert.
   first:
     btn:
       login: Logg Inn
       register: Begynn
     h1: Ta kontroll over passordene dine
-    p: |-
-      Bekvemmelighet og sikkerhet går hånd i hånd. Passordene dine er sikre og du har enkel tilgang til dem.
+    p: >-
+      Bekvemmelighet og sikkerhet går hånd i hånd. Passordene dine er sikre og
+      du har enkel tilgang til dem.
   title: Ta kontroll over passordet ditt med LibrePass
   second:
     h1: Hovedfordeler
@@ -34,22 +35,23 @@ home:
     security:
       title: Sikkerhet
       p: >-
-        LibrePass prioriterer sikkerheten din, og implementerer toppmoderne ende-til-ende-kryptering
-        for å beskytte dine mest sensitive data. Vær trygg på at personvernet ditt
-        er vår største bekymring, og gir trygghet i dagens digitale landskap.
+        LibrePass prioriterer sikkerheten din, og implementerer toppmoderne
+        ende-til-ende-kryptering for å beskytte dine mest sensitive data. Vær
+        trygg på at personvernet ditt er vår største bekymring, og gir trygghet
+        i dagens digitale landskap.
     cross_sync:
       description: >-
-        Med LibrePass synkroniseres passordene dine sømløst på tvers av alle enhetene
-        dine, og sikrer at de alltid er oppdaterte og tilgjengelige. Nyt bekvemmeligheten
-        og fleksibiliteten ved å administrere passordene dine når som helst, hvor
-        som helst, på tvers av ulike plattformer.
+        Med LibrePass synkroniseres passordene dine sømløst på tvers av alle
+        enhetene dine, og sikrer at de alltid er oppdaterte og tilgjengelige.
+        Nyt bekvemmeligheten og fleksibiliteten ved å administrere passordene
+        dine når som helst, hvor som helst, på tvers av ulike plattformer.
       title: Synkronisering på tvers av plattformer
     generator:
       title: Smart passordgenerator
       description: >-
-        Generer robuste, sikre passord uten problemer med LibrePass sin intelligente
-        passordgenerator. Forbedre din nettsikkerhet med passord skreddersydd til
-        de høyeste standardene for styrke og kompleksitet.
+        Generer robuste, sikre passord uten problemer med LibrePass sin
+        intelligente passordgenerator. Forbedre din nettsikkerhet med passord
+        skreddersydd til de høyeste standardene for styrke og kompleksitet.
     oss:
       title: Åpen kilde
       description: >-
@@ -70,3 +72,6 @@ register:
 btn:
   cancel: Avbryt
   save: Lagre
+nav:
+  login: Logg Inn
+  get_started: Kom i gang

@@ -5,7 +5,7 @@ description:
   password_hint_info: >-
     Nous vous recommandons de définir un indice de mot de passe pour vous aider
     si vous oubliez votre mot de passe.
-  password_warning: "Le mot de passe oublié ne peut pas être récupéré !"
+  password_warning: "Le mot de passe oublié ne peut pas être récupéré\_!"
 field:
   confirm_password: Confirmez le mot de passe
   cardholder_name: Nom du titulaire
@@ -21,44 +21,49 @@ field:
   name: Nom
 home:
   description: >-
-    La commodité et la sécurité peuvent être combinées. Vos mots de passe sont sécurisés
-    et facilement accessibles afin que votre vie en ligne soit simple et sécurisée.
+    La commodité et la sécurité peuvent être combinées. Vos mots de passe sont
+    sécurisés et facilement accessibles afin que votre vie en ligne soit simple
+    et sécurisée.
   first:
     btn:
       login: Se connecter
       register: Commencer
     h1: Prenez le contrôle de vos mots de passe
-    p: |-
-      Commodité et sécurité vont de pair. Vos mots de passe sont sécurisés et vous y avez facilement accès.
+    p: >-
+      Commodité et sécurité vont de pair. Vos mots de passe sont sécurisés et
+      vous y avez facilement accès.
   second:
     cross_sync:
       description: >-
-        Avec LibrePass, vos mots de passe se synchronisent de manière transparente
-        sur tous vos appareils, garantissant qu'ils sont toujours à jour et accessibles.
-        Profitez de la commodité et de la flexibilité de la gestion de vos mots de
-        passe à tout moment, n'importe où, sur diverses plateformes.
+        Avec LibrePass, vos mots de passe se synchronisent de manière
+        transparente sur tous vos appareils, garantissant qu'ils sont toujours à
+        jour et accessibles. Profitez de la commodité et de la flexibilité de la
+        gestion de vos mots de passe à tout moment, n'importe où, sur diverses
+        plateformes.
       title: Synchronisation multiplateforme
     generator:
       description: >-
-        Générez des mots de passe robustes et sécurisés sans effort avec le générateur
-        de mots de passe intelligent de LibrePass. Améliorez votre sécurité en ligne
-        avec des mots de passe adaptés aux normes les plus élevées de force et de
-        complexité.
+        Générez des mots de passe robustes et sécurisés sans effort avec le
+        générateur de mots de passe intelligent de LibrePass. Améliorez votre
+        sécurité en ligne avec des mots de passe adaptés aux normes les plus
+        élevées de force et de complexité.
       title: Générateur de mot de passe intelligent
     h1: Avantages clés
     oss:
       description: >-
-        Choisissez la transparence et la confiance avec le framework open source de
-        LibrePass. Rejoignez une communauté engagée en faveur de la sécurité et de
-        l'innovation, en garantissant que vos données restent entre de bonnes mains.
+        Choisissez la transparence et la confiance avec le framework open source
+        de LibrePass. Rejoignez une communauté engagée en faveur de la sécurité
+        et de l'innovation, en garantissant que vos données restent entre de
+        bonnes mains.
       title: Open source
     p: Découvrez les avantages d'utiliser LibrePass
     security:
       p: >-
-        LibrePass donne la priorité à votre sécurité, en mettant en œuvre un cryptage
-        de bout en bout de pointe pour protéger vos données les plus sensibles. Rassurez-vous,
-        votre vie privée est notre principale préoccupation, vous offrant une tranquillité
-        d'esprit dans le paysage numérique d'aujourd'hui.
+        LibrePass donne la priorité à votre sécurité, en mettant en œuvre un
+        cryptage de bout en bout de pointe pour protéger vos données les plus
+        sensibles. Rassurez-vous, votre vie privée est notre principale
+        préoccupation, vous offrant une tranquillité d'esprit dans le paysage
+        numérique d'aujourd'hui.
       title: Sécurité
   title: Prenez le contrôle de votre mot de passe avec LibrePass
 login:
@@ -72,3 +77,6 @@ register:
   login_link: Se connecter!
   login_msg: Vous avez déjà un compte?
   title: Commencer
+nav:
+  login: Se connecter
+  get_started: Commencer

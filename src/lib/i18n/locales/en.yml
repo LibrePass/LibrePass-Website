@@ -1,3 +1,6 @@
+nav:
+  login: Login
+  get_started: Get started
 home:
   title: Take control of your password with LibrePass
   description: >-
