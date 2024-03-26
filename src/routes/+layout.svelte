@@ -23,11 +23,6 @@
 <AppShell>
     <svelte:fragment slot="header">
         <Header />
-        <!-- <AppBar class="max-h-[4em] justify-center text-xl">
-            <a href="/">
-                Libre<span class="text-primary-500">Pass</span>
-            </a>
-        </AppBar> -->
     </svelte:fragment>
 
     <!-- Page content -->
