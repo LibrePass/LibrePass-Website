@@ -1,16 +1,9 @@
 <script lang="ts">
     // Floating UI for Popups
     import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
-    import {
-        AppBar,
-        AppShell,
-        initializeStores,
-        Modal,
-        setInitialClassState,
-        storePopup,
-        Toast
-    } from '@skeletonlabs/skeleton';
+    import { AppShell, initializeStores, Modal, setInitialClassState, storePopup, Toast } from '@skeletonlabs/skeleton';
 
+    import Header from '$lib/components/Header.svelte';
     import PageProgressBar from '$lib/components/PageProgressBar.svelte';
 
     import '../app.postcss';
@@ -29,15 +22,18 @@
 
 <AppShell>
     <svelte:fragment slot="header">
-        <AppBar class="max-h-[4em] justify-center text-xl">
+        <Header />
+        <!-- <AppBar class="max-h-[4em] justify-center text-xl">
             <a href="/">
                 Libre<span class="text-primary-500">Pass</span>
             </a>
-        </AppBar>
+        </AppBar> -->
     </svelte:fragment>
 
-    <!-- Router Slot -->
-    <slot />
+    <!-- Page content -->
+    <div class="p-header">
+        <slot />
+    </div>
 
     <!-- (footer) -->
 </AppShell>
