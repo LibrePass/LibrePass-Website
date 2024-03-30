@@ -4,6 +4,7 @@
     import { PageProgressBar } from '@medzik/skeleton-utils';
     import { AppShell, initializeStores, Modal, setInitialClassState, storePopup, Toast } from '@skeletonlabs/skeleton';
 
+    import Footer from '$lib/components/footer/Footer.svelte';
     import Header from '$lib/components/header/Header.svelte';
 
     import '../app.postcss';
@@ -21,14 +22,17 @@
 <Modal />
 
 <AppShell>
+    <!-- Header -->
     <svelte:fragment slot="header">
         <Header />
     </svelte:fragment>
 
     <!-- Page content -->
-    <div class="p-header">
+    <div class="p-header min-h-screen h-full">
         <slot />
     </div>
 
-    <!-- (footer) -->
+    <svelte:fragment slot="footer">
+        <Footer />
+    </svelte:fragment>
 </AppShell>
