@@ -1,10 +1,10 @@
 <script lang="ts">
     // Floating UI for Popups
     import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
+    import { PageProgressBar } from '@medzik/skeleton-utils';
     import { AppShell, initializeStores, Modal, setInitialClassState, storePopup, Toast } from '@skeletonlabs/skeleton';
 
     import Header from '$lib/components/Header.svelte';
-    import PageProgressBar from '$lib/components/PageProgressBar.svelte';
 
     import '../app.postcss';
 
