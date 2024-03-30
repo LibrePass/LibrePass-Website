@@ -8,6 +8,7 @@
         type CipherSecureNoteData,
         CipherType
     } from '@librepass/client';
+    import { PasswordInput } from '@medzik/skeleton-utils';
     import { getModalStore } from '@skeletonlabs/skeleton';
 
     import { API_URL } from '$lib';
@@ -82,9 +83,9 @@
                 <input class="input input-bordered w-full" bind:value={loginData.username} />
             </label>
 
-            <label class="label">
+            <label class="label" for="password">
                 <span>{$_('field.password')}</span>
-                <input class="input input-bordered w-full" bind:value={loginData.password} />
+                <PasswordInput id="password" bind:value={loginData.password} />
             </label>
 
             <label class="label">
@@ -124,9 +125,9 @@
                 </label>
             </div>
 
-            <label class="label">
+            <label class="label" for="cvc">
                 <span>{$_('field.secure_code')}</span>
-                <input class="input input-bordered w-full" bind:value={cardData.code} />
+                <PasswordInput id="cvc" bind:value={cardData.code} />
             </label>
 
             <label class="label">
