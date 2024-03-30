@@ -4,7 +4,7 @@
     import { PageProgressBar } from '@medzik/skeleton-utils';
     import { AppShell, initializeStores, Modal, setInitialClassState, storePopup, Toast } from '@skeletonlabs/skeleton';
 
-    import Header from '$lib/components/Header.svelte';
+    import Header from '$lib/components/header/Header.svelte';
 
     import '../app.postcss';
 

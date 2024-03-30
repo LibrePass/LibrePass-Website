@@ -2,11 +2,14 @@
     import { _ } from 'svelte-i18n';
     import { AppBar } from '@skeletonlabs/skeleton';
 
-    import LibrePassIcon from './icon/LibrePassIcon.svelte';
+    import MobileMenu from '$lib/components/header/MobileMenu.svelte';
+    import LibrePassIcon from '$lib/components/icon/LibrePassIcon.svelte';
 </script>
 
 <AppBar class="fixed w-full text-xl h-16 justify-center" shadow="shadow-2xl">
     <svelte:fragment slot="lead">
+        <MobileMenu />
+
         <a href="/" class="flex items-center">
             <LibrePassIcon class="h-6 mr-2" />
 
@@ -18,12 +21,14 @@
     </svelte:fragment>
 
     <svelte:fragment slot="trail">
-        <a href="/auth/register" class="btn variant-ghost">
-            {$_('nav.get_started')}
-        </a>
+        <div class="hidden md:block">
+            <a href="/auth/register" class="btn variant-ghost">
+                {$_('nav.get_started')}
+            </a>
 
-        <a href="/auth/login" class="btn">
-            {$_('nav.login')}
-        </a>
+            <a href="/auth/login" class="btn">
+                {$_('nav.login')}
+            </a>
+        </div>
     </svelte:fragment>
 </AppBar>
