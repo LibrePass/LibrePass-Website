@@ -8,8 +8,6 @@
 
 <AppBar class="fixed w-full text-xl h-16 justify-center" shadow="shadow-2xl">
     <svelte:fragment slot="lead">
-        <MobileMenu />
-
         <a href="/" class="flex items-center">
             <LibrePassIcon class="h-6 mr-2" />
 
@@ -21,6 +19,8 @@
     </svelte:fragment>
 
     <svelte:fragment slot="trail">
+        <MobileMenu />
+
         <div class="hidden md:block">
             <a href="/auth/register" class="btn variant-ghost">
                 {$_('nav.get_started')}
