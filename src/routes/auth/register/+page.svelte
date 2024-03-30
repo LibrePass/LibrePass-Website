@@ -108,7 +108,7 @@
             </span>
         </label>
 
-        <p class="text-sm opacity-75">
+        <p class="text-sm">
             {$_('register.login_msg')}
             <a href="/auth/login" class="text-primary-500 font-bold">
                 {$_('register.login_link')}

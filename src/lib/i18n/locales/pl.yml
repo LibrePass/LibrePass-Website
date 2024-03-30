@@ -62,7 +62,7 @@ field:
 login:
   btn: Zaloguj się
   hint_link: Uzyskaj podpowiedź dotyczącą hasła
-  register_link: Zaloguj się!
+  register_link: Zarejestruj się!
   register_msg: Nie masz konta?
   title: Logowania
 register:
