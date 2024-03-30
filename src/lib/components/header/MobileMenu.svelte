@@ -12,7 +12,7 @@
 </script>
 
 <div class="md:hidden">
-    <button use:popup={menu} class="h-5 pr-2">
+    <button use:popup={menu} class="h-5">
         <Icon src={Menu} />
     </button>
 
