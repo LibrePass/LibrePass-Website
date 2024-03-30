@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { AuthClient, computePasswordHash, computeSharedSecret, publicFromPrivate } from '@librepass/client';
+    import { PasswordInput } from '@medzik/skeleton-utils';
     import { getToastStore } from '@skeletonlabs/skeleton';
 
     import { API_URL } from '$lib';
@@ -114,11 +115,11 @@
             <input class="input" type="text" placeholder={$_('field.email')} bind:value={field.email} />
         </label>
 
-        <label class="label">
+        <label class="label" for="password">
             <span>
                 {$_('field.password')}
             </span>
-            <input class="input" type="password" placeholder={$_('field.password')} bind:value={field.password} />
+            <PasswordInput id="password" placeholder={$_('field.password')} bind:value={field.password} />
             <button class="text-sm text-primary-500">
                 {$_('login.hint_link')}
             </button>
