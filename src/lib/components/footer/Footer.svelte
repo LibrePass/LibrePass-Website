@@ -5,10 +5,15 @@
 <footer class="bg-surface-100-800-token">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-4 lg:py-8">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
+            <div class="flex flex-col justify-center mb-6 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <LibrePassIcon class="h-8 me-3" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">LibrePass</span>
+                    <LibrePassIcon class="h-10 me-2" />
+                    <div class="grid grid-cols-1">
+                        <span class="self-center text-2xl font-semibold">LibrePass</span>
+                        <span class="text-sm text-surface-800-100-token">
+                            Take control of your password with LibrePass</span
+                        >
+                    </div>
                 </a>
             </div>
 
@@ -46,11 +51,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <hr class="my-6 sm:mx-auto border-surface-600-300-token lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm opacity-75"> Take control of your password with LibrePass </span>
         </div>
     </div>
 </footer>
