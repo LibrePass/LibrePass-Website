@@ -22,11 +22,11 @@
         <MobileMenu />
 
         <div class="hidden md:block">
-            <a href="/auth/register" class="btn variant-ghost">
+            <a href="/auth/register" class="btn variant-filled">
                 {$_('nav.get_started')}
             </a>
 
-            <a href="/auth/login" class="btn">
+            <a href="/auth/login" class="btn variant variant-outline">
                 {$_('nav.login')}
             </a>
         </div>
