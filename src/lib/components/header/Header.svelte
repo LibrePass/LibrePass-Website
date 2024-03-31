@@ -6,7 +6,7 @@
     import LibrePassIcon from '$lib/components/icon/LibrePassIcon.svelte';
 </script>
 
-<AppBar class="fixed w-full text-xl h-16 justify-center" shadow="shadow-2xl">
+<AppBar class="fixed w-full text-xl h-16 justify-center">
     <svelte:fragment slot="lead">
         <a href="/" class="flex items-center">
             <LibrePassIcon class="h-6 mr-2" />
