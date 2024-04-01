@@ -33,14 +33,14 @@
 <section class="flex justify-center items-center mx-auto py-[10vh] px-[2em] variant-filled-primary">
     <div class="flex flex-col gap-10">
         <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">{$_('home.second.h1')}</h1>
-        <p class="text-lg md:text-xl lg:text-2xl text-center text-primary-100 dark:text-primary-900">
+        <p class="text-lg md:text-xl lg:text-2xl text-center text-primary-100-800-token">
             {$_('home.second.p')}
         </p>
 
         <div class="grid text-center md:text-start md:grid-cols-2 max-w-screen-md gap-10">
             <div class="benefit">
                 <div class="icon">
-                    <Icon src={Lock} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
+                    <Icon src={Lock} size="24px" theme="round" class="text-primary-600-300-token" />
                 </div>
 
                 <h2>{$_('home.second.security.title')}</h2>
@@ -51,7 +51,7 @@
 
             <div class="benefit">
                 <div class="icon">
-                    <Icon src={Devices} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
+                    <Icon src={Devices} size="24px" theme="round" class="text-primary-600-300-token" />
                 </div>
 
                 <h2>{$_('home.second.cross_sync.title')}</h2>
@@ -62,7 +62,7 @@
 
             <div class="benefit">
                 <div class="icon">
-                    <Icon src={Shield} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
+                    <Icon src={Shield} size="24px" theme="round" class="text-primary-600-300-token" />
                 </div>
 
                 <h2>{$_('home.second.generator.title')}</h2>
@@ -73,7 +73,7 @@
 
             <div class="benefit">
                 <div class="icon">
-                    <Icon src={Code} size="24px" theme="round" class="text-primary-600 dark:text-primary-300" />
+                    <Icon src={Code} size="24px" theme="round" class="text-primary-600-300-token" />
                 </div>
 
                 <h2>{$_('home.second.oss.title')}</h2>
@@ -95,7 +95,7 @@
     }
 
     .benefit .icon {
-        @apply flex justify-center items-center w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900 mx-auto md:mx-0;
+        @apply flex justify-center items-center w-10 h-10 rounded-full bg-primary-200-700-token mx-auto md:mx-0;
     }
 
     .benefit h2 {

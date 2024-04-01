@@ -20,39 +20,39 @@ export const librepassTheme: CustomThemeConfig = {
         '--on-error': '0 0 0',
         '--on-surface': '255 255 255',
         // =~= Theme Colors  =~=
-        // primary | #ff8c5c
-        '--color-primary-50': '255 238 231', // #ffeee7
-        '--color-primary-100': '255 232 222', // #ffe8de
-        '--color-primary-200': '255 226 214', // #ffe2d6
-        '--color-primary-300': '255 209 190', // #ffd1be
-        '--color-primary-400': '255 175 141', // #ffaf8d
-        '--color-primary-500': '255 140 92', // #ff8c5c
-        '--color-primary-600': '230 126 83', // #e67e53
-        '--color-primary-700': '191 105 69', // #bf6945
-        '--color-primary-800': '153 84 55', // #995437
-        '--color-primary-900': '125 69 45', // #7d452d
-        // secondary | #ffb68d
-        '--color-secondary-50': '255 244 238', // #fff4ee
-        '--color-secondary-100': '255 240 232', // #fff0e8
-        '--color-secondary-200': '255 237 227', // #ffede3
-        '--color-secondary-300': '255 226 209', // #ffe2d1
-        '--color-secondary-400': '255 204 175', // #ffccaf
-        '--color-secondary-500': '255 182 141', // #ffb68d
-        '--color-secondary-600': '230 164 127', // #e6a47f
-        '--color-secondary-700': '191 137 106', // #bf896a
-        '--color-secondary-800': '153 109 85', // #996d55
-        '--color-secondary-900': '125 89 69', // #7d5945
-        // tertiary | #0EA5E9
-        '--color-tertiary-50': '219 242 252', // #dbf2fc
-        '--color-tertiary-100': '207 237 251', // #cfedfb
-        '--color-tertiary-200': '195 233 250', // #c3e9fa
-        '--color-tertiary-300': '159 219 246', // #9fdbf6
-        '--color-tertiary-400': '86 192 240', // #56c0f0
-        '--color-tertiary-500': '14 165 233', // #0EA5E9
-        '--color-tertiary-600': '13 149 210', // #0d95d2
-        '--color-tertiary-700': '11 124 175', // #0b7caf
-        '--color-tertiary-800': '8 99 140', // #08638c
-        '--color-tertiary-900': '7 81 114', // #075172
+        // primary | #ff7855
+        '--color-primary-50': '255 235 230', // #ffebe6
+        '--color-primary-100': '255 228 221', // #ffe4dd
+        '--color-primary-200': '255 221 213', // #ffddd5
+        '--color-primary-300': '255 201 187', // #ffc9bb
+        '--color-primary-400': '255 161 136', // #ffa188
+        '--color-primary-500': '255 120 85', // #ff7855
+        '--color-primary-600': '230 108 77', // #e66c4d
+        '--color-primary-700': '191 90 64', // #bf5a40
+        '--color-primary-800': '153 72 51', // #994833
+        '--color-primary-900': '125 59 42', // #7d3b2a
+        // secondary | #f66111
+        '--color-secondary-50': '254 231 219', // #fee7db
+        '--color-secondary-100': '253 223 207', // #fddfcf
+        '--color-secondary-200': '253 216 196', // #fdd8c4
+        '--color-secondary-300': '251 192 160', // #fbc0a0
+        '--color-secondary-400': '249 144 88', // #f99058
+        '--color-secondary-500': '246 97 17', // #f66111
+        '--color-secondary-600': '221 87 15', // #dd570f
+        '--color-secondary-700': '185 73 13', // #b9490d
+        '--color-secondary-800': '148 58 10', // #943a0a
+        '--color-secondary-900': '121 48 8', // #793008
+        // tertiary | #2ec27e
+        '--color-tertiary-50': '224 246 236', // #e0f6ec
+        '--color-tertiary-100': '213 243 229', // #d5f3e5
+        '--color-tertiary-200': '203 240 223', // #cbf0df
+        '--color-tertiary-300': '171 231 203', // #abe7cb
+        '--color-tertiary-400': '109 212 165', // #6dd4a5
+        '--color-tertiary-500': '46 194 126', // #2ec27e
+        '--color-tertiary-600': '41 175 113', // #29af71
+        '--color-tertiary-700': '35 146 95', // #23925f
+        '--color-tertiary-800': '28 116 76', // #1c744c
+        '--color-tertiary-900': '23 95 62', // #175f3e
         // success | #84cc16
         '--color-success-50': '237 247 220', // #edf7dc
         '--color-success-100': '230 245 208', // #e6f5d0
@@ -64,38 +64,38 @@ export const librepassTheme: CustomThemeConfig = {
         '--color-success-700': '99 153 17', // #639911
         '--color-success-800': '79 122 13', // #4f7a0d
         '--color-success-900': '65 100 11', // #41640b
-        // warning | #fbbd23
-        '--color-warning-50': '254 245 222', // #fef5de
-        '--color-warning-100': '254 242 211', // #fef2d3
-        '--color-warning-200': '254 239 200', // #feefc8
-        '--color-warning-300': '253 229 167', // #fde5a7
-        '--color-warning-400': '252 209 101', // #fcd165
-        '--color-warning-500': '251 189 35', // #fbbd23
-        '--color-warning-600': '226 170 32', // #e2aa20
-        '--color-warning-700': '188 142 26', // #bc8e1a
-        '--color-warning-800': '151 113 21', // #977115
-        '--color-warning-900': '123 93 17', // #7b5d11
-        // error | #f87272
-        '--color-error-50': '254 234 234', // #feeaea
-        '--color-error-100': '254 227 227', // #fee3e3
-        '--color-error-200': '253 220 220', // #fddcdc
-        '--color-error-300': '252 199 199', // #fcc7c7
-        '--color-error-400': '250 156 156', // #fa9c9c
-        '--color-error-500': '248 114 114', // #f87272
-        '--color-error-600': '223 103 103', // #df6767
-        '--color-error-700': '186 86 86', // #ba5656
-        '--color-error-800': '149 68 68', // #954444
-        '--color-error-900': '122 56 56', // #7a3838
-        // surface | #5e5c64
-        '--color-surface-50': '231 231 232', // #e7e7e8
-        '--color-surface-100': '223 222 224', // #dfdee0
-        '--color-surface-200': '215 214 216', // #d7d6d8
-        '--color-surface-300': '191 190 193', // #bfbec1
-        '--color-surface-400': '142 141 147', // #8e8d93
-        '--color-surface-500': '94 92 100', // #5e5c64
-        '--color-surface-600': '85 83 90', // #55535a
-        '--color-surface-700': '71 69 75', // #47454b
-        '--color-surface-800': '56 55 60', // #38373c
-        '--color-surface-900': '46 45 49' // #2e2d31
+        // warning | #ffbe6f
+        '--color-warning-50': '255 245 233', // #fff5e9
+        '--color-warning-100': '255 242 226', // #fff2e2
+        '--color-warning-200': '255 239 219', // #ffefdb
+        '--color-warning-300': '255 229 197', // #ffe5c5
+        '--color-warning-400': '255 210 154', // #ffd29a
+        '--color-warning-500': '255 190 111', // #ffbe6f
+        '--color-warning-600': '230 171 100', // #e6ab64
+        '--color-warning-700': '191 143 83', // #bf8f53
+        '--color-warning-800': '153 114 67', // #997243
+        '--color-warning-900': '125 93 54', // #7d5d36
+        // error | #f66151
+        '--color-error-50': '254 231 229', // #fee7e5
+        '--color-error-100': '253 223 220', // #fddfdc
+        '--color-error-200': '253 216 212', // #fdd8d4
+        '--color-error-300': '251 192 185', // #fbc0b9
+        '--color-error-400': '249 144 133', // #f99085
+        '--color-error-500': '246 97 81', // #f66151
+        '--color-error-600': '221 87 73', // #dd5749
+        '--color-error-700': '185 73 61', // #b9493d
+        '--color-error-800': '148 58 49', // #943a31
+        '--color-error-900': '121 48 40', // #793028
+        // surface | #6e5c64
+        '--color-surface-50': '233 231 232', // #e9e7e8
+        '--color-surface-100': '226 222 224', // #e2dee0
+        '--color-surface-200': '219 214 216', // #dbd6d8
+        '--color-surface-300': '197 190 193', // #c5bec1
+        '--color-surface-400': '154 141 147', // #9a8d93
+        '--color-surface-500': '110 92 100', // #6e5c64
+        '--color-surface-600': '99 83 90', // #63535a
+        '--color-surface-700': '83 69 75', // #53454b
+        '--color-surface-800': '66 55 60', // #42373c
+        '--color-surface-900': '54 45 49' // #362d31
     }
 };
