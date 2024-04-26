@@ -33,7 +33,7 @@
 <section class="flex justify-center items-center mx-auto py-[10vh] px-[2em] variant-filled-primary">
     <div class="flex flex-col gap-10">
         <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">{$_('home.second.h1')}</h1>
-        <p class="text-lg md:text-xl lg:text-2xl text-center text-primary-100-800-token">
+        <p class="text-lg md:text-xl lg:text-2xl text-center text-primary-900">
             {$_('home.second.p')}
         </p>
 
