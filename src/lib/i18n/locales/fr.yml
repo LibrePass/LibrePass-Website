@@ -28,6 +28,7 @@ home:
     btn:
       login: Se connecter
       register: Commencer
+      vault: Sauter
     h1: Prenez le contrôle de vos mots de passe
     p: >-
       Commodité et sécurité vont de pair. Vos mots de passe sont sécurisés et
@@ -80,3 +81,4 @@ register:
 nav:
   login: Se connecter
   get_started: Commencer
+  vault: Sauter

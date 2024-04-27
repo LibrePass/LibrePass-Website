@@ -11,6 +11,7 @@ home:
     btn:
       register: Rozpocznij
       login: Zaloguj się
+      vault: Sejf
   second:
     h1: Kluczowe korzyści
     p: Odkryj zalety korzystania z LibrePass
@@ -76,3 +77,4 @@ btn:
 nav:
   login: Zaloguj się
   get_started: Rozpocznij
+  vault: Sejf

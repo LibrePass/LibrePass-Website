@@ -57,6 +57,9 @@
                 background: 'variant-filled-error'
             });
         }
+
+        // update links in the header
+        window.dispatchEvent(new Event('updateHeader'));
     }
 
     async function initialLogin() {

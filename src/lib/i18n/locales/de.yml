@@ -24,6 +24,7 @@ home:
     btn:
       login: Anmeldung
       register: Loslegen
+      vault: Gewölbe
     h1: Übernehmen Sie die Kontrolle über Ihre Passwörter
     p: >-
       Komfort und Sicherheit gehen Hand in Hand. Ihre Passwörter sind sicher und
@@ -78,3 +79,4 @@ btn:
 nav:
   login: Anmeldung
   get_started: Loslegen
+  vault: Gewölbe

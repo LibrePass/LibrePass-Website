@@ -24,6 +24,7 @@ home:
     btn:
       login: Logg Inn
       register: Begynn
+      vault: Hvelv
     h1: Ta kontroll over passordene dine
     p: >-
       Bekvemmelighet og sikkerhet går hånd i hånd. Passordene dine er sikre og
@@ -75,3 +76,4 @@ btn:
 nav:
   login: Logg Inn
   get_started: Kom i gang
+  vault: Hvelv

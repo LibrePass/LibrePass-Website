@@ -1,9 +1,21 @@
 <script>
+    import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { AppBar } from '@skeletonlabs/skeleton';
 
     import MobileMenu from '$lib/components/header/MobileMenu.svelte';
     import LibrePassIcon from '$lib/components/icon/LibrePassIcon.svelte';
+    import { secretsStore } from '$lib/storage';
+
+    let loggedIn = false;
+
+    onMount(() => {
+        loggedIn = secretsStore.exists();
+
+        window.addEventListener('updateHeader', () => {
+            loggedIn = secretsStore.exists();
+        });
+    });
 </script>
 
 <AppBar class="fixed w-full text-xl h-16 justify-center">
@@ -22,13 +34,19 @@
         <MobileMenu />
 
         <div class="hidden md:block">
-            <a href="/auth/login" class="btn">
-                {$_('nav.login')}
-            </a>
+            {#if loggedIn}
+                <a href="/user/vault" class="btn">
+                    {$_('nav.vault')}
+                </a>
+            {:else}
+                <a href="/auth/login" class="btn">
+                    {$_('nav.login')}
+                </a>
 
-            <a href="/auth/register" class="btn p-2">
-                {$_('nav.get_started')}
-            </a>
+                <a href="/auth/register" class="btn p-2">
+                    {$_('nav.get_started')}
+                </a>
+            {/if}
         </div>
     </svelte:fragment>
 </AppBar>

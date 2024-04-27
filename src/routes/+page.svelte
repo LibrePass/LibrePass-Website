@@ -1,9 +1,19 @@
 <script>
+    import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { Code, Devices, Lock, Shield } from '@steeze-ui/material-design-icons';
     import { Icon } from '@steeze-ui/svelte-icon';
 
     import Seo from '$lib/components/Seo.svelte';
+    import { secretsStore } from '$lib/storage';
+
+    let loggedIn = false;
+
+    onMount(() => {
+        if (secretsStore.exists()) {
+            loggedIn = true;
+        }
+    });
 </script>
 
 <Seo title={$_('home.title')} description={$_('home.description')} />
@@ -19,13 +29,19 @@
         </p>
 
         <div class="flex justify-center sm:justify-start gap-4">
-            <a href="/auth/register" class="btn variant-filled-primary">
-                {$_('home.first.btn.register')} &rarr;
-            </a>
+            {#if loggedIn}
+                <a href="/user/vault" class="btn variant-soft-primary">
+                    {$_('home.first.btn.vault')} &rarr;
+                </a>
+            {:else}
+                <a href="/auth/register" class="btn variant-filled-primary">
+                    {$_('home.first.btn.register')} &rarr;
+                </a>
 
-            <a href="/auth/login" class="btn variant-soft-primary">
-                {$_('home.first.btn.login')} &rarr;
-            </a>
+                <a href="/auth/login" class="btn variant-soft-primary">
+                    {$_('home.first.btn.login')} &rarr;
+                </a>
+            {/if}
         </div>
     </div>
 </section>

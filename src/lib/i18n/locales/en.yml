@@ -1,6 +1,7 @@
 nav:
   login: Login
   get_started: Get started
+  vault: Vault
 home:
   title: Take control of your password with LibrePass
   description: >-
@@ -14,6 +15,7 @@ home:
     btn:
       register: Get started
       login: Log in
+      vault: Vault
   second:
     h1: Key Benefits
     p: Discover the advantages of using LibrePass
