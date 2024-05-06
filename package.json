@@ -11,7 +11,7 @@
         "format": "prettier --write . && eslint . --fix"
     },
     "devDependencies": {
-        "@floating-ui/dom": "^1.6.3",
+        "@floating-ui/dom": "^1.6.5",
         "@librepass/client": "^1.0.1",
         "@medzik/skeleton-utils": "^1.0.2",
         "@modyfi/vite-plugin-yaml": "^1.1.0",
