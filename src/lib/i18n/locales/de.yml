@@ -24,7 +24,7 @@ home:
     btn:
       login: Anmeldung
       register: Loslegen
-      vault: Gewölbe
+      vault: Tresor
     h1: Übernehmen Sie die Kontrolle über Ihre Passwörter
     p: >-
       Komfort und Sicherheit gehen Hand in Hand. Ihre Passwörter sind sicher und
@@ -77,6 +77,6 @@ btn:
   cancel: Stornieren
   save: Speichern
 nav:
-  login: Anmeldung
+  login: Log in
   get_started: Loslegen
-  vault: Gewölbe
+  vault: Tresor
