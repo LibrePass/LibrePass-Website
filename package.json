@@ -15,7 +15,7 @@
         "@librepass/client": "^1.0.1",
         "@medzik/skeleton-utils": "^1.0.2",
         "@modyfi/vite-plugin-yaml": "^1.1.0",
-        "@skeletonlabs/skeleton": "2.9.2",
+        "@skeletonlabs/skeleton": "2.10.0",
         "@skeletonlabs/tw-plugin": "0.4.0",
         "@steeze-ui/material-design-icons": "^1.1.2",
         "@steeze-ui/svelte-icon": "^1.5.0",
