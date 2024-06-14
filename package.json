@@ -47,7 +47,7 @@
         "typescript": "^5.4.5",
         "vite": "^5.2.11",
         "vite-plugin-image-optimizer": "^1.1.7",
-        "vite-plugin-node-polyfills": "^0.21.0",
+        "vite-plugin-node-polyfills": "^0.22.0",
         "vite-plugin-tailwind-purgecss": "0.3.3"
     },
     "type": "module"
