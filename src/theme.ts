@@ -86,16 +86,16 @@ export const librepassTheme: CustomThemeConfig = {
         '--color-error-700': '191 62 55', // #bf3e37
         '--color-error-800': '153 50 44', // #99322c
         '--color-error-900': '125 41 36', // #7d2924
-        // surface | #63535a
-        '--color-surface-50': '232 229 230', // #e8e5e6
-        '--color-surface-100': '224 221 222', // #e0ddde
-        '--color-surface-200': '216 212 214', // #d8d4d6
-        '--color-surface-300': '193 186 189', // #c1babd
-        '--color-surface-400': '146 135 140', // #92878c
-        '--color-surface-500': '99 83 90', // #63535a
-        '--color-surface-600': '89 75 81', // #594b51
-        '--color-surface-700': '74 62 68', // #4a3e44
-        '--color-surface-800': '59 50 54', // #3b3236
-        '--color-surface-900': '49 41 44' // #31292c
+        // surface | #5e5c64
+        '--color-surface-50': '231 231 232', // #e7e7e8
+        '--color-surface-100': '223 222 224', // #dfdee0
+        '--color-surface-200': '215 214 216', // #d7d6d8
+        '--color-surface-300': '191 190 193', // #bfbec1
+        '--color-surface-400': '142 141 147', // #8e8d93
+        '--color-surface-500': '94 92 100', // #5e5c64
+        '--color-surface-600': '85 83 90', // #55535a
+        '--color-surface-700': '71 69 75', // #47454b
+        '--color-surface-800': '56 55 60', // #38373c
+        '--color-surface-900': '46 45 49' // #2e2d31
     }
 };
