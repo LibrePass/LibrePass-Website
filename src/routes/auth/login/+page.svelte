@@ -46,7 +46,8 @@
                 await initialLogin();
             }
 
-            // window.dispatchEvent(new Event('updateHeader'));
+            window.dispatchEvent(new Event('updateHeader'));
+            window.dispatchEvent(new Event('updateMobileHeader'));
         } catch (e) {
             field.disabled = false;
 
