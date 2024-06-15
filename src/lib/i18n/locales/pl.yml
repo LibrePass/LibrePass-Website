@@ -56,7 +56,7 @@ field:
   exp_year: Rok ważności
   exp_month: Miesiąc ważności
   notes: Notatki
-  secure_code: Kod bezpieczeństwa
+  secure_code: Bezpieczny kod
   title: Tytuł
   username: Nazwa użytkownika
   name: Nazwa
@@ -76,5 +76,5 @@ btn:
   save: Zapisz
 nav:
   login: Zaloguj się
-  get_started: Rozpocznij
+  get_started: Rejestracja
   vault: Sejf
